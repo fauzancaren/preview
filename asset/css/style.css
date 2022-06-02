@@ -1,0 +1,268 @@
+/* nav start */
+.nav-link:hover {
+    border-top: 3px solid #cb5e37;
+    transition: all .5s;
+}
+
+.active{
+    border-top: 3px solid #cb5e37;
+}
+
+.navigasiHomeProduct {
+    font-size:x-small;
+}
+/* nav end */
+
+/* button start */
+.tombol {
+    font-size: x-small;
+    background-color: #bd7658;
+    color: #f8ddc2;
+}
+
+.tombol:hover {
+    background-color: #d19f8a;
+    color: #f8ddc2;
+    transition: all .5s;
+}
+
+.tombol-produk {
+    background-color: #c4c4c4;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.tombol-produk:hover {
+    color: whitesmoke;
+    background-color: #d6592b;
+    transition: all .5s;
+
+}
+
+.activeLeft {
+    padding: 5px;
+    cursor: pointer;
+}
+.activeLeft:hover {
+    border-left: 3px solid #cb5e37;
+}
+/* button end */
+
+/* icon start*/
+.icon {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.icon:hover{
+    background-color: #cb5e37;
+    color: #fefdf9;
+    transition: all .5s;
+}
+/* icon end */
+
+/* div start */
+.projectList:hover {
+    transform: scale(1, 1.4);
+    transition: all .3s;
+    cursor: pointer;
+    
+    
+}
+/* div end */
+
+/* image start */
+.imageHead{
+    cursor: pointer;
+}
+
+.imageHead:hover {
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}
+
+/* image end */
+
+/* youtube start */
+.youtube-grid {
+    display: grid;
+    grid-template-areas: 
+        'sub-youtube1 sub-youtube2'
+        'youtube-katamereka sub-youtube2';
+}
+
+.sub-youtube1 {
+    display:grid;
+    grid-area:sub-youtube1;
+    place-content: center;
+    padding: 10px;
+    
+}
+
+.sub-youtube2 {
+    display:grid;
+    grid-area:sub-youtube2;
+
+}
+
+.youtube-katamereka {
+    display:grid;
+    grid-area:youtube-katamereka;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    gap: 10px;
+
+}
+.youtubeimg {
+    padding: 10px;
+
+}
+
+.coveryoutube {
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background-color: whitesmoke;
+
+}
+/* youtube end */
+
+/* breakpoint start */
+@media (min-width: 375px) {
+    .imageHead {
+        width: 300px;
+        height: 300px;
+        padding-bottom: 20px;
+    }
+
+    .projectList:hover {
+        background-color: #F5F5F5;
+        transform: scale(1, 1.4);
+        transition: all .3s;
+        border: 5px solid  #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .contact {
+        width: 300px; 
+        height: 270px; 
+        border: 2px solid #9b7856; 
+        margin-bottom: 100px;
+        font-size: 10px;
+    }
+
+    .pcnav {
+        display: none;
+    }
+    .ipnav {
+        display: flex;
+    }
+
+    .navigasiHomeProduct {
+        font-size:x-small;
+    }
+
+    .tombol-produk {
+        width: 100%;
+    }
+}
+
+@media (min-width: 425px) {
+    .imageHead {
+        width: 350px;
+        height: 350px;
+        padding-y: 20px;
+    }
+
+    .contact {
+        width: 350px; 
+        height: 270px; 
+        border: 3px solid #9b7856; 
+        margin-bottom: 100px;
+        font-size: 12px;
+    }
+
+    .ipnav {
+        display: flex;
+        padding: 15px;
+    }
+
+    .textNavigasiHoemProduct {
+        font-weight: lighter;
+    }
+}
+@media (min-width: 768px) {
+    .imageHead {
+        width: 500px;
+        height: 500px;
+    }
+
+    .contact {
+        width: 90%; 
+        height: 250px; 
+        border: 3px solid #9b7856; 
+        margin-bottom: 100px;
+        font-size: 18px;
+    }
+
+    .ipnav {
+        display: flex;
+        padding: 30px;
+    }
+
+    .textNavigasiHoemProduct {
+        font-weight: normal;
+        font-size: 35px;
+    }
+
+    .navigasiHomeProduct {
+        font-size: medium;
+    }
+
+    .tombol-produk {
+        width: 120px;
+    }
+
+    .navigasiHomeProduct {
+        font-size:10px;
+    }
+
+}
+@media (min-width: 1024px) {
+    .ipnav {
+        display: none;
+    }
+    .pcnav {
+        display: flex;
+    }
+
+    .tombol-produk {
+        width: 200px;
+    }
+
+    .navigasiHomeProduct {
+        font-size:small;
+    }
+
+    .textNavigasiHoemProduct {
+        font-weight: lighter;
+        font-size: 30px;
+        padding: 100px
+    }
+
+}
+@media (min-width: 1440px) {
+
+    .textNavigasiHoemProduct {
+        font-weight: lighter;
+        font-size: 30px;
+        padding: 200px
+    }
+
+}
+
+/* breakpoint end */
+
+
