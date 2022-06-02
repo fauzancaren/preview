@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class pageContent extends CI_Controller {
+class PageContent extends CI_Controller {
 	function __construct()
 	{
 	   parent::__construct();
@@ -27,11 +27,11 @@ class pageContent extends CI_Controller {
 	}
 	public function productsById($id)
 	{
-		$text = str_replace('%20', ' ', $id);
-		$data['title'] = $text;
-		$data['productsById'] = $this->Product_model->getDataProductById($text);
+		$data['title'] = "Products Byid";
+		$data['productsById'] = $this->Product_model->getDataProductById($id);
 		$data['productKategori'] = $this->Product_model->getDataProductKategori();
-		$this->load->view('templates/header.php', $data, $text);
+		$data['productKategoriById'] = $this->Product_model->getDataProductKategoriById($id);
+		$this->load->view('templates/header.php', $data, $id);
 		$this->load->view('productsById.php', $data);
 		$this->load->view('templates/footer.php');
 	}

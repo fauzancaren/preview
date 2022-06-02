@@ -3,18 +3,26 @@
 
         public function getDataProduct()
         {
-            return $this->db->get('obi_product')->result_array();
+            return $this->db->get('TblMsItem')->result_array();
         }
-        public function getDataProductById($text)
+        public function getDataProductById($id)
         {
-            $this->db->from('obi_product');
-            $this->db->where('obiProductKategori', $text);
+            $this->db->from('TblMsItem');
+            $this->db->where('MsItemCatId', $id);
             return $this->db->get()->result_array();
         }
         
         public function getDataProductKategori()
         {
-            return $this->db->get('obi_kategori')->result_array();
+            return $this->db->get('TblMsItemCategory')->result_array();
+
+        }
+
+        public function getDataProductKategoriById($id)
+        {
+            $this->db->from('TblMsItemCategory');
+            $this->db->where('MsItemCatId', $id);
+            return $this->db->get()->result_array();
 
         }
     }

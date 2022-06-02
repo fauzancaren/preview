@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/css/style.css") ?>" rel="stylesheet" type="text/css">
@@ -46,19 +49,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>pageContent/index">HOME</a>
+                                <a class="nav-link" href="<?= base_url() ?>PageContent/index">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>pageContent/products">PRODUCTS</a>
+                                <a class="nav-link" href="<?= base_url() ?>PageContent/products">PRODUCTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>pageContent/project">PROJECT</a>
+                                <a class="nav-link" href="<?= base_url() ?>PageContent/project">PROJECT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>pageContent/contact">CONTACT</a>
+                                <a class="nav-link" href="<?= base_url() ?>PageContent/contact">CONTACT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>pageContent/myAccount">MY ACCOUNT</a>
+                                <a class="nav-link" href="<?= base_url() ?>PageContent/myAccount">MY ACCOUNT</a>
                             </li>
                         </ul>
                     </div>
@@ -75,11 +78,10 @@
                         <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
                     </div>
                     <div class="navbar-nav">
-                        <a class="nav-link" href="<?= base_url() ?>pageContent/index">HOME</a>
-                        <a class="nav-link" href="<?= base_url() ?>pageContent/products">PRODUCTS</a>
-                        <a class="nav-link" href="<?= base_url() ?>pageContent/project">PROJECT</a>
-                        <a class="nav-link" href="<?= base_url() ?>pageContent/contact">CONTACT</a>
-                        <a class="nav-link" href="<?= base_url() ?>pageContent/myAccount">MY ACCOUNT</a>
+                        <a class="nav-link" href="<?= base_url() ?>PageContent/index">HOME</a>
+                        <a class="nav-link" href="<?= base_url() ?>PageContent/products">PRODUCTS</a>
+                        <a class="nav-link" href="<?= base_url() ?>PageContent/project">PROJECT</a>
+                        <a class="nav-link" href="<?= base_url() ?>PageContent/contact">CONTACT</a>
                     </div>
                     <div class="navbar gap-4">
                         <i class="fas fa-user icon"></i>

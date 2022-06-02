@@ -19,13 +19,14 @@
                     </div>
                 </div>
                 <div class="row" style="margin-top: 250px; margin-left: -110px;">
-                    <button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button>
+
+                    <a href="http://maps.google.com/?q=1200 Omahbata - Toko Bata Expose , Toko Bata Tempel"><button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
                 </div>
             </div>
 
             <div class="d-flex align-items-center contact">
                 <div class="col-4 p-3">
-                    <img class="img-fluid" src="<?= base_url('asset/image/test.jpg') ?>" alt="image">
+                    <img class="img-fluid" src="<?= base_url('asset/image/grai/tokorosterBSD.jpg') ?>" alt="image">
 
                 </div>
                 <div class="col-8 p-2">
@@ -36,7 +37,7 @@
                     </div>
                 </div>
                 <div class="row" style="margin-top: 250px; margin-left: -110px;">
-                    <button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button>
+                    <a href="http://maps.google.com/?q=1200 Toko Roster BSD - Jual Lubang Angin - Jual Roster Custom - Pabrik Roster - Toko Roster Serpong"><button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
                 </div>
             </div>
 
