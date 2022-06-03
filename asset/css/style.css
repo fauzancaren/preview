@@ -1,8 +1,8 @@
 /* nav start */
-.nav-link:hover {
+/* .nav-link:hover {
     border-top: 3px solid #cb5e37;
     transition: all .5s;
-}
+} */
 
 .active{
     border-top: 3px solid #cb5e37;
@@ -63,13 +63,14 @@
 /* icon end */
 
 /* div start */
-.projectList:hover {
+
+/* .projectList:hover {
     transform: scale(1, 1.4);
     transition: all .3s;
     cursor: pointer;
     
     
-}
+} */
 /* div end */
 
 /* image start */
@@ -96,8 +97,8 @@
 .sub-youtube1 {
     display:grid;
     grid-area:sub-youtube1;
-    place-content: center;
-    padding: 10px;
+    place-content:center;
+    padding-top: 20px;
     
 }
 
@@ -128,6 +129,43 @@
 
 }
 /* youtube end */
+
+/* nav content start */
+.tab-content {
+    background-color: #cb5e37;
+    padding: 1px;
+}
+.nav-tabs {
+    border-bottom: transparent;
+    border-top: 1px solid #dddddd;
+  }
+  .nav-tabs > li {
+    float: left;
+    margin-top: -1px;
+  }
+  .nav-tabs > .nav-link {
+    color: #cb5e37;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    background-color: #c4c4c4;
+    border: 2px solid transparent;
+    border-radius: 0 0 4px 4px;
+    padding: 10px;
+  }
+  .nav-tabs > .nav-link:hover {
+    border-color: #eeeeee #eeeeee #dddddd;
+  }
+  .nav-link.active,
+  .nav-link.active:hover,
+  .nav-link.active:focus {
+    color: #fefdf9;
+    background-color: #cb5e37;
+    border: 2px solid #cb5e37;
+    border-top-color: transparent;
+    cursor: default;
+    margin:-1px;
+  }
+/* nav end */
 
 /* breakpoint start */
 @media (min-width: 320px) {
@@ -181,7 +219,6 @@
     .youtube-katamereka {
         grid-template-columns: 1fr;
         padding: 0;
-    
     }
 }
 

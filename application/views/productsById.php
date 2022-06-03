@@ -40,7 +40,7 @@
     <?php foreach ($productsById as $row) : ?>
         <div class="d-flex flex-row justify-content-center">
             <div class="d-flex flex-column p-3">
-                <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;" src="" alt="">
+                <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
                 <span class=" px-1 fw-bold"><?= $row["MsItemName"] ?></span>
                 <small class="px-1">Rp. <?= number_format($row["MsItemPrice"]) ?></small>
                 <small class="px-1"><?= $row["MsItemCode"] ?></small>

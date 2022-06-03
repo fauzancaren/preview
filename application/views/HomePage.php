@@ -26,19 +26,19 @@
         </div>
         <div class="container-fluid d-flex flex-row p-3 flex-wrap gap-4 justify-content-around">
             <div class="d-flex flex-column projectList">
-                <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="350px" height="250px" alt="image">
+                <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="300px" height="300px" alt="image">
                 <small class="text-center py-2">KFC Pustitek Pamulang</small>
 
             </div>
 
             <div class="d-flex flex-column projectList">
-                <img src="<?= base_url() ?>/asset/image/project/stasiunTebet.jpg" width="350px" height="250px" alt="image">
+                <img src="<?= base_url() ?>/asset/image/project/stasiunTebet.jpg" width="300px" height="300px" alt="image">
                 <small class="text-center py-2">Halte Integrasi Stasiun Tebet</small>
 
             </div>
 
             <div class="d-flex flex-column projectList">
-                <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="350px" height="250px" alt="image">
+                <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="300px" height="300px" alt="image">
                 <small class="text-center py-2">Starbucks Dramaga Bogor</small>
 
             </div>
@@ -56,7 +56,7 @@
 <div class="container-fluid" style="background-color: #bd7658;;">
     <div class="youtube-grid">
         <div class="sub-youtube1">
-            <small>Kata Mereka Tentang Omah Bata</small>
+            <h4 style="color: whitesmoke;">Kata Mereka Tentang Omah Bata</h4>
         </div>
 
         <div class="youtube-katamereka">
@@ -71,10 +71,10 @@
             </div>
             <div class="youtubeimg">
                 <div>
-                    <iframe class="container-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="container-fluid" src="https://www.youtube.com/embed/49SPpOzj-Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="row p-3 text-center" style="color: white;">
-                        <small>Sofian</small>
-                        <small class="fw-light">Arsitek & Kontraktor</small>
+                        <small>Nayakumara</small>
+                        <small class="fw-light">Arsitek</small>
                     </div>
                 </div>
             </div>
@@ -94,17 +94,36 @@
     </div>
 </div>
 
-<div class="container-fluid p-2" style="background-color: #fefdf9;">
-    <div class="flex text-center justify-content-center p-lg-5">
-        <p class="py-2 textNavigasiHoemProduct">Percantik hunian anda dengan dengan aneka produk material kami</p>
-        <img class="img-fluid px-5" src="<?= base_url() ?>/asset/image/test.jpg" alt="">
+<div class="container-fluid p-5" style="background-color: #fefdf9;">
+    <p class="py-2 textNavigasiHoemProduct">Percantik hunian anda dengan dengan aneka produk material kami</p>
 
-        <div class="d-flex flex-row flex-wrap fw-light px-5 mt-1 mb-5 gap-1 justify-content-between navigasiHomeProduct">
-            <a href="" class="px-5 py-2 mt-1 tombol-produk">BATA EXPOSE</a>
-            <a href="" class="px-5 py-2 mt-1 tombol-produk">BATA TEMPEL</a>
-            <a href="" class="px-5 py-2 mt-1 tombol-produk">ROSTER</a>
-            <a href="" class="px-5 py-2 mt-1 tombol-produk">PAVING</a>
+    <div class="container">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <img class="img-fluid" src="<?= base_url() ?>/asset/image/test.jpg" alt="">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <img class="img-fluid" src="<?= base_url() ?>/asset/image/1.jpg" alt="">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <img class="img-fluid" src="<?= base_url() ?>/asset/image/2.jpg" alt="">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">
+                <img class="img-fluid" src="<?= base_url() ?>/asset/image/3.jpg" alt="">
+            </div>
         </div>
+
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <button class="nav-link px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
+                <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
+                <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
+                <button class="nav-link px-lg-5 rounded-0" id="nav-contact2-tab" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">PAVING</button>
+            </div>
+        </nav>
     </div>
 </div>
 
