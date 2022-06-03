@@ -40,7 +40,6 @@
             <div class="d-flex flex-column projectList">
                 <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="300px" height="300px" alt="image">
                 <small class="text-center py-2">Starbucks Dramaga Bogor</small>
-
             </div>
         </div>
 
