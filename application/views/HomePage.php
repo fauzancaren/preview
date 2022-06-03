@@ -187,6 +187,7 @@
         <div class=" border border-2" style="width: 100px; height: 100px;">
             <img class=" p-2 img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png"" alt="">
         </div>
+        
 
         <div class=" border border-2" style="width: 100px; height: 100px;">
             <img class=" p-2 img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png"" alt="">
