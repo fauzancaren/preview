@@ -114,7 +114,6 @@
                 <img class="img-fluid" src="<?= base_url() ?>/asset/image/3.jpg" alt="">
             </div>
         </div>
-
         <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                 <button class="nav-link px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
