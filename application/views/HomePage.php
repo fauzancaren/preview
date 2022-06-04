@@ -1,9 +1,10 @@
-<div class="container-fluid mb-1" style="background-color: #fefdf9; color: #69422d">
+<div class="container">
+<div class="row mb-1" style="background-color: #fefdf9; color: #69422d">
     <div class="row py-4">
-        <div class="container-fluid col-6 d-flex justify-content-center align-items-center">
+        <div class="col-6 d-flex justify-content-center align-items-center">
             <img class=" imageHead" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" width="550px" height="550px" alt="">
         </div>
-        <div class="container-fluid col-6 text-center d-grid align-content-center align-items-center" style="width: 600px;">
+        <div class="col-6 text-center d-grid align-content-center align-items-center" style="width: 600px;">
             <div class="col">
                 <p class="fw-normal fs-1" style="font-family: 'Lora', serif;">Fungsional sekaligus estetis dengan bentuk geometris.</p>
             </div>
@@ -19,12 +20,12 @@
     </div>
 </div>
 
-<div class="container-fluid mb-1" style="background-color: #fefdf9;">
+<div class="row mb-1" style="background-color: #fefdf9;">
     <div>
         <div class="row flex-column text-center justify-content-end mb-5" style="height: 100px;">
             <h4 class="fw-normal" style="color: #69422d;">Featured Projects</h4>
         </div>
-        <div class="container-fluid d-flex p-3 flex-wrap gap-4 justify-content-around">
+        <div class="d-flex p-3 flex-wrap gap-4 justify-content-around">
             <div class="d-flex flex-column projectList">
                 <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="300px" height="300px" alt="image">
                 <small class="text-center py-2">KFC Pustitek Pamulang</small>
@@ -52,7 +53,7 @@
 </div>
 
 
-<div class="container-fluid" style="background-color: #bd7658;;">
+<div class="row" style="background-color: #bd7658;;">
     <div class="youtube-grid">
         <div class="sub-youtube1">
             <h4 style="color: whitesmoke;">Kata Mereka Tentang Omah Bata</h4>
@@ -61,7 +62,7 @@
         <div class="youtube-katamereka">
             <div class="youtubeimg">
                 <div>
-                    <iframe class="container-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="row p-3 text-center" style="color: white;">
                         <small>Sofian</small>
                         <small class="fw-light">Arsitek & Kontraktor</small>
@@ -70,7 +71,7 @@
             </div>
             <div class="youtubeimg">
                 <div>
-                    <iframe class="container-fluid" src="https://www.youtube.com/embed/49SPpOzj-Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="img-fluid" src="https://www.youtube.com/embed/49SPpOzj-Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="row p-3 text-center" style="color: white;">
                         <small>Nayakumara</small>
                         <small class="fw-light">Arsitek</small>
@@ -86,17 +87,17 @@
                     <img class="mt-1" src="<?= base_url() ?>/asset/image/transtvlogo.png" width="100px" height="15px" alt="">
                 </div>
                 <div class="div">
-                    <iframe class="container-fluid" src="https://www.youtube.com/embed/M-6erT4kwK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="img-fluid" src="https://www.youtube.com/embed/M-6erT4kwK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid py-5" style="background-color: #fefdf9;">
-    <p class="py-2 textNavigasiHomeProduct">Percantik hunian anda dengan dengan aneka produk material kami</p>
+<div class="row py-5" style="background-color: #fefdf9;">
+    <p class="row py-2 textNavigasiHomeProduct">Percantik hunian anda dengan dengan aneka produk material kami</p>
 
-    <div class="container">
+    <div class="row">
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                 <img class="img-fluid" src="<?= base_url() ?>/asset/image/test.jpg" alt="">
@@ -114,7 +115,8 @@
                 <img class="img-fluid" src="<?= base_url() ?>/asset/image/3.jpg" alt="">
             </div>
         </div>
-        <nav>
+       <div class="row">
+       <nav>
             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                 <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
                 <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
@@ -122,10 +124,11 @@
                 <button class="nav-link px-lg-5 rounded-0" id="nav-contact2-tab" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">PAVING</button>
             </div>
         </nav>
+       </div>
     </div>
 </div>
 
-<div class="container-fluid p-4 p-md-5 p-lg-3 p-sm-5" style="background-color: #bd7658;">
+<div class="row p-4 p-md-5 p-lg-3 p-sm-5" style="background-color: #bd7658;">
     <div class="d-flex flex-column text-center flex-wrap justify-content-center">
         <h4 class="fw-light" style="color: whitesmoke;">Why shope with use?</h4>
 
@@ -154,11 +157,11 @@
     </div>
 </div>
 
-<div class="container-fuid py-5" style="background-color: #fefdf9;">
+<div class="row py-5" style="background-color: #fefdf9;">
     <div class="row text-center">
         <h3 class="fw-normal py-5" style="color: #69422d;">Our Client</h3>
     </div>
-    <div class="container px-2 px-sm-3 px-md-5">
+    <div class="row px-2 px-sm-3 px-md-5">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-2">
             <div class="col">
                 <div class="box-client">
@@ -254,7 +257,7 @@
     </div>
 </div>
 
-<div class=" container-fluid" style="background-color: #bd7658;">
+<div class="row" style="background-color: #bd7658;">
     <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
         <h4 class="fw-normal">Our Newsletter</h4>
         <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
@@ -264,4 +267,5 @@
             <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
         </div>
     </div>
+</div>
 </div>

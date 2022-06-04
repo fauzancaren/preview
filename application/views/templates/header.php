@@ -22,9 +22,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
     <script>
-        $(".nav-link").on('click', 'nav-link', function() {
-            $(this).addClass('active').siblings().removeClass('active')
+        document.addEventListener("DOMContentLoaded", function() {
+
+            el_autohide = document.querySelector('.autohide');
+
+            // add padding-top to bady (if necessary)
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+
+            if (el_autohide) {
+                var last_scroll_top = 0;
+                window.addEventListener('scroll', function() {
+                    let scroll_top = window.scrollY;
+                    if (scroll_top < last_scroll_top) {
+                        el_autohide.classList.remove('scrolled-down');
+                        el_autohide.classList.add('scrolled-up');
+                    } else {
+                        el_autohide.classList.remove('scrolled-up');
+                        el_autohide.classList.add('scrolled-down');
+                    }
+                    last_scroll_top = scroll_top;
+                });
+                window.addEventListener
+            }
+            // if
+
         });
     </script>
 </head>
@@ -32,7 +56,6 @@
 
 
 <body style="background-color: #e0e0e0;">
-    <div class="container">
         <nav class="navbar ipnav" style="background-color: #fefdf9;">
             <div class="container-fluid">
                 <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
@@ -69,8 +92,8 @@
 
 
 
-        <nav class="navbar navbar-expand-lg p-4 shadow shadow-sm pcnav" style="background-color: #fefdf9;">
-            <div class="container-fluid">
+        <nav class="autohide navbar navbar-expand-lg p-4 shadow shadow-sm scrolled-up pcnav" style="background-color: #fefdf9;">
+            <div class="container">
                 <div class="collapse navbar-collapse d-flex justify-content-around flex-wrap customNav" id="navbarNavAltMarkup">
                     <div class="navbar">
                         <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
