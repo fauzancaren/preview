@@ -25,5 +25,12 @@
             return $this->db->get()->result_array();
 
         }
+        public function getDataItemById($id)
+        {
+            $this->db->from('TblMsItem');
+            $this->db->where('MsItemId', $id);
+            return $this->db->get()->result_array();
+
+        }
     }
 ?>
