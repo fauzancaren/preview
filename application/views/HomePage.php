@@ -116,7 +116,7 @@
         </div>
 
         <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                 <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
                 <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
                 <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
@@ -156,114 +156,114 @@
 </div>
 
 <div class="container-fuid py-5" style="background-color: #fefdf9;">
-        <div class="row text-center">
-            <h3 class="fw-normal py-5" style="color: #69422d;">Our Client</h3>
-        </div>
+    <div class="row text-center">
+        <h3 class="fw-normal py-5" style="color: #69422d;">Our Client</h3>
+    </div>
 
-        <div class="container px-2 px-sm-3 px-md-5">
-            <div class="row row-cols-3 row-cols-sm-4 row-cols-md-5 row-cols-lg-6 px-2 px-sm-3 px-md-5">
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/adhi.png"" alt="">
-                    </div>
+    <div class="container px-2 px-sm-3 px-md-5">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-2">
+            <div class="col text-center">
+                <div class="box-client">
+                    <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/adhi.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/al-jazaera-logo.png"" alt="">
-                    </div>
+            </div>
+            <div class="col">
+                <div class="box-client">
+                    <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/al-jazaera-logo.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/daiso.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/daiso.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Dominos_pizza.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Dominos_pizza.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/dr-marteens.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/dr-marteens.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hana_Bank.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hana_Bank.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jco.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jco.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jw marriote.jpg"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jw marriote.jpg" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/kfc.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/kfc.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/logo-Net-tv.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/logo-Net-tv.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/PT_PP_logo.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/PT_PP_logo.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/quality.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/quality.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Rai-Fitness.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Rai-Fitness.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/sbucks.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/sbucks.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/skechers.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/skechers.png" alt="">
                 </div>
-                <div class="col mb-4">
-                    <div class="border border-2">
-                        <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Wika.png"" alt="">
-                    </div>
+            </div>
+            <div class=" col">
+                <div class="box-client">
+                    <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Wika.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-        <div class=" container-fluid" style="background-color: #bd7658;">
-            <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
-                <h4 class="fw-normal">Our Newsletter</h4>
-                <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
+<div class=" container-fluid" style="background-color: #bd7658;">
+    <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
+        <h4 class="fw-normal">Our Newsletter</h4>
+        <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
 
-                <div class="input-group mb-3 mt-5">
-                    <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
-                </div>
-            </div>
+        <div class="input-group mb-3 mt-5">
+            <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
         </div>
+    </div>
+</div>

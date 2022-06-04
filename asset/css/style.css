@@ -10,8 +10,9 @@
 } */
 
 .navigasiHomeProduct {
-    font-size:x-small;
+    font-size: x-small;
 }
+
 /* nav end */
 
 /* start item Product */
@@ -19,8 +20,9 @@
     background-color: #e6e3e0;
     transition: all .5s;
     border-radius: 10px;
-    cursor: pointer; 
+    cursor: pointer;
 }
+
 /* end item product */
 
 /* button start */
@@ -53,9 +55,11 @@
     padding: 5px;
     cursor: pointer;
 }
+
 .activeLeft:hover {
     border-left: 3px solid #cb5e37;
 }
+
 /* button end */
 
 /* icon start*/
@@ -65,17 +69,18 @@
     border-radius: 2rem;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: #cb5e37;
     color: #fefdf9;
     transition: all .5s;
 }
+
 /* icon end */
 
 
 
 /* image start */
-.imageHead{
+.imageHead {
     cursor: pointer;
 }
 
@@ -90,33 +95,34 @@
 .youtube-grid {
     display: grid;
     padding: 10px;
-    grid-template-areas: 
+    grid-template-areas:
         'sub-youtube1 sub-youtube2'
         'youtube-katamereka sub-youtube2';
 }
 
 .sub-youtube1 {
-    display:grid;
-    grid-area:sub-youtube1;
-    place-content:center;
+    display: grid;
+    grid-area: sub-youtube1;
+    place-content: center;
     padding-top: 20px;
-    
+
 }
 
 .sub-youtube2 {
-    display:grid;
-    grid-area:sub-youtube2;
+    display: grid;
+    grid-area: sub-youtube2;
 
 }
 
 .youtube-katamereka {
-    display:grid;
-    grid-area:youtube-katamereka;
+    display: grid;
+    grid-area: youtube-katamereka;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 25px;
     gap: 10px;
 
 }
+
 .youtubeimg {
     padding: 10px;
 
@@ -129,6 +135,7 @@
     background-color: whitesmoke;
 
 }
+
 /* youtube end */
 
 /* nav content start */
@@ -136,15 +143,18 @@
     background-color: #cb5e37;
     padding: 1px;
 }
+
 .nav-tabs {
     border-bottom: transparent;
     border-top: 1px solid #dddddd;
-  }
-  .nav-tabs > li {
+}
+
+.nav-tabs>li {
     float: left;
     margin-top: -1px;
-  }
-  .nav-tabs > .nav-link {
+}
+
+.nav-tabs>.nav-link {
     color: #69422d;
     margin-right: 2px;
     line-height: 1.42857143;
@@ -152,21 +162,52 @@
     /* border: 2px solid transparent; */
     border-radius: 0 0 4px 4px;
     padding: 10px;
-  }
-  .nav-tabs > .nav-link:hover {
+}
+
+.nav-tabs>.nav-link:hover {
     border-color: #eeeeee #eeeeee #dddddd;
-  }
-  
-  .nav-link.active:hover,
-  .nav-link.active:focus {
+}
+
+.nav-link.active {
+    color: #fefdf9 !important;
+    background-color: #cb5e37 !important;
+    border: 2px solid #cb5e37 !important;
+    border-top-color: transparent !important;
+    margin-top: -1px !important;
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus {
     color: #fefdf9;
     background-color: #cb5e37;
     border: 2px solid #cb5e37;
     border-top-color: transparent;
     cursor: default;
-    margin:-1px;
-  }
+    margin-top: -1px;
+}
+
 /* nav end */
+.box-client {
+    border: 1px solid #e5e5e5;
+    height: 9rem;
+    width: 9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-client>img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.box-client:hover>img {
+    filter: grayscale(0%);
+}
 
 /* breakpoint start */
 @media (min-width: 320px) {
@@ -186,9 +227,9 @@
     } */
 
     .contact {
-        width: 300px; 
-        height: 270px; 
-        border: 2px solid #9b7856; 
+        width: 300px;
+        height: 270px;
+        border: 2px solid #9b7856;
         margin-bottom: 100px;
         font-size: 10px;
     }
@@ -196,12 +237,13 @@
     .pcnav {
         display: none;
     }
+
     .ipnav {
         display: flex;
     }
 
     .navigasiHomeProduct {
-        font-size:x-small;
+        font-size: x-small;
     }
 
     .tombol-produk {
@@ -211,7 +253,7 @@
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1'
             'youtube-katamereka'
             'sub-youtube2';
@@ -241,9 +283,9 @@
     } */
 
     .contact {
-        width: 300px; 
-        height: 270px; 
-        border: 2px solid #9b7856; 
+        width: 300px;
+        height: 270px;
+        border: 2px solid #9b7856;
         margin-bottom: 100px;
         font-size: 10px;
     }
@@ -251,12 +293,13 @@
     .pcnav {
         display: none;
     }
+
     .ipnav {
         display: flex;
     }
 
     .navigasiHomeProduct {
-        font-size:x-small;
+        font-size: x-small;
     }
 
     .tombol-produk {
@@ -266,7 +309,7 @@
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1'
             'youtube-katamereka'
             'sub-youtube2';
@@ -274,7 +317,7 @@
 
     .youtube-katamereka {
         grid-template-columns: 1fr;
-    
+
     }
 }
 
@@ -286,9 +329,9 @@
     }
 
     .contact {
-        width: 350px; 
-        height: 270px; 
-        border: 3px solid #9b7856; 
+        width: 350px;
+        height: 270px;
+        border: 3px solid #9b7856;
         margin-bottom: 100px;
         font-size: 12px;
     }
@@ -306,7 +349,7 @@
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1'
             'youtube-katamereka'
             'sub-youtube2';
@@ -315,9 +358,10 @@
     .youtube-katamereka {
         grid-template-columns: 1fr;
         padding: 25px;
-    
+
     }
 }
+
 @media (min-width: 768px) {
 
     .imageHead {
@@ -326,9 +370,9 @@
     }
 
     .contact {
-        width: 90%; 
-        height: 250px; 
-        border: 3px solid #9b7856; 
+        width: 90%;
+        height: 250px;
+        border: 3px solid #9b7856;
         margin-bottom: 100px;
         font-size: 18px;
     }
@@ -352,27 +396,29 @@
     }
 
     .navigasiHomeProduct {
-        font-size:10px;
+        font-size: 10px;
     }
 
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1 sub-youtube2'
             'youtube-katamereka sub-youtube2';
     }
 
     .youtube-katamereka {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    
+
     }
 
 }
+
 @media (min-width: 1024px) {
     .ipnav {
         display: none;
     }
+
     .pcnav {
         display: flex;
     }
@@ -382,7 +428,7 @@
     }
 
     .navigasiHomeProduct {
-        font-size:small;
+        font-size: small;
     }
 
     .textNavigasiHomeProduct {
@@ -393,12 +439,13 @@
 
     .youtube-grid {
         gap: 50px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1 sub-youtube1 sub-youtube2'
             'youtube-katamereka youtube-katamereka sub-youtube2';
     }
 
 }
+
 @media (min-width: 1440px) {
 
     .textNavigasiHomeProduct {
@@ -410,5 +457,3 @@
 }
 
 /* breakpoint end */
-
-
