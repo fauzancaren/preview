@@ -1,9 +1,10 @@
-<div class="container-fluid" style="background-color: #fefdf9;">
-    <div class="row py-3">
-        <div class="col-12">
-            <h4 class="px-2 py-2">CUSTOMER PROJECT</h4>
+<div style="background-color: #fefdf9;">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-12">
+                <h4 class="px-2 py-2">CUSTOMER PROJECT</h4>
+            </div>
         </div>
-    </div>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center">
             <div class="col">
@@ -18,4 +19,5 @@
                 </div>
             </div>
         </div>
+    </div>
 </div>

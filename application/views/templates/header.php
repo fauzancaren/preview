@@ -26,27 +26,25 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             console.log(document.documentElement.clientWidth);
-            if (document.documentElement.clientWidth < 767) {
-                el_autohide = document.querySelector('.autohide');
-                // add padding-top to bady (if necessary)
-                navbar_height = document.querySelector('.navbar').offsetHeight;
-                //  document.body.style.paddingTop = navbar_height + 'px';
+            el_autohide = document.querySelector('.autohide');
+            // add padding-top to bady (if necessary)
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            //  document.body.style.paddingTop = navbar_height + 'px';
 
-                if (el_autohide) {
-                    var last_scroll_top = 0;
-                    window.addEventListener('scroll', function() {
-                        let scroll_top = window.scrollY;
-                        if (scroll_top < last_scroll_top) {
-                            el_autohide.classList.remove('scrolled-down');
-                            el_autohide.classList.add('scrolled-up');
-                        } else {
-                            el_autohide.classList.remove('scrolled-up');
-                            el_autohide.classList.add('scrolled-down');
-                        }
-                        last_scroll_top = scroll_top;
-                    });
-                    window.addEventListener
-                }
+            if (el_autohide) {
+                var last_scroll_top = 0;
+                window.addEventListener('scroll', function() {
+                    let scroll_top = window.scrollY;
+                    if (scroll_top < last_scroll_top) {
+                        el_autohide.classList.remove('scrolled-down');
+                        el_autohide.classList.add('scrolled-up');
+                    } else {
+                        el_autohide.classList.remove('scrolled-up');
+                        el_autohide.classList.add('scrolled-down');
+                    }
+                    last_scroll_top = scroll_top;
+                });
+                window.addEventListener
             }
         });
     </script>
@@ -69,19 +67,19 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>PageContent/index">HOME</a>
+                            <a class="nav-link" href="<?= base_url() ?>">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>PageContent/products">PRODUCTS</a>
+                            <a class="nav-link  " href="<?= base_url() ?>product">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>PageContent/project">PROJECT</a>
+                            <a class="nav-link  " href="<?= base_url() ?>project">PROJECT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>PageContent/contact">CONTACT</a>
+                            <a class="nav-link  " href="<?= base_url() ?>contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>PageContent/myAccount">MY ACCOUNT</a>
+                            <a class="nav-link  " href="<?= base_url() ?>account">MY ACCOUNT</a>
                         </li>
                     </ul>
                 </div>
@@ -95,10 +93,10 @@
                     <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
                 </div>
                 <div class="navbar-nav fw-bold gap-3">
-                    <a class="nav-link" href="<?= base_url() ?>PageContent/index">HOME</a>
-                    <a class="nav-link" href="<?= base_url() ?>PageContent/products">PRODUCTS</a>
-                    <a class="nav-link" href="<?= base_url() ?>PageContent/project">PROJECT</a>
-                    <a class="nav-link" href="<?= base_url() ?>PageContent/contact">CONTACT</a>
+                    <a class="nav-link <?= ($_page == "HOME" ? "active" : "") ?>" href="<?= base_url() ?>">HOME</a>
+                    <a class="nav-link <?= ($_page == "PRODUCTS" ? "active" : "") ?>" href="<?= base_url() ?>product">PRODUCTS</a>
+                    <a class="nav-link <?= ($_page == "PROJECT" ? "active" : "") ?>" href="<?= base_url() ?>project">PROJECT</a>
+                    <a class="nav-link <?= ($_page == "CONTACT" ? "active" : "") ?>" href="<?= base_url() ?>contact">CONTACT</a>
                 </div>
                 <div class="navbar gap-4">
                     <i class="fas fa-user icon"></i>
