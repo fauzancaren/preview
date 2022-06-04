@@ -1,4 +1,8 @@
 /* nav start */
+body {
+    color: #69422d;
+}
+
 .nav-link:hover {
     border-top: 3px solid #cb5e37;
     transition: all .3s;
@@ -10,7 +14,7 @@
 }
 
 /* .active{
-    border-top: 3px solid #cb5e37;
+    border-top: 3px solid #cb5e37;#
 } */
 
 .navigasiHomeProduct {
@@ -30,19 +34,24 @@
 /* end item product */
 
 /* startt nav autohide */
-.autohide{
+.autohide {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1030;
 }
-.scrolled-down{
-    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
 }
-.scrolled-up{
-    transform:translateY(0); transition: all 0.3s ease-in-out;
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
 }
+
 /* end autohide */
 
 /* button start */
@@ -291,6 +300,11 @@
         padding-bottom: 20px;
     }
 
+    .box-project>img {
+        width: 200px;
+        height: 100px;
+    }
+
     /* .projectList:hover {
         background-color: #F5F5F5;
         transform: scale(1, 1.4);
@@ -344,7 +358,12 @@
     .imageHead {
         width: 350px;
         height: 350px;
-        padding-y: 20px;
+        padding: 20px;
+    }
+
+    .box-project>img {
+        width: 300px;
+        height: 200px;
     }
 
     .contact {

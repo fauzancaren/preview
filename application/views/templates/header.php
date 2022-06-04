@@ -25,30 +25,29 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            console.log(document.documentElement.clientWidth);
+            if (document.documentElement.clientWidth < 767) {
+                el_autohide = document.querySelector('.autohide');
+                // add padding-top to bady (if necessary)
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                //  document.body.style.paddingTop = navbar_height + 'px';
 
-            el_autohide = document.querySelector('.autohide');
-
-            // add padding-top to bady (if necessary)
-            navbar_height = document.querySelector('.navbar').offsetHeight;
-            document.body.style.paddingTop = navbar_height + 'px';
-
-            if (el_autohide) {
-                var last_scroll_top = 0;
-                window.addEventListener('scroll', function() {
-                    let scroll_top = window.scrollY;
-                    if (scroll_top < last_scroll_top) {
-                        el_autohide.classList.remove('scrolled-down');
-                        el_autohide.classList.add('scrolled-up');
-                    } else {
-                        el_autohide.classList.remove('scrolled-up');
-                        el_autohide.classList.add('scrolled-down');
-                    }
-                    last_scroll_top = scroll_top;
-                });
-                window.addEventListener
+                if (el_autohide) {
+                    var last_scroll_top = 0;
+                    window.addEventListener('scroll', function() {
+                        let scroll_top = window.scrollY;
+                        if (scroll_top < last_scroll_top) {
+                            el_autohide.classList.remove('scrolled-down');
+                            el_autohide.classList.add('scrolled-up');
+                        } else {
+                            el_autohide.classList.remove('scrolled-up');
+                            el_autohide.classList.add('scrolled-down');
+                        }
+                        last_scroll_top = scroll_top;
+                    });
+                    window.addEventListener
+                }
             }
-            // if
-
         });
     </script>
 </head>
@@ -56,7 +55,6 @@
 
 
 <body style="background-color: #e0e0e0;">
-
     <nav class="navbar ipnav" style="background-color: #fefdf9;">
         <div class="container-fluid">
             <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
@@ -90,16 +88,13 @@
             </div>
         </div>
     </nav>
-
-
-
     <nav class="autohide navbar navbar-expand-lg p-4 shadow shadow-sm scrolled-up pcnav" style="background-color: #fefdf9;">
         <div class="container">
             <div class="collapse navbar-collapse d-flex justify-content-around flex-wrap customNav" id="navbarNavAltMarkup">
                 <div class="navbar">
                     <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
                 </div>
-                <div class="navbar-nav">
+                <div class="navbar-nav fw-bold gap-3">
                     <a class="nav-link" href="<?= base_url() ?>PageContent/index">HOME</a>
                     <a class="nav-link" href="<?= base_url() ?>PageContent/products">PRODUCTS</a>
                     <a class="nav-link" href="<?= base_url() ?>PageContent/project">PROJECT</a>
@@ -114,3 +109,4 @@
         </div>
 
     </nav>
+    <div class="mt-0 pt-0 mt-lg-5 pt-lg-5">
