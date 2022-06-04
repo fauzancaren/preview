@@ -1,8 +1,12 @@
 /* nav start */
 .nav-link:hover {
     border-top: 2px solid #cb5e37;
-    transition: all .5s;
-    padding: 3px;
+    transition: all .3s;
+}
+
+.nav-link {
+    border-top: 2px solid transparent;
+    transition: all .3s;
 }
 
 /* .active{
