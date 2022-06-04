@@ -1,9 +1,9 @@
 <div class="container-fluid mb-1" style="background-color: #fefdf9; color: #69422d">
     <div class="row py-4">
-        <div class="container-fluid col-6 d-flex justify-content-center align-items-center">
+        <div class="col-6 d-flex justify-content-center align-items-center">
             <img class=" imageHead" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" width="550px" height="550px" alt="">
         </div>
-        <div class="container-fluid col-6 text-center d-grid align-content-center align-items-center" style="width: 600px;">
+        <div class="col-6 text-center d-grid align-content-center align-items-center" style="width: 600px;">
             <div class="col">
                 <p class="fw-normal fs-1" style="font-family: 'Lora', serif;">Fungsional sekaligus estetis dengan bentuk geometris.</p>
             </div>

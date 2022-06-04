@@ -1,11 +1,11 @@
 /* nav start */
 .nav-link:hover {
-    border-top: 2px solid #cb5e37;
+    border-top: 3px solid #cb5e37;
     transition: all .3s;
 }
 
 .nav-link {
-    border-top: 2px solid transparent;
+    border-top: 3px solid transparent;
     transition: all .3s;
 }
 
@@ -171,7 +171,7 @@
     border-color: #eeeeee #eeeeee #dddddd;
 }
 
-.nav-link.active {
+.nav-tabs>.nav-link.active {
     color: #fefdf9 !important;
     background-color: #cb5e37 !important;
     border: 2px solid #cb5e37 !important;
@@ -179,8 +179,8 @@
     margin-top: -1px !important;
 }
 
-.nav-link.active:hover,
-.nav-link.active:focus {
+.nav-tabs>.nav-link.active:hover,
+.nav-tabs>.nav-link.active:focus {
     color: #fefdf9;
     background-color: #cb5e37;
     border: 2px solid #cb5e37;
