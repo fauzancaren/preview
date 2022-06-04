@@ -1,4 +1,4 @@
-<div class="container-fluid" style="background-color: #fefdf9;">
+<div class="row">
     <div class="row text-dark bg-opacity-50" style="height: 400px; background-image: url(<?= base_url() ?>/asset/image/test.jpg);">
         <div class=" d-grid justify-content-center text-center align-content-center" style="font-family: 'Montserrat', sans-serif;">
             <h1 class="fw-bolder">https://Omahbata.com</h1>
@@ -8,7 +8,6 @@
 </div>
 
 <nav class="navbar navbar-expand-lg p-5" style="background-color: #fefdf9;">
-    <div class="container-fluid">
         <div class="collapse navbar-collapse d-flex justify-content-around mt-5" id="navbarNavAltMarkup">
             <div class="navbar-nav">
 
@@ -32,7 +31,6 @@
                 <a class="nav-link px-4" href="<?= base_url() ?>/pageContent/productsById/10">ROBLOCK</a>
             </div>
         </div>
-    </div>
 </nav>
 
 <div class="d-flex flex-wrap justify-content-center p-4 gap-3" style="background-color: #fefdf9;">
