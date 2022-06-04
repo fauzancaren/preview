@@ -158,9 +158,6 @@ body {
 }
 
 .coveryoutube {
-    display: grid;
-    place-content: center;
-    padding: 10px;
     background-color: whitesmoke;
 
 }
@@ -185,7 +182,6 @@ body {
 
 .nav-tabs>.nav-link {
     color: #69422d;
-    margin-right: 2px;
     line-height: 1.42857143;
     background-color: #c4c4c4;
     border-radius: 0 0 4px 4px;

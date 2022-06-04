@@ -5,7 +5,6 @@
         </div>
     </div>
 
-    <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center">
             <div class="col">
                 <div class="img-fluid p-4 rounded-1" style="height: 200px; background-image: url(<?= base_url('asset/image/project/MpHouse.jpeg') ?>); background-size: cover; background-position: center;">
@@ -19,5 +18,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
