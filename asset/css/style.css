@@ -1,17 +1,33 @@
 /* nav start */
-/* .nav-link:hover {
+.nav-link:hover {
+    border-top: 2px solid #cb5e37;
+    transition: all .3s;
+}
+
+.nav-link {
+    border-top: 2px solid transparent;
+    transition: all .3s;
+}
+
+/* .active{
     border-top: 3px solid #cb5e37;
-    transition: all .5s;
 } */
 
-.active{
-    border-top: 3px solid #cb5e37;
+.navigasiHomeProduct {
+    font-size: x-small;
 }
 
-.navigasiHomeProduct {
-    font-size:x-small;
-}
 /* nav end */
+
+/* start item Product */
+.item:hover {
+    background-color: #e6e3e0;
+    transition: all .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* end item product */
 
 /* button start */
 .tombol {
@@ -43,9 +59,11 @@
     padding: 5px;
     cursor: pointer;
 }
+
 .activeLeft:hover {
     border-left: 3px solid #cb5e37;
 }
+
 /* button end */
 
 /* icon start*/
@@ -55,26 +73,18 @@
     border-radius: 2rem;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: #cb5e37;
     color: #fefdf9;
     transition: all .5s;
 }
+
 /* icon end */
 
-/* div start */
 
-/* .projectList:hover {
-    transform: scale(1, 1.4);
-    transition: all .3s;
-    cursor: pointer;
-    
-    
-} */
-/* div end */
 
 /* image start */
-.imageHead{
+.imageHead {
     cursor: pointer;
 }
 
@@ -89,33 +99,34 @@
 .youtube-grid {
     display: grid;
     padding: 10px;
-    grid-template-areas: 
+    grid-template-areas:
         'sub-youtube1 sub-youtube2'
         'youtube-katamereka sub-youtube2';
 }
 
 .sub-youtube1 {
-    display:grid;
-    grid-area:sub-youtube1;
-    place-content:center;
+    display: grid;
+    grid-area: sub-youtube1;
+    place-content: center;
     padding-top: 20px;
-    
+
 }
 
 .sub-youtube2 {
-    display:grid;
-    grid-area:sub-youtube2;
+    display: grid;
+    grid-area: sub-youtube2;
 
 }
 
 .youtube-katamereka {
-    display:grid;
-    grid-area:youtube-katamereka;
+    display: grid;
+    grid-area: youtube-katamereka;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 25px;
     gap: 10px;
 
 }
+
 .youtubeimg {
     padding: 10px;
 
@@ -128,6 +139,7 @@
     background-color: whitesmoke;
 
 }
+
 /* youtube end */
 
 /* nav content start */
@@ -135,37 +147,70 @@
     background-color: #cb5e37;
     padding: 1px;
 }
+
 .nav-tabs {
     border-bottom: transparent;
     border-top: 1px solid #dddddd;
-  }
-  .nav-tabs > li {
+}
+
+.nav-tabs>li {
     float: left;
     margin-top: -1px;
-  }
-  .nav-tabs > .nav-link {
-    color: #cb5e37;
+}
+
+.nav-tabs>.nav-link {
+    color: #69422d;
     margin-right: 2px;
     line-height: 1.42857143;
     background-color: #c4c4c4;
-    border: 2px solid transparent;
     border-radius: 0 0 4px 4px;
     padding: 10px;
-  }
-  .nav-tabs > .nav-link:hover {
+}
+
+.nav-tabs>.nav-link:hover {
     border-color: #eeeeee #eeeeee #dddddd;
-  }
-  .nav-link.active,
-  .nav-link.active:hover,
-  .nav-link.active:focus {
+}
+
+.nav-link.active {
+    color: #fefdf9 !important;
+    background-color: #cb5e37 !important;
+    border: 2px solid #cb5e37 !important;
+    border-top-color: transparent !important;
+    margin-top: -1px !important;
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus {
     color: #fefdf9;
     background-color: #cb5e37;
     border: 2px solid #cb5e37;
     border-top-color: transparent;
     cursor: default;
-    margin:-1px;
-  }
+    margin-top: -1px;
+}
+
 /* nav end */
+.box-client {
+    border: 1px solid #e5e5e5;
+    height: 9rem;
+    width: 9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-client>img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.box-client:hover>img {
+    filter: grayscale(0%);
+}
 
 /* breakpoint start */
 @media (min-width: 320px) {
@@ -175,19 +220,19 @@
         padding-bottom: 20px;
     }
 
-    .projectList:hover {
+    /* .projectList:hover {
         background-color: #F5F5F5;
         transform: scale(1, 1.4);
         transition: all .3s;
         border: 5px solid  #e0e0e0;
         border-radius: 10px;
         overflow: hidden;
-    }
+    } */
 
     .contact {
-        width: 300px; 
-        height: 270px; 
-        border: 2px solid #9b7856; 
+        width: 300px;
+        height: 270px;
+        border: 2px solid #9b7856;
         margin-bottom: 100px;
         font-size: 10px;
     }
@@ -195,12 +240,13 @@
     .pcnav {
         display: none;
     }
+
     .ipnav {
         display: flex;
     }
 
     .navigasiHomeProduct {
-        font-size:x-small;
+        font-size: x-small;
     }
 
     .tombol-produk {
@@ -210,7 +256,7 @@
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1'
             'youtube-katamereka'
             'sub-youtube2';
@@ -229,19 +275,20 @@
         padding-bottom: 20px;
     }
 
-    .projectList:hover {
+    /* .projectList:hover {
         background-color: #F5F5F5;
         transform: scale(1, 1.4);
         transition: all .3s;
         border: 5px solid  #e0e0e0;
         border-radius: 10px;
         overflow: hidden;
-    }
+        
+    } */
 
     .contact {
-        width: 300px; 
-        height: 270px; 
-        border: 2px solid #9b7856; 
+        width: 300px;
+        height: 270px;
+        border: 2px solid #9b7856;
         margin-bottom: 100px;
         font-size: 10px;
     }
@@ -249,12 +296,13 @@
     .pcnav {
         display: none;
     }
+
     .ipnav {
         display: flex;
     }
 
     .navigasiHomeProduct {
-        font-size:x-small;
+        font-size: x-small;
     }
 
     .tombol-produk {
@@ -264,7 +312,7 @@
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1'
             'youtube-katamereka'
             'sub-youtube2';
@@ -272,7 +320,7 @@
 
     .youtube-katamereka {
         grid-template-columns: 1fr;
-    
+
     }
 }
 
@@ -284,9 +332,9 @@
     }
 
     .contact {
-        width: 350px; 
-        height: 270px; 
-        border: 3px solid #9b7856; 
+        width: 350px;
+        height: 270px;
+        border: 3px solid #9b7856;
         margin-bottom: 100px;
         font-size: 12px;
     }
@@ -296,14 +344,15 @@
         padding: 15px;
     }
 
-    .textNavigasiHoemProduct {
-        font-weight: lighter;
+    .textNavigasiHomeProduct {
+        font-weight: normal;
+        color: #bd7658;
     }
 
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1'
             'youtube-katamereka'
             'sub-youtube2';
@@ -312,9 +361,10 @@
     .youtube-katamereka {
         grid-template-columns: 1fr;
         padding: 25px;
-    
+
     }
 }
+
 @media (min-width: 768px) {
 
     .imageHead {
@@ -323,9 +373,9 @@
     }
 
     .contact {
-        width: 90%; 
-        height: 250px; 
-        border: 3px solid #9b7856; 
+        width: 90%;
+        height: 250px;
+        border: 3px solid #9b7856;
         margin-bottom: 100px;
         font-size: 18px;
     }
@@ -335,7 +385,7 @@
         padding: 30px;
     }
 
-    .textNavigasiHoemProduct {
+    .textNavigasiHomeProduct {
         font-weight: normal;
         font-size: 35px;
     }
@@ -349,27 +399,29 @@
     }
 
     .navigasiHomeProduct {
-        font-size:10px;
+        font-size: 10px;
     }
 
     .youtube-grid {
         display: grid;
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1 sub-youtube2'
             'youtube-katamereka sub-youtube2';
     }
 
     .youtube-katamereka {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    
+
     }
 
 }
+
 @media (min-width: 1024px) {
     .ipnav {
         display: none;
     }
+
     .pcnav {
         display: flex;
     }
@@ -379,10 +431,10 @@
     }
 
     .navigasiHomeProduct {
-        font-size:small;
+        font-size: small;
     }
 
-    .textNavigasiHoemProduct {
+    .textNavigasiHomeProduct {
         font-weight: lighter;
         font-size: 30px;
         padding: 100px
@@ -390,15 +442,16 @@
 
     .youtube-grid {
         gap: 50px;
-        grid-template-areas: 
+        grid-template-areas:
             'sub-youtube1 sub-youtube1 sub-youtube2'
             'youtube-katamereka youtube-katamereka sub-youtube2';
     }
 
 }
+
 @media (min-width: 1440px) {
 
-    .textNavigasiHoemProduct {
+    .textNavigasiHomeProduct {
         font-weight: lighter;
         font-size: 30px;
         padding: 200px
@@ -407,5 +460,3 @@
 }
 
 /* breakpoint end */
-
-

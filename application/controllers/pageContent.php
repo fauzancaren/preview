@@ -57,4 +57,14 @@ class PageContent extends CI_Controller {
 		$this->load->view('myaccount.php');
 		$this->load->view('templates/footer.php');
 	}
+
+	public function detailItem($id)
+	{
+		$data['title'] = "Detail Item";
+		$data['productKategori'] = $this->Product_model->getDataProductKategori();
+		$data['MsitemById'] = $this->Product_model->getDataItemById($id);
+		$this->load->view('templates/header.php', $data, $id);
+		$this->load->view('itemById.php', $data);
+		$this->load->view('templates/footer.php');
+	}
 }
