@@ -7,17 +7,21 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center">
-            <div class="col">
-                <div class="img-fluid p-4 rounded-1" style="height: 200px; background-image: url(<?= base_url('asset/image/project/MpHouse.jpeg') ?>); background-size: cover; background-position: center;">
-                </div>
+            <?php foreach ($project as $row) : ?>
+                <div class="col mb-5">
+                    <a href="#">
+                        <div class="img-fluid p-4 rounded-1" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
+                        </div>
+                    </a>
 
-                <div class="d-flex flex-column rounded-3 p-3 shadow shadow-sm" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
-                    <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, non?</h5>
-                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nulla officiis sunt tempore consequuntur itaque aspernatur.</small>
-                    <small>Lorem, ipsum dolor.</small>
+                    <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
+                        <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button>
+                        <a href="#" class="btnProject"><h5><?= $row["CustomerProjectTitle"] ?></h5></a>
+                        <small><?= $row["CustomerProjectDeskripsi"] ?></small>
+                        <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
+                    </div>
                 </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

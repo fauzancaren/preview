@@ -239,6 +239,16 @@ body {
     filter: grayscale(0%);
 }
 
+/* project start */
+.btnProject {
+    text-decoration: none;
+    color: black;
+}
+.btnProject:hover {
+    color: #cb5e37;
+}
+/* project end */
+
 /* breakpoint start */
 @media (min-width: 320px) {
     .imageHead {
