@@ -8,9 +8,8 @@ class Product_model extends CI_Model
     }
     public function getDataProductById($id)
     {
-        $this->db->from('TblMsItem');
         $this->db->where('MsItemCatId', $id);
-        return $this->db->get()->result_array();
+        return $this->db->get('TblMsItem', 20)->result_array();
     }
 
     public function getDataProductKategori()
@@ -33,7 +32,7 @@ class Product_model extends CI_Model
     public function getDataProductNext($category, $index)
     {
         if ($category != "0") $this->db->where('MsItemCatId', $category);
-        return $this->db->get("TblMsItem", $index, ((int)$index + 20))->result();
+        return $this->db->get("TblMsItem", 20, $index)->result();
     }
     function get_base_64_by_item($id)
     {

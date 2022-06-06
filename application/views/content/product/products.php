@@ -55,18 +55,22 @@
         </div>
     </div>
     <script>
+        var loaddata = true;
         $(window).scroll(function() {
             var request; // Stores the XMLHTTPRequest object
             var timeout; // Stores time
             if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-                if (!request) {
+                if (!request && loaddata) {
                     $(".loading").css("display", "block");
                     request = $.ajax({
-                        url: "<?= base_url("product/getitem/0/") ?>" + $("#data-item").data("index"),
+                        url: "<?= base_url("product/getitem/")  . "0/" ?>" + $("#data-item").data("index"),
                         success: function(data) {
-                            console.log(data);
-                            $("#data-item").append(data);
-                            $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
+                            if (data != "") {
+                                $("#data-item").append(data);
+                                $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
+                            } else {
+                                loaddata = false;
+                            }
                             $(".loading").css("display", "none");
                             timeout = request = null
                         }
