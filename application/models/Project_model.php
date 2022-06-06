@@ -5,5 +5,10 @@
         {
             return $this->db->get('TblMsCustomerProject')->result_array();
         }
+        public function getDataProjectLastUpdate()
+        {
+           
+            return $this->db->order_by("CustomerProjectDate desc")->get('TblMsCustomerProject')->result_array();
+        }
     }
 ?>

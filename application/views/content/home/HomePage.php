@@ -26,30 +26,63 @@
         <div class="text-center justify-content-end mb-5">
             <h3>Featured Projects</h3>
         </div>
-        <div class="d-flex p-3 flex-wrap gap-4 justify-content-around">
-            <div class="d-flex flex-column projectList">
-                <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="350px" height="300px" alt="image">
-                <small class="text-center py-2">KFC Pustitek Pamulang</small>
+        <div class="project">
+            <?php foreach ($project as $row) : ?>
+                <div class="col mb-5">
+                    <a href="#">
+                        <div class="img-fluid p-4 rounded-1" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
+                        </div>
+                    </a>
 
-            </div>
-
-            <div class="d-flex flex-column projectList">
-                <img src="<?= base_url() ?>/asset/image/project/stasiunTebet.jpg" width="350px" height="300px" alt="image">
-                <small class="text-center py-2">Halte Integrasi Stasiun Tebet</small>
-
-            </div>
-
-            <div class="d-flex flex-column projectList">
-                <img src="<?= base_url() ?>/asset/image/project/kfc.jpg" width="350px" height="300px" alt="image">
-                <small class="text-center py-2">Starbucks Dramaga Bogor</small>
-            </div>
+                    <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
+                        <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button>
+                        <a href="#" class="btnProject">
+                            <h5><?= $row["CustomerProjectTitle"] ?></h5>
+                        </a>
+                        <small><?= $row["CustomerProjectDeskripsi"] ?></small>
+                        <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
 
         <div class="row py-4">
             <div class="d-flex align-items-center justify-content-center mt-4" style="height: 100px;">
-                <a href="<?= base_url() ?>PageContent/project"><button class="btn btn-sm px-5 fw-bold py-3 rounded-0 tombol">LIHAT SELURUH PROJECT</button></a>
+                <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 fw-bold py-3 rounded-0 tombol">LIHAT SELURUH PROJECT</button></a>
             </div>
         </div>
+        <script>
+            $('.project').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        </script>
     </div>
 </div>
 

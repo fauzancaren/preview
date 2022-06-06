@@ -7,12 +7,14 @@ class Home extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Product_model');
+		$this->load->model('Project_model');
 	}
 
 	public function index()
 	{
 		$data['title'] = 'Homepage';
 		$data['_page'] = 'HOME';
+		$data['project'] = $this->Project_model->getDataProjectLastUpdate();
 		$data['productKategori'] = $this->Product_model->getDataProductKategori();
 		$this->load->view('templates/header.php', $data);
 		$this->load->view('content/home/HomePage.php');
