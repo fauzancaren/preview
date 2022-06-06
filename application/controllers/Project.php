@@ -19,4 +19,14 @@ class Project extends CI_Controller
       $this->load->view('content/project/project.php');
       $this->load->view('templates/footer.php');
    }
+   public function projectById($id)
+   {
+      $data['title'] = 'Customer Project';
+      $data['_page'] = 'PROJECT';
+      $data['projectGallery'] = $this->Project_model->getDataProjectGallery($id);
+      $data['projectById'] = $this->Project_model->getDataProjectById($id);
+      $this->load->view('templates/header.php', $data);
+      $this->load->view('content/project/projectById.php');
+      $this->load->view('templates/footer.php');
+   }
 }

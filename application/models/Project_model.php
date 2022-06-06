@@ -10,5 +10,19 @@
            
             return $this->db->order_by("CustomerProjectDate desc")->get('TblMsCustomerProject')->result_array();
         }
+        public function getDataProjectById($id)
+        {
+            $this->db->from('TblMsCustomerProject');
+            $this->db->where('CustomerProjectId', $id);
+            return $this->db->get()->result_array();
+
+        }
+        public function getDataProjectGallery($id)
+        {
+            $this->db->from('TblMsCustomerProjectGallery');
+            $this->db->where('CustomerProjectGalleryRef', $id);
+            return $this->db->get()->result_array();
+
+        }
     }
 ?>
