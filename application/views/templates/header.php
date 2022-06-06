@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
 
-    <link href="<?= base_url("asset/css/bootstrap.min.css") ?>" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<?= base_url() ?>/asset/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("asset/omahbata/style.css") ?>" type="text/css">
+    <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/slick/slick.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/slick/slick-theme.css") ?>" rel="stylesheet" type="text/css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("asset/css/style.css") ?>" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="<?= base_url("asset/bootstrap5-2/js/bootstrap.min.js") ?>"></script>
+    <script type="text/javascript" src="<?= base_url("asset/slick/slick.min.js") ?>"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            console.log(document.documentElement.clientWidth);
             el_autohide = document.querySelector('.autohide');
             // add padding-top to bady (if necessary)
             navbar_height = document.querySelector('.navbar').offsetHeight;

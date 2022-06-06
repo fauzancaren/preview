@@ -26,9 +26,9 @@
         <div class="text-center justify-content-end mb-5">
             <h3>Featured Projects</h3>
         </div>
-        <div class="project">
+        <div class="d-flex flex-row project">
             <?php foreach ($project as $row) : ?>
-                <div class="col mb-5">
+                <div class="col p-4">
                     <a href="#">
                         <div class="img-fluid p-4 rounded-1" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
                         </div>
@@ -52,35 +52,39 @@
             </div>
         </div>
         <script>
-            $('.project').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
+            $(document).ready(function() {
+                $('.project').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    adaptiveHeight: true,
+                    infinite: false,
+                    responsive: [{
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 576,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
                         }
-                    },
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
             });
         </script>
     </div>
