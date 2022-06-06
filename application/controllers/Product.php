@@ -40,4 +40,23 @@ class Product extends CI_Controller
       $this->load->view('content/product/itemById.php', $data);
       $this->load->view('templates/footer.php');
    }
+   public function getitem($category, $index)
+   {
+      $data = $this->Product_model->getDataProductNext($category, $index);
+      $html = "";
+      foreach ($data as $row) {
+         $html .= '<div class="d-flex flex-row justify-content-center">
+                     <a style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
+                        <div class="d-flex flex-column p-3 item">
+                           <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
+                           <span class=" px-1 fw-bold">' . $row->MsItemName . '</span>
+                           <small class="px-1">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</small>
+                           <small class="px-1">' . $row->MsItemCode . '</small>
+                        </div>
+                     </a>
+                  </div>';
+      }
+      header('Content-type: application/json');
+      echo json_encode($html);
+   }
 }

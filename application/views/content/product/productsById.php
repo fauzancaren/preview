@@ -41,7 +41,7 @@
         <div class="d-flex flex-row justify-content-center">
             <a style="text-decoration: none; color: black;" href="<?= base_url() ?>product/detailItem/<?= $row["MsItemId"] ?>">
                 <div class="d-flex flex-column p-3 item">
-                    <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
+                    <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;" src="<?= base_url("function/functionimage/product/") . $row["MsItemCode"]  ?>" alt="">
                     <span class=" px-1 fw-bold"><?= $row["MsItemName"] ?></span>
                     <small class="px-1">Rp. <?= number_format($row["MsItemPrice"]) ?></small>
                     <small class="px-1"><?= $row["MsItemCode"] ?></small>

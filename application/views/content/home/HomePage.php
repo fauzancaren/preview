@@ -208,7 +208,7 @@
     <div class="container ">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end mb-5">
-                <h3>Percantik hunian anda dengan dengan aneka produk material kami</h3>
+                <h3>Percantik hunian anda dengan aneka produk material kami</h3>
             </div>
             <div class="row d-flex">
                 <div class="tab-content" id="nav-tabContent">
@@ -231,7 +231,7 @@
             </div>
 
             <nav>
-                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
                     <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
