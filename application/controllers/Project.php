@@ -25,6 +25,7 @@ class Project extends CI_Controller
       $data['_page'] = 'PROJECT';
       $data['projectGallery'] = $this->Project_model->getDataProjectGallery($id);
       $data['projectById'] = $this->Project_model->getDataProjectById($id);
+      $data['projectItem'] = $this->Project_model->getDataProjectItem($id);
       $this->load->view('templates/header.php', $data);
       $this->load->view('content/project/projectById.php');
       $this->load->view('templates/footer.php');

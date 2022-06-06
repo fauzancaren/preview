@@ -24,5 +24,12 @@
             return $this->db->get()->result_array();
 
         }
+        public function getDataProjectItem($id)
+        {
+            return $this->db->join("TblMsItem", "TblMsItem.MsItemId=TblMsCustomerProjectItem.CustomerProjectItemType", "left")
+            ->where("CustomerProjectItemRef", $id)->get("TblMsCustomerProjectItem")
+            ->result_array();
+
+        }
     }
 ?>
