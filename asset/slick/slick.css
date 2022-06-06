@@ -113,3 +113,7 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-list {
+    transition: all .5s ease;
+}

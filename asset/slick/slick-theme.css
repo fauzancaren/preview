@@ -16,6 +16,15 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(../webfonts/fa-regular-400.eot);
+    src: url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-regular-400.woff2) format("woff2"), url(../webfonts/fa-regular-400.woff) format("woff"), url(../webfonts/fa-regular-400.ttf) format("truetype"), url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -27,8 +36,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -65,49 +74,74 @@
 
 .slick-prev:before,
 .slick-next:before {
-    font-family: 'FontAwesome';
-    font-size: 20px;
-    line-height: 1;
+    /* font-family: 'Font Awesome 5 Free';
+font-size: 50px;
+line-height: 1;
 
-    opacity: .75;
-    color: white;
+opacity: .75;
+color: rgb(94, 93, 93);
 
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale; */
+
+    font-size: 50px;
+    color: rgb(211 211 211);
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: rgb(86, 86, 86);
+    transition: all .3s;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 0px;
+    z-index: 1;
 }
 
 [dir='rtl'] .slick-prev {
-    right: -25px;
+    right: 0px;
     left: auto;
 }
 
+
 .slick-prev:before {
-    content: '\f104';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f053";
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f054";
 }
 
 .slick-next {
-    right: -25px;
+    right: 0px;
+    z-index: 1;
 }
 
 [dir='rtl'] .slick-next {
     right: auto;
-    left: -25px;
+    left: 0px;
 }
 
 .slick-next:before {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f054";
 }
 
 [dir='rtl'] .slick-next:before {
-    content: '←';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f053";
 }
 
 /* Dots */

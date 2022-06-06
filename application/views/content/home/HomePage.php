@@ -26,7 +26,7 @@
         <div class="text-center justify-content-end mb-5">
             <h3>Featured Projects</h3>
         </div>
-        <div class="d-flex flex-row project">
+        <div class="project">
             <?php foreach ($project as $row) : ?>
                 <div class="col p-4">
                     <a href="#">
@@ -35,11 +35,15 @@
                     </a>
 
                     <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
-                        <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button>
-                        <a href="#" class="btnProject">
-                            <h5><?= $row["CustomerProjectTitle"] ?></h5>
+                        <div class="text-center mb-2">
+                            <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
+                            <div class=" badge" style="background:#ff3c18">UPDATE AND NEWS</div>
+                        </div>
+                        <!-- <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button> -->
+                        <a href="#" class="btnProject mb-1">
+                            <h6><?= $row["CustomerProjectTitle"] ?></h6>
                         </a>
-                        <small><?= $row["CustomerProjectDeskripsi"] ?></small>
+                        <small><?= $row["CustomerProjectDeskripsi"] ?></small><Br>
                         <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
                     </div>
                 </div>
@@ -53,12 +57,15 @@
         </div>
         <script>
             $(document).ready(function() {
-                $('.project').slick({
+
+                // my slick slider options
+                var options = {
                     infinite: true,
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     adaptiveHeight: true,
                     infinite: false,
+                    dots: true,
                     responsive: [{
                             breakpoint: 1200,
                             settings: {
@@ -80,10 +87,69 @@
                                 slidesToScroll: 1
                             }
                         }
-                        // You can unslick at a given breakpoint now by adding:
-                        // settings: "unslick"
-                        // instead of a settings object
                     ]
+                };
+
+
+                // my slick slider as constant object
+                const mySlider = $('.project').on('init', function(slick) {
+
+                    // on init run our multi slide adaptive height function
+                    multiSlideAdaptiveHeight(this);
+
+                }).on('beforeChange', function(slick, currentSlide, nextSlide) {
+
+                    // on beforeChange run our multi slide adaptive height function
+                    multiSlideAdaptiveHeight(this);
+
+                }).slick(options);
+
+
+                // our multi slide adaptive height function passing slider object
+                function multiSlideAdaptiveHeight(slider) {
+
+                    // set our vars
+                    let activeSlides = [];
+                    let tallestSlide = 0;
+
+                    // very short delay in order for us get the correct active slides
+                    setTimeout(function() {
+
+                        // loop through each active slide for our current slider
+                        $('.slick-track .slick-active', slider).each(function(item) {
+
+                            // add current active slide height to our active slides array
+                            activeSlides[item] = $(this).outerHeight();
+
+                        });
+
+                        // for each of the active slides heights
+                        activeSlides.forEach(function(item) {
+
+                            // if current active slide height is greater than tallest slide height
+                            if (item > tallestSlide) {
+
+                                // override tallest slide height to current active slide height
+                                tallestSlide = item;
+
+                            }
+
+                        });
+
+                        // set the current slider slick list height to current active tallest slide height
+                        $('.slick-list', slider).height(tallestSlide);
+
+                    }, 10);
+
+                }
+
+
+                // when window is resized
+                $(window).on('resize', function() {
+
+                    // run our multi slide adaptive height function incase current slider active slides change height responsively
+                    multiSlideAdaptiveHeight(mySlider);
+
                 });
             });
         </script>
@@ -101,11 +167,11 @@
                     <div class="row row-cols-md-2 py-3 m-auto">
                         <div class="col-lg justify-content-center">
                             <div class="d-flex justify-content-center">
-                                <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="row p-3 text-center" style="color: white;">
-                                <small>Sofian</small>
-                                <small class="fw-light">Arsitek & Kontraktor</small>
+                                <small class="fw-bold">NAYA KUMARA</small>
+                                <small class="fw-light">KONSULTAN DESAIN & KONTRAKTOR</small>
                             </div>
                         </div>
                         <div class="col-lg">
@@ -113,8 +179,8 @@
                                 <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="row p-3 text-center" style="color: white;">
-                                <small>Sofian</small>
-                                <small class="fw-light">Arsitek & Kontraktor</small>
+                                <small class="fw-bold">SOFYAN</small>
+                                <small class="fw-light">ARSITEK & KONTRAKTOR</small>
                             </div>
                         </div>
                     </div>
