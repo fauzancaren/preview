@@ -63,9 +63,9 @@
                     $(".loading").css("display", "block");
                     request = $.ajax({
                         url: "<?= base_url("product/getitem/0/") ?>" + $("#data-item").data("index"),
-                        dataType: 'json',
-                        complete: function(data) {
-                            $("#data-item").append(JSON.stringify(data));
+                        success: function(data) {
+                            console.log(data);
+                            $("#data-item").append(data);
                             $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
                             $(".loading").css("display", "none");
                             timeout = request = null

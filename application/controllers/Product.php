@@ -56,7 +56,6 @@ class Product extends CI_Controller
                      </a>
                   </div>';
       }
-      header('Content-type: application/json');
-      echo json_encode($html);
+      echo $html;
    }
 }
