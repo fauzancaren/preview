@@ -1,5 +1,5 @@
-<div class="py-5" style="position: relative;">
-    <img class="demo-bg" src="<?= base_url() ?>/asset/image/test.jpg" alt="" style="opacity: 0.6;position: absolute;left: 0;top: 0; width: 100%;height: 400;z-index: -1;">
+<div class="py-5" style="position: relative; overflow: hidden;">
+    <img class="demo-bg" src="<?= base_url() ?>/asset/image/test.jpg" alt="" style="opacity: 0.6;position: absolute;left: 0;top: 0; height: 400;z-index: -1;">
     <div class="container text-dark">
         <div class=" d-grid justify-content-center text-center align-content-center" style="height: 400px;font-family: 'Montserrat', sans-serif;position: relative;">
             <h1 class="fw-bolder">https://Omahbata.com</h1>

@@ -32,4 +32,16 @@
 
         </div>
     </div>
+
+    <div class="row">
+        <h4>Item yang digunakan</h4>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4">
+            <?php foreach ($projectItem as $item) : ?>
+                <h5><?= $item["MsItemName"]; ?></h5>
+                <div class="col mb-3">
+                    <img class="img-fluid" src="<?= base_url() ?>asset/image/product/" alt="img">
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 </div>
