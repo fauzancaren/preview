@@ -22,7 +22,7 @@ class Functionimage extends CI_Controller
             imagedestroy($image);
             exit(0);
          } else {
-            $path = FCPATH .  $configfile . 'img-not-available.png';
+            $path = FCPATH .  $configfile . 'not-found.png';
             $type = pathinfo($path, PATHINFO_EXTENSION);
             $data = file_get_contents($path);
             $image = imagecreatefromstring($data);
@@ -32,7 +32,7 @@ class Functionimage extends CI_Controller
             exit(0);
          }
       } catch (Exception $e) {
-         $path = FCPATH .  $configfile . '/img-not-available.png';
+         $path = FCPATH .  $configfile . 'not-found.png';
          $type = pathinfo($path, PATHINFO_EXTENSION);
          $data = file_get_contents($path);
          $image = imagecreatefromstring($data);
