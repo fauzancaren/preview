@@ -1,4 +1,4 @@
-<div class="container-fluid" style="background-color: #fefdf9;;">
+<div class="container-fluid" style="background-color: #fefdf9;">
     <?php foreach ($MsitemById as $item) : ?>
         <div class="row row-cols-1 row-cols-lg-2 p-lg-5">
             <div class="col mb-5 mb-lg-0 text-center d-flex justify-content-center" style="height: 600px;">
