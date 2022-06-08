@@ -36,6 +36,7 @@ class Product extends CI_Controller
       $data['_page'] = 'PRODUCTS';
       $data['productKategori'] = $this->Product_model->getDataProductKategori();
       $data['MsitemById'] = $this->Product_model->getDataItemById($id);
+      $data['MsitemDeskripsi'] = $this->Product_model->getDataItemDeskripsiById($id);
       $this->load->view('templates/header.php', $data, $id);
       $this->load->view('content/product/itemById.php', $data);
       $this->load->view('templates/footer.php');
