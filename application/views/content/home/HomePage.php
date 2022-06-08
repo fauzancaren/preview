@@ -40,7 +40,7 @@
                             <div class=" badge" style="background:#ff3c18">UPDATE AND NEWS</div>
                         </div>
                         <!-- <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button> -->
-                        <a href="#" class="btnProject mb-1">
+                        <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject mb-1">
                             <h6><?= $row["CustomerProjectTitle"] ?></h6>
                         </a>
                         <small><?= $row["CustomerProjectDeskripsi"] ?></small><Br>
