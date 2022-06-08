@@ -2,7 +2,9 @@
     <?php foreach ($projectById as $item) : ?>
         <div class="row row-cols-1 row-cols-lg-2 p-2 p-lg-5 mb-3">
             <div class="row mb-5 col-lg">
-                <img class="img-fluid" style="height: 500px;" src="<?= base_url() ?>/asset/image/project/<?= $item["CustomerProjectHeaderImg"] ?>" alt="">
+                <!-- <img class="img-fluid" style="height: 500px;" src="<?= base_url() ?>/asset/image/project/<?= $item["CustomerProjectHeaderImg"] ?>" alt=""> -->
+                <div class="img-fluid p-4 rounded-1" style="height: 500px; background-image: url(<?= base_url('asset/image/project/' . $item["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
+                </div>
             </div>
             <div class="row col-lg px-lg-5">
                 <div class="row">
@@ -19,7 +21,7 @@
 
     <div class="row row-cols-2 p-2">
         <div class="col-9">
-            <h2 class="p-lg-5 p-sm-4">Gallery</h2>
+            <h4 class="p-lg-5 p-sm-4 mb-3">Gallery Project</h4>
             <div class="row row-cols-1 p-sm-4 p-lg-5 text-center">
                 <?php foreach ($projectGallery as $row) : ?>
                     <div class="col mb-1 mb-lg-5">
