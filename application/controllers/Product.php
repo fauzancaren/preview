@@ -45,16 +45,17 @@ class Product extends CI_Controller
       $data = $this->Product_model->getDataProductNext($category, $index);
       $html = "";
       foreach ($data as $row) {
-         $html .= '<div class="d-flex flex-row justify-content-center">
-                     <a style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
-                        <div class="d-flex flex-column p-3 item">
-                           <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
-                           <span class=" px-1 fw-bold">' . $row->MsItemName . '</span>
-                           <small class="px-1">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</small>
-                           <small class="px-1">' . $row->MsItemCode . '</small>
+         $html .= '<a class ="col" style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
+                     <div class="d-flex flex-column justify-content-center  p-2">
+                        <div class="d-flex flex-column item"> 
+                           <img class="img-fluid mb-2 rounded-3 align-self-center" style="height: 300px; width: 350px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
+                           <h6 class="align-self-center align-self-lg-start px-sm-2 fw-bold">' . $row->MsItemName . '</h6> 
+                           <span class="align-self-center align-self-lg-start px-sm-2">' . $row->MsItemSize . '</span>
+                           <span class="align-self-center align-self-lg-start px-sm-2">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
+                           <span class="align-self-center  align-self-lg-start px-sm-2">' . $row->MsItemCode . '</span> 
                         </div>
-                     </a>
-                  </div>';
+                     </div>
+                  </a>';
       }
       echo $html;
    }

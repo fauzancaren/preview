@@ -34,19 +34,7 @@
                 </div>
             </div>
         </nav>
-        <div class="d-flex flex-wrap justify-content-center p-4 gap-3" id="data-item" data-index="20" style="background-color: #fefdf9;">
-            <?php foreach ($product as $row) : ?>
-                <div class="d-flex flex-row justify-content-center">
-                    <a style="text-decoration: none; color: black;" href="<?= base_url() ?>product/detailItem/<?= $row["MsItemId"] ?>">
-                        <div class="d-flex flex-column p-3 item">
-                            <img class="img-fluid mb-3 rounded-3" style="height: 250px; width: 250px;object-fit: cover;" src="<?= base_url("function/functionimage/product/") . $row["MsItemCode"]  ?>" alt="">
-                            <span class=" px-1 fw-bold"><?= $row["MsItemName"] ?></span>
-                            <small class="px-1">Rp. <?= number_format($row["MsItemPrice"]) ?></small>
-                            <small class="px-1"><?= $row["MsItemCode"] ?></small>
-                        </div>
-                    </a>
-                </div>
-            <?php endforeach; ?>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" id="data-item" data-index="0" style="background-color: #fefdf9;">
         </div>
         <div class="text-center loading" style="display: none">
             <div class="fa-5x">
@@ -56,35 +44,38 @@
     </div>
     <script>
         var loaddata = true;
+        var request; // Stores the XMLHTTPRequest object
+        var timeout; // Stores time
         $(window).scroll(function() {
-            var request; // Stores the XMLHTTPRequest object
-            var timeout; // Stores time
             if ($(window).scrollTop() == $(document).height() - $(window).height()) {
                 if (!request && loaddata) {
-                    $(".loading").css("display", "block");
-                    request = $.ajax({
-                        url: "<?= base_url("product/getitem/")  . "0/" ?>" + $("#data-item").data("index"),
-                        success: function(data) {
-                            if (data != "") {
-                                $("#data-item").append(data);
-                                $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
-                            } else {
-                                loaddata = false;
-                            }
-                            $(".loading").css("display", "none");
-                            timeout = request = null
-                        }
-                    });
-
-                    timeout = setTimeout(function() {
-                        if (request) {
-                            request.abort();
-                            $(".loading").css("display", "none");
-                        }
-                    }, 10000);
-
+                    load_data();
                 }
             }
         });
+        load_data = function() {
+            $(".loading").css("display", "block");
+            request = $.ajax({
+                url: "<?= base_url("product/getitem/")  . "0/" ?>" + $("#data-item").data("index"),
+                success: function(data) {
+                    if (data != "") {
+                        $("#data-item").append(data);
+                        $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
+                    } else {
+                        loaddata = false;
+                    }
+                    $(".loading").css("display", "none");
+                    timeout = request = null
+                }
+            });
+
+            timeout = setTimeout(function() {
+                if (request) {
+                    request.abort();
+                    $(".loading").css("display", "none");
+                }
+            }, 10000);
+        }
+        load_data();
     </script>
 </div>

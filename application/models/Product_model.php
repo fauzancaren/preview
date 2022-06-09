@@ -32,7 +32,7 @@ class Product_model extends CI_Model
     public function getDataProductNext($category, $index)
     {
         if ($category != "0") $this->db->where('MsItemCatId', $category);
-        return $this->db->get("TblMsItem", 20, $index)->result();
+        return $this->db->order_by("MsItemName asc")->get("TblMsItem", 20, $index)->result();
     }
     function get_base_64_by_item($id)
     {
