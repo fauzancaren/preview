@@ -15,8 +15,13 @@
                     </a>
 
                     <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
-                        <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button>
-                        <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject"><h5><?= $row["CustomerProjectTitle"] ?></h5></a>
+                        <div class="text-center mb-2">
+                            <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
+                            <div class=" badge" style="background:#ff3c18">UPDATE AND NEWS</div>
+                        </div>
+                        <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
+                            <h5><?= $row["CustomerProjectTitle"] ?></h5>
+                        </a>
                         <small><?= $row["CustomerProjectDeskripsi"] ?></small>
                         <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
                     </div>

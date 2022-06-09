@@ -29,6 +29,13 @@ class Product_model extends CI_Model
         $this->db->where('MsItemId', $id);
         return $this->db->get()->result_array();
     }
+    public function getDataItemDeskripsiById($id)
+    {
+        $this->db->from('TblMsItemDeskripsi');
+        $this->db->where('MsItemDeskripsiRef', $id);
+        return $this->db->get()->result_array();
+    }
+    
     public function getDataProductNext($category, $index)
     {
         if ($category != "0") $this->db->where('MsItemCatId', $category);
