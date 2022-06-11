@@ -17,7 +17,6 @@
                     <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
                         <div class="text-center mb-2">
                             <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
-                            <div class=" badge" style="background:#ff3c18">UPDATE AND NEWS</div>
                         </div>
                         <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
                             <h5><?= $row["CustomerProjectTitle"] ?></h5>
