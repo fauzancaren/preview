@@ -5,7 +5,7 @@
 
         <div class="d-flex flex-column justify-content-center p-4 mt-4 align-items-center">
 
-            <div class="d-flex align-items-center contact">
+            <div class="d-flex align-items-center contact" data-aos="fade-left">
                 <div class="col-4 p-3">
                     <img class="img-fluid" src="<?= base_url('asset/image/test.jpg') ?>" alt="image">
 
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="d-flex align-items-center contact">
+            <div class="d-flex align-items-center contact" data-aos="fade-right">
                 <div class="col-4 p-3">
                     <img class="img-fluid" src="<?= base_url('asset/image/grai/tokorosterBSD.jpg') ?>" alt="image">
 
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="d-flex align-items-center contact">
+            <div class="d-flex align-items-center contact" data-aos="fade-left">
                 <div class="col-4 p-3">
                     <img class="img-fluid" src="<?= base_url('asset/image/test.jpg') ?>" alt="image">
 

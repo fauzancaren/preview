@@ -1,19 +1,19 @@
 <div class="mb-1 py-5" style="background-color: #fefdf9;">
     <div class="container">
         <div class="row py-4">
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                <img class="imageHead" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" width="550px" height="550px" alt="">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
             </div>
             <div class="col-12 col-lg-6 text-center d-grid align-content-center align-items-center">
-                <div class="col">
-                    <p class="fw-normal fs-1" style="font-family: 'Lora', serif;">Fungsional sekaligus estetis dengan bentuk geometris.</p>
+                <div class="col mb-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                    <h1 class="fw-bolder" style="font-family: 'Montserrat', sans-serif;">Fungsional sekaligus estetis dengan bentuk geometris.</h1>
                 </div>
-                <div class="col d-grid mb-5">
-                    <small class="fs-6 fw-normal" style="font-family: 'Lora', serif;">MP House by TIES</small>
-                    <span class="fw-lighter" style="font-family: 'Lora', serif; font-size: small;">Tangerang</span>
+                <div class="col d-grid mb-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <small class="fs-6 fw-normal">MP House by TIES</small>
+                    <span class="fw-normal" style="font-size: small;">Tangerang</span>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
                     <a href="<?= base_url() ?>/PageContent/project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT</button></a>
                 </div>
             </div>
@@ -22,7 +22,7 @@
 </div>
 
 <div class="py-5" style="background-color: #fefdf9;">
-    <div class="container ">
+    <div class="container" data-aos="fade-right">
         <div class="text-center justify-content-end mb-5">
             <h3>Featured Projects</h3>
         </div>
@@ -159,7 +159,7 @@
 </div>
 
 <div class="py-3" style="background-color: #bd7658;">
-    <div class="container ">
+    <div class="container">
         <div class="row py-2 d-flex justify-content-center">
             <div class="row rows-col-1 rows-cols-md-2 justify-content-center">
                 <div class="col-md-8">
@@ -191,7 +191,7 @@
 
                 <div class="col-md-4 d-flex flex-column align-items-center p-2" style="background-color: whitesmoke;">
 
-                    <div class="d-flex justify-content-center gap-2 p-2">
+                    <div class="d-flex justify-content-center gap-2 p-2" >
                         <h5 class="text-center mb-3 fw-normal">Omahbata on</h5>
                         <img class="mt-1" src="<?= base_url() ?>/asset/image/transtvlogo.png" width="100px" height="15px" alt="">
                     </div>
@@ -207,7 +207,7 @@
 </div>
 
 <div class="py-5" style="background-color: #fefdf9;">
-    <div class="container ">
+    <div class="container">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end mb-5">
                 <h3>Percantik hunian anda dengan aneka produk material kami</h3>
@@ -246,7 +246,7 @@
 </div>
 
 <div class="py-5" style="background-color: #bd7658;">
-    <div class="container ">
+    <div class="container">
         <div class="row p-4 p-md-5 p-lg-3 p-sm-5">
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
 
@@ -281,7 +281,7 @@
 </div>
 
 <div class="py-5" style="background-color: #fefdf9;">
-    <div class="container ">
+    <div class="container">
         <div class="row py-5">
             <div class="text-center justify-content-end">
                 <h3>Our Client</h3>

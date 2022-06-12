@@ -20,11 +20,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="<?= base_url("asset/bootstrap5-2/js/bootstrap.min.js") ?>"></script>
     <script type="text/javascript" src="<?= base_url("asset/slick/slick.min.js") ?>"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             el_autohide = document.querySelector('.autohide');
@@ -56,7 +62,9 @@
 <body style="background-color: #e0e0e0;">
     <nav class="navbar ipnav" style="background-color: #fefdf9;">
         <div class="container-fluid">
-            <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
+            <div class="navbar align-content-center" style="width: 100px; height: 60px;">
+                <img src="<?= base_url() ?>/asset/image/obilogo.png" class="img-fluid" alt="omahbata">
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,8 +98,8 @@
     <nav class="autohide navbar navbar-expand-lg p-4 shadow shadow-sm scrolled-up pcnav" style="background-color: #fefdf9;">
         <div class="container">
             <div class="collapse navbar-collapse d-flex justify-content-around flex-wrap customNav" id="navbarNavAltMarkup">
-                <div class="navbar">
-                    <img src="<?= base_url() ?>/asset/image/obilogo.jpg" width="100px" height="30px" alt="omahbata">
+                <div class="navbar align-content-center" style="width: 100px; height: 60px;">
+                    <img src="<?= base_url() ?>/asset/image/obilogo.png" class="img-fluid" alt="omahbata">
                 </div>
                 <div class="navbar-nav fw-bold gap-3">
                     <a class="nav-link <?= ($_page == "HOME" ? "active" : "") ?>" href="<?= base_url() ?>">HOME</a>
