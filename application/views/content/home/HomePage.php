@@ -212,15 +212,53 @@
         </div>
     </div>
 </div>
+<div class="p-xl-5 p-sm-2 p-md-3 p-md-5" style="background-color: #fefdf9;">
+    <div class="text-center justify-content-end mb-5">
+        <h3>Percantik hunian anda dengan aneka produk material kami</h3>
+    </div>
+    <div class="container shadow-lg" style="background-color:  #aa6a4f; margin: auto;">
+        <div class="row d-flex justify-content-center py-5 text-center">
+            <div class="row d-flex style="opacity: 0.6;">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/red.jpg" alt="">
+                    </div>
 
-<div class="py-5" style="background-color: #fefdf9;">
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/headerBTL.jpg" alt="">
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/red.jpg" alt="">
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/red.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
+                    <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
+                    <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
+                    <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
+                    <button class="nav-link px-lg-5 rounded-0" id="nav-contact2-tab" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">PAVING</button>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="py-5" style="background-color: black">
     <div class="container">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end mb-5">
                 <h3>Percantik hunian anda dengan aneka produk material kami</h3>
             </div>
-            <div class="row d-flex">
-                <div class="tab-content" id="nav-tabContent">
+            <div class="row d-flex" style="opacity: 0.5; height: 500px;">
+                <div class="tab-content" id="nav-tabContent" style="background-color: black;">
                     <div class="tab-pane fade show active p-1" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                         <img class="img-fluid" src="<?= base_url() ?>/asset/image/test.jpg" alt="">
                     </div>
@@ -250,9 +288,9 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="py-5" style="background-color: #bd7658;">
+<div class="py-5" style="background-color: #975e46;">
     <div class="container">
         <div class="row p-4 p-md-5 p-lg-3 p-sm-5">
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
@@ -261,22 +299,22 @@
                     <h3>Why shope with use?</h3>
                 </div>
                 <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-wrap justify-content-center gap-4 p-4 text-center">
-                    <div class="col-md img-fluid border border-#f2e0d6 border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
+                    <div class="col-md img-fluid shadow shadow-md rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
                         <h4>Free Delivery</h4>
                         <span class="fw-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem cumque tempora magnam!</span>
 
                     </div>
-                    <div class="col-md img-fluid border border border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
+                    <div class="col-md img-fluid shadow shadow-md rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
                         <h4>100% Secure Payment</h4>
                         <span class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error officia illo nisi.</span>
 
                     </div>
-                    <div class="col-md img-fluid border border-#f2e0d6 border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
+                    <div class="col-md img-fluid shadow shadow-md rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
                         <h4>Quality Quarantee</h4>
                         <span class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt eius aliquam. Aut, autem?</span>
 
                     </div>
-                    <div class="col-md img-fluid border border-#f2e0d6 border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
+                    <div class="col-md img-fluid shadow shadow-md rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
                         <h4>Big Offers</h4>
                         <span class="fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellat corrupti?</span>
 
@@ -296,92 +334,92 @@
             <div class="row justify-content-center ms-auto me-auto">
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gy-xl-5 gy-lg-4 gy-md-3 gy-2">
                     <div class="col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/adhi.png" alt="">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/al-jazaera-logo.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/daiso.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Dominos_pizza.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/dr-marteens.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hana_Bank.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jco.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jw marriote.jpg" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/kfc.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/logo-Net-tv.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/PT_PP_logo.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/quality.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Rai-Fitness.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/sbucks.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/skechers.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client shadow shadow-sm rounded rounded-2 border-0">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Wika.png" alt="">
                         </div>
                     </div>
@@ -391,7 +429,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background-color: #bd7658;">
+<div class="py-5" style="background-color: #975e46;">
     <div class="container ">
         <div class="row">
             <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">

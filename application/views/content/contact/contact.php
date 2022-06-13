@@ -1,5 +1,6 @@
-<div class="row" style="background-color: #fefdf9; padding: 50px;">
-        <div class="row flex-column text-center justify-content-end" style="height: 100px;">
+<div style="background-color: #fefdf9; padding: 50px;">
+       <div class="container">
+       <div class="row flex-column text-center justify-content-end" style="height: 100px;">
             <h4 class="fw-normal fs-2" style="font-family: lora, serif;">Our Locations</h4>
         </div>
 
@@ -58,4 +59,5 @@
             </div>
 
         </div>
+       </div>
 </div>
