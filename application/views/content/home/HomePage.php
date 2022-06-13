@@ -29,12 +29,9 @@
         <div class=" project text-center" data-aos="fade-right">
             <?php foreach ($project as $row) : ?>
                 <div class="col p-4 item-project">
-                    <a href="#">
-                        <div class="img-fluid p-4 rounded-1" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
-                        </div>
-                    </a>
-
-                    <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md deskripsi" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
+                    <div class="img-fluid p-4 rounded-1 head-project" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md deskripsi-project" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
                         <div class="text-center mb-2">
                             <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
                         </div>

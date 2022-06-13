@@ -114,9 +114,23 @@ body {
 
 /* icon end */
 
-.item-project:hover>.deskripsi {
-    transition: all 0.5s;
+.item-project>.deskripsi-project {
+    transition: all 0.3s;
+}
+
+.item-project>.head-project {
+    transition: all 0.3s;
+}
+
+.item-project:hover>.deskripsi-project {
+    transition: all 0.3s;
     box-shadow: 0rem 0rem 2rem 0.5rem rgb(0 0 0 / 15%) !important;
+    transform: scale(1.01);
+}
+
+.item-project:hover>.head-project {
+    transition: all 0.3s;
+    transform: scale(1.01);
 }
 
 
@@ -194,7 +208,7 @@ body {
 
 .nav-tabs>li {
     float: left;
-    
+
 }
 
 .nav-tabs>.nav-link {
@@ -203,7 +217,7 @@ body {
     background-color: #aa6a4f;
     border-radius: 0 0 4px 4px;
     padding: 10px;
-    
+
 }
 
 .nav-tabs>.nav-link:hover {
