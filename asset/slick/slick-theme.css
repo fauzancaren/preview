@@ -85,7 +85,7 @@ color: rgb(94, 93, 93);
 -moz-osx-font-smoothing: grayscale; */
 
     font-size: 50px;
-    color: rgb(211 211 211);
+    color: rgb(78 78 78);
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -100,7 +100,7 @@ color: rgb(94, 93, 93);
 }
 
 .slick-prev {
-    left: 0px;
+    left: -25px;
     z-index: 1;
 }
 
@@ -123,7 +123,7 @@ color: rgb(94, 93, 93);
 }
 
 .slick-next {
-    right: 0px;
+    right: -25px;
     z-index: 1;
 }
 

@@ -1,51 +1,51 @@
-<div class="mb-1 py-5" style="background-color: #fefdf9;">
+<div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);">
     <div class="container">
-        <div class="row py-4">
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
                 <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
             </div>
             <div class="col-12 col-lg-6 text-center d-grid align-content-center align-items-center">
                 <div class="col mb-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
-                    <h1 class="fw-bolder" style="font-family: 'Montserrat', sans-serif;">Fungsional sekaligus estetis dengan bentuk geometris.</h1>
+                    <h1 class="fw-bolder text-uppercase" style="font-family: 'Montserrat', sans-serif;">Fungsional sekaligus estetis dengan bentuk geometris.</h1>
                 </div>
                 <div class="col d-grid mb-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <small class="fs-6 fw-normal">MP House by TIES</small>
-                    <span class="fw-normal" style="font-size: small;">Tangerang</span>
+                    <small class="fs-6 fw-normal text-uppercase">MP House by TIES</small>
+                    <span class="fw-normal text-uppercase" style="font-size: small;">Tangerang</span>
                 </div>
 
                 <div class="col" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
-                    <a href="<?= base_url() ?>/PageContent/project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT</button></a>
+                    <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="py-5" style="background-color: #fefdf9;">
-    <div class="container" data-aos="fade-right">
-        <div class="text-center justify-content-end mb-5">
-            <h3>Featured Projects</h3>
+<div class="py-5" style="background: linear-gradient(180deg, rgba(254,253,249,1) 15%, rgba(237,237,237,1) 100%);">
+    <div class="container py-5">
+        <div class="text-center justify-content-end py-5">
+            <H1 class="fw-bolder text-uppercase">Featured Projects</H1>
         </div>
-        <div class="project text-center">
+        <div class=" project text-center" data-aos="fade-right">
             <?php foreach ($project as $row) : ?>
-                <div class="col p-4">
+                <div class="col p-4 item-project">
                     <a href="#">
                         <div class="img-fluid p-4 rounded-1" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
                         </div>
                     </a>
 
-                    <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
+                    <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md deskripsi" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
                         <div class="text-center mb-2">
                             <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
                         </div>
                         <!-- <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button> -->
                         <div class="align-content-end" style="height: 7em; overflow: hidden;">
-                        <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
-                            <h5><?= $row["CustomerProjectTitle"] ?></h5>
-                        </a>
+                            <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
+                                <h5><?= $row["CustomerProjectTitle"] ?></h5>
+                            </a>
                         </div>
 
-                       <div class="align-content-start" style="height: 8em; overflow: hidden;">
+                        <div class="align-content-start" style="height: 8em; overflow: hidden;">
                             <small><?= $row["CustomerProjectDeskripsi"] ?></small>
                         </div>
                         <div class="row align-content-center" style="height: 3em;">
@@ -56,9 +56,9 @@
             <?php endforeach; ?>
         </div>
 
-        <div class="row py-1">
+        <div class="row py-1 pb-5 mb-5">
             <div class="d-flex align-items-center justify-content-center mt-4" style="height: 100px;">
-                <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 fw-bold py-3 rounded-0 tombol">LIHAT SELURUH PROJECT</button></a>
+                <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 fw-bold py-3 rounded-0 tombol text-uppercase">Selengkapnya <span class="ps-2 fa fa-arrow-right"></span></button></a>
             </div>
         </div>
         <script>
@@ -165,31 +165,31 @@
     </div>
 </div>
 
-<div class="py-3" style="background-color: #bd7658;">
-    <div class="container">
+<div class="py-5" style="background: radial-gradient(circle, rgba(199,145,123,1) 68%, rgba(189,118,88,1) 28%);">
+    <div class="container py-5">
         <div class="row py-2 d-flex justify-content-center">
             <div class="row rows-col-1 rows-cols-md-2 justify-content-center">
                 <div class="col-md-8">
                     <div class="row">
-                        <h4 style="color: whitesmoke; text-align: center;">Kata Mereka Tentang Omah Bata</h4>
+                        <h1 class="text-uppercase fw-bold" style="color: whitesmoke; text-align: center;">Kata Mereka Tentang <span style=" color: #6d4a33; ">Omah</span><span style=" color: #d4582a; ">Bata</span></h1>
                     </div>
                     <div class="row row-cols-md-2 py-3 m-auto">
                         <div class="col-lg justify-content-center">
                             <div class="d-flex justify-content-center">
-                                <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                             </div>
                             <div class="row p-3 text-center" style="color: white;">
-                                <small class="fw-bold">NAYA KUMARA</small>
-                                <small class="fw-light">KONSULTAN DESAIN & KONTRAKTOR</small>
+                                <small class="fw-bold fs-5 text-white">NAYA KUMARA</small>
+                                <small class="fw-bold text-light">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
                             </div>
                         </div>
                         <div class="col-lg">
                             <div class="d-flex justify-content-center">
-                                <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                             </div>
                             <div class="row p-3 text-center" style="color: white;">
-                                <small class="fw-bold">SOFYAN</small>
-                                <small class="fw-light">ARSITEK & KONTRAKTOR</small>
+                                <small class="fw-bold fs-5 text-white">SOFYAN</small>
+                                <small class="fw-bold text-light">ARSITEK &amp; KONTRAKTOR</small>
                             </div>
                         </div>
                     </div>
@@ -198,13 +198,13 @@
 
                 <div class="col-md-4 d-flex flex-column align-items-center p-2" style="background-color: whitesmoke;">
 
-                    <div class="d-flex justify-content-center gap-2 p-2" >
+                    <div class="d-flex justify-content-center gap-2 p-2">
                         <h5 class="text-center mb-3 fw-normal">Omahbata on</h5>
-                        <img class="mt-1" src="<?= base_url() ?>/asset/image/transtvlogo.png" width="100px" height="15px" alt="">
+                        <img class="mt-1" src="https://192.168.1.200/omahbata.com//asset/image/transtvlogo.png" width="100px" height="15px" alt="">
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <iframe class="img-fluid" src="https://www.youtube.com/embed/M-6erT4kwK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/M-6erT4kwK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
 
                 </div>
@@ -213,11 +213,11 @@
     </div>
 </div>
 
-<div class="py-5" style="background-color: #fefdf9;">
-    <div class="container">
+<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);">
+    <div class="container py-5">
         <div class="row d-flex justify-content-center py-5 text-center">
-            <div class="text-center justify-content-end mb-5">
-                <h3>Percantik hunian anda dengan aneka produk material kami</h3>
+            <div class="text-center justify-content-end py-5">
+                <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan aneka produk material kami</h3>
             </div>
             <div class="row d-flex">
                 <div class="tab-content" id="nav-tabContent">
@@ -252,7 +252,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background-color: #bd7658;">
+<div class="py-5" style="background: radial-gradient(circle, rgba(199,145,123,1) -1%, rgba(189,118,88,1) 76%);">
     <div class="container">
         <div class="row p-4 p-md-5 p-lg-3 p-sm-5">
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
@@ -391,7 +391,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background-color: #bd7658;">
+<div class="py-5" style="background: radial-gradient(circle, rgba(199,145,123,1) -1%, rgba(189,118,88,1) 76%);">
     <div class="container ">
         <div class="row">
             <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">

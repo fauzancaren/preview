@@ -62,7 +62,7 @@
 <body style="background-color: #e0e0e0;">
     <nav class="navbar ipnav" style="background-color: #fefdf9;">
         <div class="container-fluid">
-            <div class="navbar align-content-center" style="width: 100px; height: 60px;">
+            <div class="navbar align-content-center" style="width: 175px;height:60px; ">
                 <img src="<?= base_url() ?>/asset/image/obilogo.png" class="img-fluid" alt="omahbata">
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -98,7 +98,7 @@
     <nav class="autohide navbar navbar-expand-lg p-4 shadow shadow-sm scrolled-up pcnav" style="background-color: #fefdf9;">
         <div class="container">
             <div class="collapse navbar-collapse d-flex justify-content-around flex-wrap customNav" id="navbarNavAltMarkup">
-                <div class="navbar align-content-center" style="width: 100px; height: 60px;">
+                <div class="navbar align-content-center" style="width: 175px;height:60px; ">
                     <img src="<?= base_url() ?>/asset/image/obilogo.png" class="img-fluid" alt="omahbata">
                 </div>
                 <div class="navbar-nav fw-bold gap-3">

@@ -64,6 +64,7 @@ body {
     font-size: 1rem;
     background-color: #bd7658;
     border: none;
+    border-radius: 2.5rem !important;
     color: #ffffff;
 }
 
@@ -72,6 +73,7 @@ body {
     color: #ffffff;
     transition: all .5s;
 }
+
 
 .tombol-produk {
     background-color: #c4c4c4;
@@ -112,11 +114,18 @@ body {
 
 /* icon end */
 
+.item-project:hover>.deskripsi {
+    transition: all 0.5s;
+    box-shadow: 0rem 0rem 2rem 0.5rem rgb(0 0 0 / 15%) !important;
+}
+
+
 
 
 /* image start */
 .imageHead {
     cursor: pointer;
+    transition: all .3s;
 }
 
 .imageHead:hover {
