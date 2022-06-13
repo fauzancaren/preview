@@ -221,7 +221,7 @@
             <div class="row d-flex style="opacity: 0.6;">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/red.jpg" alt="">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/white.jpg" alt="">
                     </div>
 
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
@@ -229,11 +229,11 @@
                     </div>
 
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/red.jpg" alt="">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/Red.jpg" alt="">
                     </div>
 
                     <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">
-                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/red.jpg" alt="">
+                        <img class="img-fluid max-heigt: 500px;"  src="<?= base_url() ?>/asset/image/headerProduct/semen.jpg" alt="">
                     </div>
                 </div>
             </div>
