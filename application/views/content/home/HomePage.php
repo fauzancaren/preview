@@ -26,7 +26,7 @@
         <div class="text-center justify-content-end mb-5">
             <h3>Featured Projects</h3>
         </div>
-        <div class="project">
+        <div class="project text-center">
             <?php foreach ($project as $row) : ?>
                 <div class="col p-4">
                     <a href="#">
@@ -39,17 +39,24 @@
                             <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
                         </div>
                         <!-- <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button> -->
-                        <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject mb-1">
-                            <h6><?= $row["CustomerProjectTitle"] ?></h6>
+                        <div class="align-content-end" style="height: 7em; overflow: hidden;">
+                        <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
+                            <h5><?= $row["CustomerProjectTitle"] ?></h5>
                         </a>
-                        <small><?= $row["CustomerProjectDeskripsi"] ?></small><Br>
-                        <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
+                        </div>
+
+                       <div class="align-content-start" style="height: 8em; overflow: hidden;">
+                            <small><?= $row["CustomerProjectDeskripsi"] ?></small>
+                        </div>
+                        <div class="row align-content-center" style="height: 3em;">
+                            <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
 
-        <div class="row py-4">
+        <div class="row py-1">
             <div class="d-flex align-items-center justify-content-center mt-4" style="height: 100px;">
                 <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 fw-bold py-3 rounded-0 tombol">LIHAT SELURUH PROJECT</button></a>
             </div>
