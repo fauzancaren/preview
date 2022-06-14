@@ -188,7 +188,6 @@ body {
 
 .coveryoutube {
     background-color: whitesmoke;
-
 }
 
 /* youtube end */
@@ -249,7 +248,7 @@ body {
 
 /* nav end */
 .box-client {
-    border: 1px solid #e5e5e5;
+    /* border: 1px solid #e5e5e5; */
     height: 9rem;
     width: 9rem;
     justify-content: center;
