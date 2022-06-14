@@ -249,7 +249,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background: radial-gradient(circle, rgba(199,145,123,1) -1%, rgba(189,118,88,1) 76%);">
+<div class="py-5" style="background-image: url('<?= base_url("asset/image/bg-world.svg") ?>')">
     <div class="container">
         <div class="row p-4 p-md-5 p-lg-3 p-sm-5">
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
