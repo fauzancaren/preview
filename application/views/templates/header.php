@@ -16,19 +16,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Montserrat:wght@100;300;400;700&family=Poppins:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+ 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="<?= base_url("asset/bootstrap5-2/js/bootstrap.min.js") ?>"></script>
-    <script type="text/javascript" src="<?= base_url("asset/slick/slick.min.js") ?>"></script>
+    <script src="<?= base_url("asset/slick/slick.min.js") ?>" type="text/javascript" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
@@ -57,6 +51,12 @@
             }
         });
     </script>
+    <style>
+        small{
+            /* font-family: 'Montserrat', sans-serif; */
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 

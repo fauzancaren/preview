@@ -34,16 +34,15 @@
                     <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md deskripsi-project" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
                         <div class="text-center mb-2">
                             <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
-                        </div>
-                        <!-- <button class="btn btn-sm btn-danger">UPDATE AND NEWS</button> -->
+                        </div> 
                         <div class="align-content-end" style="height: 7em; overflow: hidden;">
                             <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
-                                <h5><?= $row["CustomerProjectTitle"] ?></h5>
+                                <h6><?= $row["CustomerProjectTitle"] ?></h6>
                             </a>
                         </div>
 
                         <div class="align-content-start" style="height: 8em; overflow: hidden;">
-                            <small><?= $row["CustomerProjectDeskripsi"] ?></small>
+                            <small ><?= $row["CustomerProjectDeskripsi"] ?></small>
                         </div>
                         <div class="row align-content-center" style="height: 3em;">
                             <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
@@ -178,9 +177,19 @@
                                 </div>
                             </div>
                             <div class="row py-3 text-center" style="color: white;">
-                                <small class="fw-bold fs-5 text-white">NAYA KUMARA</small>
-                                <small class="fw-light text-light">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
-                            </div>
+                            <figure class="text-center">
+  <blockquote class="blockquote">
+  <small class="fw-bold fs-5 text-white" style="font-family: 'Poppins', sans-serif;font-size: 1.4em !important;color: #422c1e !important;">NAYA KUMARA</small>
+  </blockquote>
+  <figcaption class="blockquote-footer" style="
+    color: #422c1e73;
+">
+  <small class="fw-light text-light" style="color: #422c1e73 !important;font-size: 0.75rem;">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
+  </figcaption>
+</figure>
+                               
+                                
+                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12  p-4">
                             <div class="d-flex justify-content-center">
@@ -189,8 +198,16 @@
                                 </div>
                             </div>
                             <div class="row py-3 text-center" style="color: white;">
-                                <small class="fw-bold fs-5 text-white">SOFYAN</small>
-                                <small class="fw-light text-light">ARSITEK &amp; KONTRAKTOR</small>
+                            <figure class="text-center">
+  <blockquote class="blockquote">
+  <small class="fw-bold fs-5 text-white" style="font-family: 'Poppins', sans-serif;font-size: 1.4em !important;color: #422c1e !important;">SOFYAN</small>
+  </blockquote>
+  <figcaption class="blockquote-footer" style="
+    color: #422c1e73;
+">
+  <small class="fw-light text-light" style="color: #422c1e73 !important;font-size: 0.75rem;">ARSITEK &amp; KONTRAKTOR</small>
+  </figcaption>
+</figure> 
                             </div>
                         </div>
                     </div>
