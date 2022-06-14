@@ -255,7 +255,7 @@
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
 
                 <div class="text-center justify-content-end mb-5 text-white text-uppercase">
-                    <h1>Why shope with use?</h1>
+                    <h2>Why shope with use?</h2>
                 </div>
                 <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-wrap justify-content-center gap-4 p-4 text-center">
                     <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
@@ -289,8 +289,8 @@
 <div class="py-5" style="background-color: #fefdf9;">
     <div class="container py-5">
         <div class="row py-5">
-            <div class="text-center justify-content-end mb-5 text-uppercase">
-                <h3>Our <span style="color:#d4582a">Client</span></h3>
+            <div class="text-center justify-content-end mb-5 text-uppercase fw-bold">
+                <h1>Our <span style="color:#d4582a">Client</span></h1>
             </div>
             <div class="row justify-content-center ms-auto me-auto">
                 <div class="client">
