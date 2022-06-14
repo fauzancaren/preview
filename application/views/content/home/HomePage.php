@@ -293,92 +293,92 @@
             <div class="row justify-content-center ms-auto me-auto">
                 <div class="client">
                     <div class="col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/adhi.png" alt="">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/al-jazaera-logo.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/daiso.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Dominos_pizza.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/dr-marteens.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hana_Bank.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jco.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jw marriote.jpg" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/kfc.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/logo-Net-tv.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/PT_PP_logo.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/quality.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Rai-Fitness.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/sbucks.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/skechers.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client shadow-sm">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Wika.png" alt="">
                         </div>
                     </div>
@@ -391,6 +391,7 @@
                 // my slick slider options
                 var options = {
                     infinite: true,
+                    rows: 2,
                     slidesToShow: 6,
                     slidesToScroll: 6,
                     adaptiveHeight: true,
@@ -422,6 +423,7 @@
                         },
                         {
                             breakpoint: 576,
+                            rows: 1,
                             settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
