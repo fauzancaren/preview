@@ -10,7 +10,7 @@ class Functionimage extends CI_Controller
 
    function product($id)
    {
-      $configfile = "asset/image/product/"; //untuk server 
+      $configfile = "./asset/image/product/"; //untuk server 
       try {
          if (file_exists($configfile .   $id . ".png")) {
             $path = FCPATH . $configfile .  $id . ".png";

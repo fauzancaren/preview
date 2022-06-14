@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
-    <script>
+    <script> 
         var loaddata = true;
         var request; // Stores the XMLHTTPRequest object
         var timeout; // Stores time

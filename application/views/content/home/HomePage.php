@@ -545,5 +545,4 @@
         text: ""
     })
 
-    AOS.init();
 </script>
