@@ -303,7 +303,7 @@
     <div class="container py-5">
         <div class="row py-5">
             <div class="text-center justify-content-end mb-5 text-uppercase fw-bold">
-                <h1>Our <span style="color:#d4582a">Client</span></h1>
+                <h1 class="fw-bold">Our <span style="color:#d4582a">Client</span></h1>
             </div>
             <div class="row justify-content-center ms-auto me-auto">
                 <div class="client">
