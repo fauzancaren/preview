@@ -193,11 +193,11 @@
                 </div>
 
 
-                <div class="col-md-4 d-flex flex-column align-items-center p-2" style="background-color: whitesmoke;">
+                <div class="col-md-4 d-flex flex-column align-items-center p-2 margi" style="background-color: whitesmoke;">
 
                     <div class="d-flex justify-content-center gap-2 p-2">
                         <h5 class="text-center mb-3 fw-normal">Omahbata on</h5>
-                        <img class="mt-1" src="https://192.168.1.200/omahbata.com/asset/image/transtvlogo.png" width="100px" height="15px" alt="">
+                        <img class="mt-1" src="<?= base_url("asset/image/transtvlogo.png") ?>" width="100px" height="15px" alt="">
                     </div>
 
                     <div class="d-flex justify-content-center">
