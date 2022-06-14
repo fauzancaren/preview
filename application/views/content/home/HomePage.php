@@ -1,7 +1,7 @@
 <div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);">
     <div class="container">
         <div class="row py-5">
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
             </div>
             <div class="col-12 col-lg-6 text-center d-grid align-content-center align-items-center">
@@ -24,7 +24,7 @@
 <div class="py-5" style="background: linear-gradient(180deg, rgba(254,253,249,1) 15%, rgba(237,237,237,1) 100%);">
     <div class="container py-5">
         <div class="text-center justify-content-end py-5">
-            <H1 class="fw-bolder text-uppercase">Featured Projects</H1>
+            <H1 class="fw-bolder text-uppercase">Featured <span style="color:#d4582a">Projects</span></H1>
         </div>
         <div class=" project text-center" data-aos="fade-right">
             <?php foreach ($project as $row) : ?>
@@ -214,7 +214,7 @@
     <div class="container py-5">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end py-5">
-                <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan aneka produk material kami</h3>
+                <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
             </div>
             <div class="row d-flex">
                 <div class="tab-content p-2" id="nav-tabContent" style="background-color: #aa6a4f;">
@@ -236,8 +236,8 @@
                 </div>
             </div>
 
-            <nav>
-                <div class="nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
+            <nav class="pb-5">
+                <div class=" nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
                     <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
@@ -254,28 +254,30 @@
         <div class="row p-4 p-md-5 p-lg-3 p-sm-5">
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
 
-                <div class="text-center justify-content-end mb-5 text-white">
-                    <h3>Why shope with use?</h3>
+                <div class="text-center justify-content-end mb-5 text-white text-uppercase">
+                    <h1>Why shope with use?</h1>
                 </div>
                 <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-wrap justify-content-center gap-4 p-4 text-center">
-                    <div class="col-md img-fluid border border-#f2e0d6 border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
-                        <h4>Free Delivery</h4>
-                        <span class="fw-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem cumque tempora magnam!</span>
+                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
+                        <img src="<?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                        <h4 class="mt-2">Free Delivery</h4>
+                        <span class="fw-light">Gratis Pengiriman untuk area Jakarta<br>syarat dan ketentuan berlaku</span>
+                    </div>
+                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
+                        <img src="<?= base_url("asset/image/secure-payment-svgrepo-com.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                        <h4 class="mt-2">100% Secure Payment</h4>
+                        <span class="fw-light">Jaminan transaksi yang aman dan terpercaya</span>
 
                     </div>
-                    <div class="col-md img-fluid border border border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
-                        <h4>100% Secure Payment</h4>
-                        <span class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error officia illo nisi.</span>
-
+                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
+                        <img src="<?= base_url("asset/image/quality-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                        <h4 class="mt-2">Quality Quarantee</h4>
+                        <span class="fw-light">Kualitas produk yang tidak diragukan lagi</span>
                     </div>
-                    <div class="col-md img-fluid border border-#f2e0d6 border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
-                        <h4>Quality Quarantee</h4>
-                        <span class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt eius aliquam. Aut, autem?</span>
-
-                    </div>
-                    <div class="col-md img-fluid border border-#f2e0d6 border-2 rounded-3 p-3" style="background-color: #6e492f; color: #f2e0d6;">
-                        <h4>Big Offers</h4>
-                        <span class="fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellat corrupti?</span>
+                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
+                        <img src="<?= base_url("asset/image/handshake-deal-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                        <h4 class="mt-2">Big Offers</h4>
+                        <span class="fw-light">Banyak benefit yang akan anda dapatkan</span>
 
                     </div>
                 </div>
@@ -285,10 +287,10 @@
 </div>
 
 <div class="py-5" style="background-color: #fefdf9;">
-    <div class="container">
+    <div class="container py-5">
         <div class="row py-5">
-            <div class="text-center justify-content-end mb-5">
-                <h3>Our Client</h3>
+            <div class="text-center justify-content-end mb-5 text-uppercase">
+                <h3>Our <span style="color:#d4582a">Client</span></h3>
             </div>
             <div class="row justify-content-center ms-auto me-auto">
                 <div class="client">
@@ -386,116 +388,116 @@
             </div>
 
             <script>
-            $(document).ready(function() {
+                $(document).ready(function() {
 
-                // my slick slider options
-                var options = {
-                    infinite: true,
-                    rows: 2,
-                    slidesToShow: 6,
-                    slidesToScroll: 6,
-                    adaptiveHeight: true,
-                    infinite: false,
-                    dots: true,
-                    responsive: [{
-                            breakpoint: 1440,
-                            settings: {
-                                slidesToShow: 6,
-                                slidesToScroll: 6,
-                                dots: true,
+                    // my slick slider options
+                    var options = {
+                        infinite: true,
+                        rows: 2,
+                        slidesToShow: 6,
+                        slidesToScroll: 6,
+                        adaptiveHeight: true,
+                        infinite: false,
+                        dots: true,
+                        responsive: [{
+                                breakpoint: 1440,
+                                settings: {
+                                    slidesToShow: 6,
+                                    slidesToScroll: 6,
+                                    dots: true,
+                                }
+                            },
+                            {
+                                breakpoint: 1200,
+                                settings: {
+                                    slidesToShow: 5,
+                                    slidesToScroll: 5,
+                                    dots: false,
+                                }
+                            },
+                            {
+                                breakpoint: 992,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                    dots: false,
+                                }
+                            },
+                            {
+                                breakpoint: 576,
+                                rows: 1,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    dots: false,
+                                }
                             }
-                        },
-                        {
-                            breakpoint: 1200,
-                            settings: {
-                                slidesToShow: 5,
-                                slidesToScroll: 5,
-                                dots: false,
-                            }
-                        },
-                        {
-                            breakpoint: 992,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 3,
-                                dots: false,
-                            }
-                        },
-                        {
-                            breakpoint: 576,
-                            rows: 1,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 2,
-                                dots: false,
-                            }
-                        }
-                    ]
-                };
+                        ]
+                    };
 
 
-                // my slick slider as constant object
-                const mySlider = $('.client').on('init', function(slick) {
+                    // my slick slider as constant object
+                    const mySlider = $('.client').on('init', function(slick) {
 
-                    // on init run our multi slide adaptive height function
-                    multiSlideAdaptiveHeight(this);
+                        // on init run our multi slide adaptive height function
+                        multiSlideAdaptiveHeight(this);
 
-                }).on('beforeChange', function(slick, currentSlide, nextSlide) {
+                    }).on('beforeChange', function(slick, currentSlide, nextSlide) {
 
-                    // on beforeChange run our multi slide adaptive height function
-                    multiSlideAdaptiveHeight(this);
+                        // on beforeChange run our multi slide adaptive height function
+                        multiSlideAdaptiveHeight(this);
 
-                }).slick(options);
-
-
-                // our multi slide adaptive height function passing slider object
-                function multiSlideAdaptiveHeight(slider) {
-
-                    // set our vars
-                    let activeSlides = [];
-                    let tallestSlide = 0;
-
-                    // very short delay in order for us get the correct active slides
-                    setTimeout(function() {
-
-                        // loop through each active slide for our current slider
-                        $('.slick-track .slick-active', slider).each(function(item) {
-
-                            // add current active slide height to our active slides array
-                            activeSlides[item] = $(this).outerHeight();
-
-                        });
-
-                        // for each of the active slides heights
-                        activeSlides.forEach(function(item) {
-
-                            // if current active slide height is greater than tallest slide height
-                            if (item > tallestSlide) {
-
-                                // override tallest slide height to current active slide height
-                                tallestSlide = item;
-
-                            }
-
-                        });
-
-                        // set the current slider slick list height to current active tallest slide height
-                        $('.slick-list', slider).height(tallestSlide);
-
-                    }, 10);
-
-                }
+                    }).slick(options);
 
 
-                // when window is resized
-                $(window).on('resize', function() {
+                    // our multi slide adaptive height function passing slider object
+                    function multiSlideAdaptiveHeight(slider) {
 
-                    // run our multi slide adaptive height function incase current slider active slides change height responsively
-                    multiSlideAdaptiveHeight(mySlider);
+                        // set our vars
+                        let activeSlides = [];
+                        let tallestSlide = 0;
 
+                        // very short delay in order for us get the correct active slides
+                        setTimeout(function() {
+
+                            // loop through each active slide for our current slider
+                            $('.slick-track .slick-active', slider).each(function(item) {
+
+                                // add current active slide height to our active slides array
+                                activeSlides[item] = $(this).outerHeight();
+
+                            });
+
+                            // for each of the active slides heights
+                            activeSlides.forEach(function(item) {
+
+                                // if current active slide height is greater than tallest slide height
+                                if (item > tallestSlide) {
+
+                                    // override tallest slide height to current active slide height
+                                    tallestSlide = item;
+
+                                }
+
+                            });
+
+                            // set the current slider slick list height to current active tallest slide height
+                            $('.slick-list', slider).height(tallestSlide);
+
+                        }, 10);
+
+                    }
+
+
+                    // when window is resized
+                    $(window).on('resize', function() {
+
+                        // run our multi slide adaptive height function incase current slider active slides change height responsively
+                        multiSlideAdaptiveHeight(mySlider);
+
+                    });
                 });
-            });
-        </script>
+            </script>
         </div>
     </div>
 </div>
