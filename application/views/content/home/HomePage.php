@@ -197,7 +197,7 @@
 
                     <div class="d-flex justify-content-center gap-2 p-2">
                         <h5 class="text-center mb-3 fw-normal">Omahbata on</h5>
-                        <img class="mt-1" src="https://192.168.1.200/omahbata.com//asset/image/transtvlogo.png" width="100px" height="15px" alt="">
+                        <img class="mt-1" src="https://192.168.1.200/omahbata.com/asset/image/transtvlogo.png" width="100px" height="15px" alt="">
                     </div>
 
                     <div class="d-flex justify-content-center">
@@ -217,21 +217,21 @@
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan aneka produk material kami</h3>
             </div>
             <div class="row d-flex">
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content p-2" id="nav-tabContent" style="background-color: #aa6a4f;">
                     <div class="tab-pane fade show active p-1" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/test.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/white.jpg" alt="">
                     </div>
 
                     <div class="tab-pane fade p-1" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/1.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/headerBTL.jpg" alt="">
                     </div>
 
                     <div class="tab-pane fade p-1" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/2.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/Red.jpg" alt="">
                     </div>
 
                     <div class="tab-pane fade p-1" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/3.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/semen.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -287,103 +287,215 @@
 <div class="py-5" style="background-color: #fefdf9;">
     <div class="container">
         <div class="row py-5">
-            <div class="text-center justify-content-end">
+            <div class="text-center justify-content-end mb-5">
                 <h3>Our Client</h3>
             </div>
             <div class="row justify-content-center ms-auto me-auto">
-                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gy-xl-5 gy-lg-4 gy-md-3 gy-2">
+                <div class="client">
                     <div class="col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/adhi.png" alt="">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/al-jazaera-logo.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/daiso.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Dominos_pizza.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/dr-marteens.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hana_Bank.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jco.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jw marriote.jpg" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/kfc.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/logo-Net-tv.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/PT_PP_logo.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/quality.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Rai-Fitness.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/sbucks.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/skechers.png" alt="">
                         </div>
                     </div>
                     <div class=" col">
-                        <div class="box-client">
+                        <div class="box-client mb-5 shadow-sm">
                             <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Wika.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+
+            <script>
+            $(document).ready(function() {
+
+                // my slick slider options
+                var options = {
+                    infinite: true,
+                    rows: 2,
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                    adaptiveHeight: true,
+                    infinite: false,
+                    dots: true,
+                    responsive: [{
+                            breakpoint: 1440,
+                            settings: {
+                                slidesToShow: 6,
+                                slidesToScroll: 6,
+                                dots: true,
+                            }
+                        },
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 5,
+                                slidesToScroll: 5,
+                                dots: false,
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                dots: false,
+                            }
+                        },
+                        {
+                            breakpoint: 576,
+                            rows: 1,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                                dots: false,
+                            }
+                        }
+                    ]
+                };
+
+
+                // my slick slider as constant object
+                const mySlider = $('.client').on('init', function(slick) {
+
+                    // on init run our multi slide adaptive height function
+                    multiSlideAdaptiveHeight(this);
+
+                }).on('beforeChange', function(slick, currentSlide, nextSlide) {
+
+                    // on beforeChange run our multi slide adaptive height function
+                    multiSlideAdaptiveHeight(this);
+
+                }).slick(options);
+
+
+                // our multi slide adaptive height function passing slider object
+                function multiSlideAdaptiveHeight(slider) {
+
+                    // set our vars
+                    let activeSlides = [];
+                    let tallestSlide = 0;
+
+                    // very short delay in order for us get the correct active slides
+                    setTimeout(function() {
+
+                        // loop through each active slide for our current slider
+                        $('.slick-track .slick-active', slider).each(function(item) {
+
+                            // add current active slide height to our active slides array
+                            activeSlides[item] = $(this).outerHeight();
+
+                        });
+
+                        // for each of the active slides heights
+                        activeSlides.forEach(function(item) {
+
+                            // if current active slide height is greater than tallest slide height
+                            if (item > tallestSlide) {
+
+                                // override tallest slide height to current active slide height
+                                tallestSlide = item;
+
+                            }
+
+                        });
+
+                        // set the current slider slick list height to current active tallest slide height
+                        $('.slick-list', slider).height(tallestSlide);
+
+                    }, 10);
+
+                }
+
+
+                // when window is resized
+                $(window).on('resize', function() {
+
+                    // run our multi slide adaptive height function incase current slider active slides change height responsively
+                    multiSlideAdaptiveHeight(mySlider);
+
+                });
+            });
+        </script>
         </div>
     </div>
 </div>
