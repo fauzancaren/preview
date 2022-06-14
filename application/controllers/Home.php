@@ -12,6 +12,8 @@ class Home extends CI_Controller
 
 	public function index()
 	{
+		$this->output->delete_cache();
+
 		$data['title'] = 'Homepage';
 		$data['_page'] = 'HOME';
 		$data['project'] = $this->Project_model->getDataProjectLastUpdate();
