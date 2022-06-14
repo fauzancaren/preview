@@ -1,7 +1,7 @@
-<div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);">
+<div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
     <div class="container">
         <div class="row py-5">
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out-back">
                 <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
             </div>
             <div class="col-12 col-lg-6 text-center d-grid align-content-center align-items-center">
@@ -166,52 +166,57 @@
     <div class="container py-5">
         <div class="row py-2 d-flex justify-content-center">
             <div class="row rows-col-1 rows-cols-md-2 justify-content-center">
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-12 p-2">
                     <div class="row">
-                        <h1 class="text-uppercase fw-bold" style="color: whitesmoke; text-align: center;">Kata Mereka Tentang <span style=" color: #6d4a33; ">Omah</span><span style=" color: #d4582a; ">Bata</span></h1>
+                        <h2 class="text-uppercase fw-bold" style="color: whitesmoke; text-align: center;"><span class="text-kata-mereka">Kata Mereka Tentang <span style=" color: #6d4a33; ">Omah</span><span style=" color: #d4582a; ">Bata</span></span>&nbsp;|</h2>
                     </div>
-                    <div class="row row-cols-md-2 py-3 m-auto">
-                        <div class="col-lg justify-content-center">
+                    <div class="row row-cols-md-2 pt-3 m-auto">
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
                             <div class="d-flex justify-content-center">
-                                <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px ">
+                                    <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                </div>
                             </div>
-                            <div class="row p-3 text-center" style="color: white;">
+                            <div class="row py-3 text-center" style="color: white;">
                                 <small class="fw-bold fs-5 text-white">NAYA KUMARA</small>
-                                <small class="fw-bold text-light">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
+                                <small class="fw-light text-light">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
                             </div>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg-6 col-md-6 col-sm-12  p-4">
                             <div class="d-flex justify-content-center">
-                                <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px">
+                                    <iframe class="img-fluid" src="https://www.youtube.com/embed/5gPSkUXMq-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                </div>
                             </div>
-                            <div class="row p-3 text-center" style="color: white;">
+                            <div class="row py-3 text-center" style="color: white;">
                                 <small class="fw-bold fs-5 text-white">SOFYAN</small>
-                                <small class="fw-bold text-light">ARSITEK &amp; KONTRAKTOR</small>
+                                <small class="fw-light text-light">ARSITEK &amp; KONTRAKTOR</small>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-md-4 d-flex flex-column align-items-center p-2" style="background-color: whitesmoke;">
-
-                    <div class="d-flex justify-content-center gap-2 p-2">
-                        <h5 class="text-center mb-3 fw-normal">Omahbata on</h5>
-                        <img class="mt-1" src="https://192.168.1.200/omahbata.com/asset/image/transtvlogo.png" width="100px" height="15px" alt="">
+                <div class="col-lg-4 col-md-12 p-0">
+                    <div class="d-flex flex-column align-items-center p-2 rounded" style="background-color: #f5f5f5d4;">
+                        <div class="row pb-2">
+                            <h1 class="fw-bolder" style="color: whitesmoke; text-align: center;">
+                                <span class="fs-5" style=" color: #6d4a33; ">OMAH</span><span class="fs-5" style=" color: #d4582a; ">BATA</span> <span class="fs-5" style=" color: #6c6c6c; ">on</span>
+                                <img class="d-inline-block" src="https://192.168.1.200/omahbata.com/asset/image/transtvlogo.png" height="15px" alt="" style="width:fit-content">
+                            </h1>
+                        </div>
+                        <div class="d-flex justify-content-center p-4 mb-4">
+                            <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px">
+                                <iframe class="img-fluid" src="https://www.youtube.com/embed/M-6erT4kwK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="d-flex justify-content-center">
-                        <iframe class="img-fluid" src="https://www.youtube.com/embed/M-6erT4kwK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);">
-    <div class="container py-5">
+<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
+    <div class=" container py-5">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end py-5">
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
@@ -257,27 +262,35 @@
                 <div class="text-center justify-content-end mb-5 text-white text-uppercase">
                     <h2>Why shope with use?</h2>
                 </div>
-                <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-wrap justify-content-center gap-4 p-4 text-center">
-                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
-                        <img src="<?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                        <h4 class="mt-2">Free Delivery</h4>
-                        <span class="fw-light">Gratis Pengiriman untuk area Jakarta<br>syarat dan ketentuan berlaku</span>
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src=" <?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Free Delivery</h4>
+                            <span class="fw-light">Gratis Pengiriman untuk area Jakarta<br>syarat dan ketentuan berlaku</span>
+                        </div>
                     </div>
-                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
-                        <img src="<?= base_url("asset/image/secure-payment-svgrepo-com.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                        <h4 class="mt-2">100% Secure Payment</h4>
-                        <span class="fw-light">Jaminan transaksi yang aman dan terpercaya</span>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/secure-payment-svgrepo-com.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">100% Secure Payment</h4>
+                            <span class="fw-light">Jaminan transaksi yang aman dan terpercaya</span>
+                        </div>
 
                     </div>
-                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
-                        <img src="<?= base_url("asset/image/quality-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                        <h4 class="mt-2">Quality Quarantee</h4>
-                        <span class="fw-light">Kualitas produk yang tidak diragukan lagi</span>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/quality-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Quality Quarantee</h4>
+                            <span class="fw-light">Kualitas produk yang tidak diragukan lagi</span>
+                        </div>
                     </div>
-                    <div class="col-md img-fluid rounded-3 p-3 py-5 text-white" style="background-color: #6e492f99;">
-                        <img src="<?= base_url("asset/image/handshake-deal-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                        <h4 class="mt-2">Big Offers</h4>
-                        <span class="fw-light">Banyak benefit yang akan anda dapatkan</span>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/handshake-deal-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Big Offers</h4>
+                            <span class="fw-light">Banyak benefit yang akan anda dapatkan</span>
+                        </div>
 
                     </div>
                 </div>
@@ -286,7 +299,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background-color: #fefdf9;">
+<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
     <div class="container py-5">
         <div class="row py-5">
             <div class="text-center justify-content-end mb-5 text-uppercase fw-bold">
@@ -392,12 +405,13 @@
 
                     // my slick slider options
                     var options = {
+                        autoplay: true,
+                        autoplaySpeed: 2000,
                         infinite: true,
                         rows: 2,
                         slidesToShow: 6,
                         slidesToScroll: 6,
                         adaptiveHeight: true,
-                        infinite: false,
                         dots: true,
                         responsive: [{
                                 breakpoint: 1440,
@@ -502,19 +516,34 @@
     </div>
 </div>
 
-<div class="py-5" style="background: radial-gradient(circle, rgba(199,145,123,1) -1%, rgba(189,118,88,1) 76%);">
-    <div class="container ">
-        <div class="row">
-            <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
-                <h4 class="fw-normal">Our Newsletter</h4>
-                <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
+<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/moon.svg") ?>');background-size: cover;"">
+    <div class=" container ">
+        <div class=" row">
+    <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
+        <h4 class="fw-normal">Our Newsletter</h4>
+        <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
 
 
-                <div class="input-group mb-3 mt-5">
-                    <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
-                </div>
-            </div>
+        <div class="input-group mb-3 mt-5">
+            <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
         </div>
     </div>
 </div>
+</div>
+</div>
+
+
+<script>
+    gsap.registerPlugin(TextPlugin);
+    const tl = gsap.timeline({
+        repeat: -1,
+        repeatDelay: 4,
+    });
+    tl.from(".text-kata-mereka", {
+        duration: 4,
+        text: ""
+    })
+
+    AOS.init();
+</script>

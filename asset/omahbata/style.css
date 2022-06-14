@@ -74,6 +74,12 @@ body {
     transition: all .5s;
 }
 
+.tombol:hover>.fa {
+    background-color: #99634c;
+    color: #ffffff;
+    transition: all .5s;
+    padding-left: 2rem;
+}
 
 .tombol-produk {
     background-color: #c4c4c4;
@@ -248,7 +254,8 @@ body {
 
 /* nav end */
 .box-client {
-    /* border: 1px solid #e5e5e5; */
+    border: 1px solid #e5e5e5;
+    background: white;
     height: 9rem;
     width: 9rem;
     justify-content: center;

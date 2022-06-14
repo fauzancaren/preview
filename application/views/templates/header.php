@@ -8,7 +8,7 @@
     <title><?php echo $title; ?></title>
 
     <link rel="stylesheet" href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" type="text/css">
-    <link rel="stylesheet" href="<?= base_url("asset/omahbata/style.css?version=v2.0.0") ?>" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("asset/omahbata/style.css?version=v2.0.1") ?>" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/slick/slick.css") ?>" rel="stylesheet" type="text/css">
@@ -31,10 +31,11 @@
     <script type="text/javascript" src="<?= base_url("asset/slick/slick.min.js") ?>"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             el_autohide = document.querySelector('.autohide');
-            // add padding-top to bady (if necessary)
             navbar_height = document.querySelector('.navbar').offsetHeight;
             //  document.body.style.paddingTop = navbar_height + 'px';
 
@@ -49,6 +50,7 @@
                         el_autohide.classList.remove('scrolled-up');
                         el_autohide.classList.add('scrolled-down');
                     }
+                    scroll_top > 0 ? el_autohide.classList.add('shadow-sm') : el_autohide.classList.remove('shadow-sm')
                     last_scroll_top = scroll_top;
                 });
                 window.addEventListener
@@ -95,7 +97,7 @@
             </div>
         </div>
     </nav>
-    <nav class="autohide navbar navbar-expand-lg p-4 shadow shadow-sm scrolled-up pcnav" style="background-color: #fefdf9;">
+    <nav class="autohide navbar navbar-expand-lg p-4 scrolled-up pcnav" style="background-color: #fefdf9;">
         <div class="container">
             <div class="collapse navbar-collapse d-flex justify-content-around flex-wrap customNav" id="navbarNavAltMarkup">
                 <div class="navbar align-content-center" style="width: 175px;height:60px; ">
