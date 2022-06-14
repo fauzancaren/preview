@@ -397,6 +397,8 @@
                         slidesToShow: 6,
                         slidesToScroll: 6,
                         adaptiveHeight: true,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                         infinite: false,
                         dots: true,
                         responsive: [{
