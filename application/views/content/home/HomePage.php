@@ -516,7 +516,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/moon.svg") ?>');background-size: cover;"">
+<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/Moon.svg") ?>');background-size: cover;"">
     <div class=" container ">
         <div class=" row">
     <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
