@@ -17,7 +17,17 @@ class Admin extends CI_Controller
 		// $data['project'] = $this->Project_model->getDataProjectLastUpdate();
 		// $data['productKategori'] = $this->Product_model->getDataProductKategori();
 		$this->load->view('templates/adminHeader.php', $data);
-		$this->load->view('admin/adminDashboard.php');
+		$this->load->view('admin/dashboard.php');
+		$this->load->view('templates/footerAdmin.php');
+	}
+	public function kategori()
+	{
+		$data['title'] = 'Kategori';
+		// $data['_page'] = 'HOME';
+		// $data['project'] = $this->Project_model->getDataProjectLastUpdate();
+		// $data['productKategori'] = $this->Product_model->getDataProductKategori();
+		$this->load->view('templates/adminHeader.php', $data);
+		$this->load->view('admin/kategori.php');
 		$this->load->view('templates/footerAdmin.php');
 	}
 	public function getDataProject()

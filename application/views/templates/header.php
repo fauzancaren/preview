@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
 
-    <link rel="stylesheet" href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" type="text/css">
-    <link rel="stylesheet" href="<?= base_url("asset/omahbata/style.css?version=v2.0.2") ?>" type="text/css">
+    <link href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/omahbata/style.css?version=v2.0.2") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/slick/slick.css") ?>" rel="stylesheet" type="text/css">
