@@ -1,4 +1,4 @@
-<div style="background-color: #fefdf9;">
+<div style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);">
     <div class="container">
         <div class="row py-3">
             <div class="col-12">
