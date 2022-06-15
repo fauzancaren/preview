@@ -13,7 +13,7 @@
                     <span class="fw-normal text-uppercase" style="font-size: small;">Tangerang</span>
                 </div>
 
-                <div class="col" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
+                <div class="col" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
                     <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
                 </div>
             </div>
@@ -26,7 +26,7 @@
         <div class="text-center justify-content-end py-5">
             <H1 class="fw-bolder text-uppercase">Featured <span style="color:#d4582a">Projects</span></H1>
         </div>
-        <div class=" project text-center" data-aos="fade-right">
+        <div class="project text-center" data-aos="fade-right">
             <?php foreach ($project as $row) : ?>
                 <div class="col p-4 item-project">
                     <div class="img-fluid p-4 rounded-1 head-project" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
@@ -34,7 +34,7 @@
                     <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md deskripsi-project" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
                         <div class="text-center mb-2">
                             <div class="badge" style="background:#ff3c18">CUSTOMER PROJECT</div>
-                        </div> 
+                        </div>
                         <div class="align-content-end" style="height: 7em; overflow: hidden;">
                             <a href="<?= base_url() ?>project/projectById/<?= $row["CustomerProjectId"] ?>" class="btnProject">
                                 <h6><?= $row["CustomerProjectTitle"] ?></h6>
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="align-content-start" style="height: 8em; overflow: hidden;">
-                            <small ><?= $row["CustomerProjectDeskripsi"] ?></small>
+                            <small><?= $row["CustomerProjectDeskripsi"] ?></small>
                         </div>
                         <div class="row align-content-center" style="height: 3em;">
                             <small><?= date('d F Y', strtotime($row["CustomerProjectDate"])); ?> | <?= $row["CustomerProjectAddress"]  ?></small>
@@ -177,19 +177,17 @@
                                 </div>
                             </div>
                             <div class="row py-3 text-center" style="color: white;">
-                            <figure class="text-center">
-  <blockquote class="blockquote">
-  <small class="fw-bold fs-5 text-white" style="font-family: 'Poppins', sans-serif;font-size: 1.4em !important;color: #422c1e !important;">NAYA KUMARA</small>
-  </blockquote>
-  <figcaption class="blockquote-footer" style="
-    color: #422c1e73;
-">
-  <small class="fw-light text-light" style="color: #422c1e73 !important;font-size: 0.75rem;">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
-  </figcaption>
-</figure>
-                               
-                                
-                             </div>
+                                <figure class="text-center">
+                                    <blockquote class="blockquote">
+                                        <small class="fw-bold fs-5 text-white" style="font-family: 'Poppins', sans-serif;font-size: 1.4em !important;color: #422c1e !important;">NAYA KUMARA</small>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer" style="color: #422c1e73;">
+                                        <small class="fw-light text-light" style="color: #422c1e73 !important;font-size: 0.75rem;">KONSULTAN DESAIN &amp; KONTRAKTOR</small>
+                                    </figcaption>
+                                </figure>
+
+
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12  p-4">
                             <div class="d-flex justify-content-center">
@@ -198,16 +196,14 @@
                                 </div>
                             </div>
                             <div class="row py-3 text-center" style="color: white;">
-                            <figure class="text-center">
-  <blockquote class="blockquote">
-  <small class="fw-bold fs-5 text-white" style="font-family: 'Poppins', sans-serif;font-size: 1.4em !important;color: #422c1e !important;">SOFYAN</small>
-  </blockquote>
-  <figcaption class="blockquote-footer" style="
-    color: #422c1e73;
-">
-  <small class="fw-light text-light" style="color: #422c1e73 !important;font-size: 0.75rem;">ARSITEK &amp; KONTRAKTOR</small>
-  </figcaption>
-</figure> 
+                                <figure class="text-center">
+                                    <blockquote class="blockquote">
+                                        <small class="fw-bold fs-5 text-white" style="font-family: 'Poppins', sans-serif;font-size: 1.4em !important;color: #422c1e !important;">SOFYAN</small>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer" style="color: #422c1e73;">
+                                        <small class="fw-light text-light" style="color: #422c1e73 !important;font-size: 0.75rem;">ARSITEK &amp; KONTRAKTOR</small>
+                                    </figcaption>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -239,8 +235,31 @@
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
             </div>
             <div class="row d-flex">
-                <div class="tab-content p-2" id="nav-tabContent" style="background-color: #aa6a4f;">
-                    <div class="tab-pane fade show active p-1" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="test p-2" id="nav-tabContent" style="background-color: #aa6a4f;">
+                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/white.jpg);">
+                        <a href="<?= base_url() ?>" class="imgrole">
+                            <button class="btn-imgrole">LIHAT PRODUK</button>
+                        </a>
+                    </div>
+
+                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/headerBTL.jpg);">
+                        <a href="<?= base_url() ?>" class="imgrole">
+                            <button class="btn-imgrole">LIHAT PRODUK</button>
+                        </a>
+                    </div>
+
+                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/Red.jpg);">
+                        <a href="<?= base_url() ?>" class="imgrole">
+                            <button class="btn-imgrole">LIHAT PRODUK</button>
+                        </a>
+                    </div>
+
+                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/semen.jpg);">
+                        <a href="<?= base_url() ?>" class="imgrole">
+                            <button class="btn-imgrole">LIHAT PRODUK</button>
+                        </a>
+                    </div>
+                    <!-- <div class="tab-pane fade show active p-1" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                         <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/white.jpg" alt="">
                     </div>
 
@@ -254,18 +273,96 @@
 
                     <div class="tab-pane fade p-1" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">
                         <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/semen.jpg" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-            <nav class="pb-5">
-                <div class=" nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
+            <script>
+                $(document).ready(function() {
+
+                    // my slick slider options
+                    var options = {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        adaptiveHeight: true,
+                        infinite: false,
+                        dots: true,
+                    };
+
+
+                    // my slick slider as constant object
+                    const mySlider = $('.test').on('init', function(slick) {
+
+                        // on init run our multi slide adaptive height function
+                        multiSlideAdaptiveHeight(this);
+
+                    }).on('beforeChange', function(slick, currentSlide, nextSlide) {
+
+                        // on beforeChange run our multi slide adaptive height function
+                        multiSlideAdaptiveHeight(this);
+
+                    }).slick(options);
+
+
+                    // our multi slide adaptive height function passing slider object
+                    function multiSlideAdaptiveHeight(slider) {
+
+                        // set our vars
+                        let activeSlides = [];
+                        let tallestSlide = 0;
+
+                        // very short delay in order for us get the correct active slides
+                        setTimeout(function() {
+
+                            // loop through each active slide for our current slider
+                            $('.slick-track .slick-active', slider).each(function(item) {
+
+                                // add current active slide height to our active slides array
+                                activeSlides[item] = $(this).outerHeight();
+
+                            });
+
+                            // for each of the active slides heights
+                            activeSlides.forEach(function(item) {
+
+                                // if current active slide height is greater than tallest slide height
+                                if (item > tallestSlide) {
+
+                                    // override tallest slide height to current active slide height
+                                    tallestSlide = item;
+
+                                }
+
+                            });
+
+                            // set the current slider slick list height to current active tallest slide height
+                            $('.slick-list', slider).height(tallestSlide);
+
+                        }, 10);
+
+                    }
+
+
+                    // when window is resized
+                    $(window).on('resize', function() {
+
+                        // run our multi slide adaptive height function incase current slider active slides change height responsively
+                        multiSlideAdaptiveHeight(mySlider);
+
+                    });
+                });
+            </script>
+
+            <!-- <nav class="pb-5">
+                <div class=" flex-column nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
                     <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
                     <button class="nav-link px-lg-5 rounded-0" id="nav-contact2-tab" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">PAVING</button>
                 </div>
-            </nav>
+            </nav> -->
 
         </div>
     </div>
@@ -561,5 +658,4 @@
         duration: 4,
         text: ""
     })
-
 </script>

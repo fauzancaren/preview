@@ -207,7 +207,8 @@ body {
 .nav-tabs {
     border-bottom: transparent;
     /* border-top: 1px solid #dddddd; */
-    margin-top: -80px;
+    margin-top: -250px;
+    margin-left: 10px;
     position: absolute;
 }
 
@@ -286,6 +287,29 @@ body {
     color: #cb5e37;
 }
 
+.btn-imgrole {
+    width: 250px; height:30px; 
+    background-color:transparent;
+    border: transparent;
+    color: #ffffff9e;
+}
+.imgrole {
+   
+    margin: auto; 
+    background-color:#aa6a4f; 
+    padding: 8px; 
+    opacity: 0.9;
+    box-shadow: 0 0 0 2px #ffffff52;
+}
+.imgrole:hover {
+    margin: auto; 
+    background-color:#aa6a4f; 
+    padding: 8px; 
+    opacity: 1;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+
 /* project end */
 
 /* breakpoint start */
@@ -306,11 +330,9 @@ body {
     } */
 
     .contact {
-        width: 300px;
-        height: 270px;
         border: 2px solid #9b7856;
-        margin-bottom: 100px;
-        font-size: 10px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
     }
 
     .pcnav {
@@ -366,14 +388,6 @@ body {
         
     } */
 
-    .contact {
-        width: 300px;
-        height: 270px;
-        border: 2px solid #9b7856;
-        margin-bottom: 100px;
-        font-size: 10px;
-    }
-
     .pcnav {
         display: none;
     }
@@ -417,14 +431,6 @@ body {
         height: 200px;
     }
 
-    .contact {
-        width: 350px;
-        height: 270px;
-        border: 3px solid #9b7856;
-        margin-bottom: 100px;
-        font-size: 12px;
-    }
-
     .ipnav {
         display: flex;
         padding: 15px;
@@ -456,14 +462,6 @@ body {
     .imageHead {
         width: 500px;
         height: 500px;
-    }
-
-    .contact {
-        width: 90%;
-        height: 250px;
-        border: 3px solid #9b7856;
-        margin-bottom: 100px;
-        font-size: 18px;
     }
 
     .ipnav {
