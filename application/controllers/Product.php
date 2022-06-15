@@ -22,7 +22,7 @@ class Product extends CI_Controller
    public function productsById($id)
    {
       $data['title'] = "Products Byid";
-      $data['_page'] = 'PRODUCTS';
+      $data['_page'] = ["1, 2, 3, 4"];
       $data['productsById'] = $this->Product_model->getDataProductById($id);
       $data['productKategori'] = $this->Product_model->getDataProductKategori();
       $data['productKategoriById'] = $this->Product_model->getDataProductKategoriById($id);
