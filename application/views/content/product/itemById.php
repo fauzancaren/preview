@@ -1,44 +1,56 @@
 <div class="container-fluid" style="background-color: #fefdf9;">
     <?php foreach ($MsitemById as $item) : ?>
-        <div class="row row-cols-1 row-cols-lg-2 p-lg-5">
+        <div class="row row-cols-1 row-cols-lg-2 p-lg-5 shadow-sm pb-5">
             <div class="col mb-5 mb-lg-0 text-center d-flex justify-content-center" style="height: 600px;">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
+                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/<?= $item["MsItemImage"] ?>" alt="">
             </div>
-            <div class="col d-flex px-4 px-lg-5 flex-column justify-content-lg-center ">
+            <div class="col d-flex px-4 px-lg-5 flex-column justify-content-lg-center">
                 <div class="row">
-                    <h2 class="mb-5"><?= $item["MsItemName"] ?></h2>
+                    <h2 class="mb-2"><?= $item["MsItemName"] ?></h2>
+                    <span class="mb-4">Ukuran <?= $item["MsItemSize"] ?></span>
                     <h4 class="mb-4 fw-normal">Rp. <?= number_format($item["MsItemPrice"]) ?> <small class="fw-light">/<?= $item["MsItemUoM"] ?></small></h4>
-                    <hr>
-                    <?php foreach ($MsitemDeskripsi as $row) : ?>
-                        <small class="mb-3" style="white-space: pre-wrap; "><b>Deskripsi :</b> <?= $row["MsItemDeskripsiText"] ?> </small>
+                    <hr class="mb-4">
+                    <div class="p-0" id="list-tab" role="tablist">
+                        <a class="px-4 py-1 active border border-1 border-dark text-dark" style="text-decoration: none;" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Deskripsi</a>
+                        <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Info Tambahan</a>
+                    </div>
+                    <div class="tab-content mt-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <?php foreach ($MsitemDeskripsi as $row) : ?>
+                                <blockquote class="mb-3" style="white-space: pre-wrap; "><?= $row["MsItemDeskripsiText"] ?> </blockquote>
+
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <table>
+                                <tr>
+                                    <td><small class="fw-bold">Warna</small></td>
+                                    <td style="width: 1rem;"> : </td>
+                                    <td><?= $row["MsItemColor"] ?></td>
+                                </tr>
+                                <tr>
+                                    <td><small class="fw-bold">Material</small> </td>
+                                    <td style="width: 1rem;"> : </td>
+                                    <td><?= $row["MsItemMaterial"] ?></td>
+                                </tr>
+                            </table>
+                        </div>
                     <?php endforeach; ?>
-                    <span>Ukuran <?= $item["MsItemSize"] ?></span>
+                    </div>
                 </div>
             </div>
         </div>
-
-
     <?php endforeach; ?>
+
 
 
     <div class="p-5 mt-5">
         <h4 class="text-center mb-5">Gallery Product</h4>
         <div class="row row-cols-2 row-cols-lg-4 row-cols-sm-3 row-cols-xxl-5 text-center">
-            <div class="col mb-5">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
-            </div>
-            <div class="col mb-5">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
-            </div>
-            <div class="col mb-5">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
-            </div>
-            <div class="col mb-5">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
-            </div>
-            <div class="col mb-5">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/notFound.jpg" alt="">
-            </div>
+            <?php foreach($MsItemSubImg as $row) : ?>
+                <div class="col mb-5">
+                    <img class="img-fluid" src="<?= base_url() ?>/asset/image/subProduct/<?= $row["ItemSubImageFileName"] ?>" alt="">
+                </div>
+                <?php endforeach; ?>
         </div>
     </div>
 </div>

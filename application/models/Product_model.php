@@ -19,8 +19,8 @@ class Product_model extends CI_Model
 
     public function getDataProductKategoriById($id)
     {
-        $this->db->from('TblMsItemCategory');
-        $this->db->where('MsItemCatId', $id);
+        $this->db->from('TblMsItemCategoryDetail');
+        $this->db->where('CategoryRef', $id);
         return $this->db->get()->result_array();
     }
     public function getDataItemById($id)
@@ -33,6 +33,13 @@ class Product_model extends CI_Model
     {
         $this->db->from('TblMsItemDeskripsi');
         $this->db->where('MsItemDeskripsiRef', $id);
+        return $this->db->get()->result_array();
+    }
+
+    public function getDataItemSubImgById($id)
+    {
+        $this->db->from('TblMsItemSubImage');
+        $this->db->where('ItemSubImageRef', $id);
         return $this->db->get()->result_array();
     }
     

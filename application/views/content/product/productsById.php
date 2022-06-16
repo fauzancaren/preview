@@ -1,25 +1,19 @@
 <div class="py-5" style="position: relative; overflow: hidden;">
     <?php foreach ($productKategoriById as $item) : ?>
-        <?php $catid = $item['MsItemCatId']; ?>
-        <img class="demo-bg" src="<?= base_url() ?>/asset/image/headerProduct/<?= $item['MsItemHeaderImg'] ?>" alt="" style="opacity: 0.6;position: absolute;left: 0;top: 0; height: 400;z-index: -1; background-position: center;">
+        <?php $catid = $item['CategoryRef']; ?>
+        <img class="demo-bg" src="<?= base_url() ?>/asset/image/headerProduct/<?= $item['CategoryDetailImg'] ?>" alt="" style="opacity: 0.6;position: absolute;left: 0;top: 0; height: 400;z-index: -1; background-position: center;">
         <div class="container text-dark">
             <div class=" d-grid justify-content-center text-center align-content-center" style="height: 400px;font-family: 'Montserrat', sans-serif;position: relative;">
-                <h1 class="fw-bolder"><?= $item['MsItemCatName'] ?></h1>
-                <small class="fw-normal fs-3">Omahbata penyedia berbagai macam Bata Expose, Bata Tempel Roster Dan Paving</small>
+                <h1 class="fw-bolder"><?= $item['CategoryDetailHeader'] ?></h1>
+                <small class="fw-normal fs-3"><?= $item['CategoryDetailText'] ?></small>
             </div>
         </div>
     <?php endforeach; ?>
 </div>
 
 <div class="py-5" style="background-color: #fefdf9;">
-    <div class="container ">
-    <ul style="padding:10px; list-style: none; position: fixed; top: 50%; left: 0;">
-            <li class="bg-dark mb-1 p-3 border border-1" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a></li>
-            <li class="bg-dark mb-1 p-3 border border-1" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a></li>
-            <li class="bg-dark mb-1 p-3 border border-1" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="">ROSTER</a></li>
-            <li class="bg-dark mb-1 p-3 border border-1" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="<?= base_url() ?>/product/productsById/10">PAVING</a></li>
-        </ul>
-        <!-- <nav class="navbar navbar-expand-lg p-5" style="background-color: #fefdf9;">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg p-5" style="background-color: #fefdf9;">
             <div class="collapse navbar-collapse d-flex justify-content-around mt-5" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link px-4" href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
@@ -38,7 +32,7 @@
                     <a class="nav-link px-4" href="<?= base_url() ?>/product/productsById/10">ROBLOCK</a>
                 </div>
             </div>
-        </nav> -->
+        </nav>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" data-aos="fade-up" id="data-item" data-index="0" style="background-color: #fefdf9;">
         </div>
         <div class="text-center loading" style="display: none">

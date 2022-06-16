@@ -9,19 +9,7 @@
 </div>
 <div class="py-5" style="background-color: #fefdf9;">
     <div class="container">
-        <ul class="bg-dark navcos">
-            <li class="linavcos bg-dark mb-1 p-3" style="opacity: 0.5;">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control bg-transparent text-white" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
-                </div>
-            </li>
-            <li class="linavcos bg-dark mb-1 p-3" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a></li>
-            <li class="linavcos bg-dark mb-1 p-3" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a></li>
-            <li class="linavcos bg-dark mb-1 p-3" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="">ROSTER</a></li>
-            <li class="linavcos bg-dark mb-1 p-3" style="opacity: 0.5;"><a class="text-light" style="list-style: none; text-decoration: none;" href="<?= base_url() ?>/product/productsById/10">PAVING</a></li>
-        </ul>
-        <!-- <nav class="navbar navbar-expand-lg p-5" style="background-color: #fefdf9;">
+        <nav class="navbar navbar-expand-lg p-5" style="background-color: #fefdf9;">
             <div class="collapse navbar-collapse d-flex justify-content-around mt-5" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link px-4" href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
@@ -40,7 +28,7 @@
                     <a class="nav-link px-4" href="<?= base_url() ?>/product/productsById/10">ROBLOCK</a>
                 </div>
             </div>
-        </nav> -->
+        </nav>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" data-aos="fade-up" id="data-item" data-index="0" style="background-color: #fefdf9;">
         </div>
         <div class="text-center loading" style="display: none">
