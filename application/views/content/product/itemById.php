@@ -9,48 +9,68 @@
                     <h2 class="mb-2"><?= $item["MsItemName"] ?></h2>
                     <span class="mb-4">Ukuran <?= $item["MsItemSize"] ?></span>
                     <h4 class="mb-4 fw-normal">Rp. <?= number_format($item["MsItemPrice"]) ?> <small class="fw-light">/<?= $item["MsItemUoM"] ?></small></h4>
-                    <hr class="mb-4">
-                    <div class="p-0" id="list-tab" role="tablist">
-                        <a class="px-4 py-1 active border border-1 border-dark text-dark" style="text-decoration: none;" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Deskripsi</a>
-                        <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Info Tambahan</a>
-                    </div>
-                    <div class="tab-content mt-3" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                            <?php foreach ($MsitemDeskripsi as $row) : ?>
-                                <blockquote class="mb-3" style="white-space: pre-wrap; "><?= $row["MsItemDeskripsiText"] ?> </blockquote>
+                    <?php
+                    // sediakan nohp target
+                    $nohp = hp('08128201414');
+                    // atur pesan dengan helper text urlencode
+                    $message = '&text=' . urlencode('Halo omahbata');
+                    // cek user_agent / device yang digunakan user
+                    // kalau mobil maka pakai api.whatsapp.com
+                    if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=' . $nohp . $message;
+                    // tapi kalau desktop pakai web.whatsapp.com
+                    else $linkWA = 'https://web.whatsapp.com/send?phone=' . $nohp . $message;
+                    ?>
 
-                        </div>
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                            <table>
-                                <tr>
-                                    <td><small class="fw-bold">Warna</small></td>
-                                    <td style="width: 1rem;"> : </td>
-                                    <td><?= $row["MsItemColor"] ?></td>
-                                </tr>
-                                <tr>
-                                    <td><small class="fw-bold">Material</small> </td>
-                                    <td style="width: 1rem;"> : </td>
-                                    <td><?= $row["MsItemMaterial"] ?></td>
-                                </tr>
-                            </table>
-                        </div>
-                    <?php endforeach; ?>
+                    <div class="col col-sm-6 col-lg-8 col-xl-5">
+                    <a class="btn d-flex justify-content-center" style="background-color: #26a69a; color: white;" target="_blank" href="<?php echo $linkWA ?>">
+                        <i class="fab fa-whatsapp fs-2" style="margin-right: 1rem;"></i>
+                        <span>Order Via Whatsapp</span>
+                    </a>
                     </div>
+
+                </div>
+                <hr class="mb-4">
+                <div class="p-0" id="list-tab" role="tablist">
+                    <a class="px-4 py-1 active border border-1 border-dark text-dark" style="text-decoration: none;" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Deskripsi</a>
+                    <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Info Tambahan</a>
+                </div>
+                <div class="tab-content mt-3" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <?php foreach ($MsitemDeskripsi as $row) : ?>
+                            <blockquote class="mb-3" style="white-space: pre-wrap; "><?= $row["MsItemDeskripsiText"] ?> </blockquote>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <table>
+                            <tr>
+                                <td><small class="fw-bold">Warna</small></td>
+                                <td style="width: 1rem;"> : </td>
+                                <td><?= $row["MsItemColor"] ?></td>
+                            </tr>
+                            <tr>
+                                <td><small class="fw-bold">Material</small> </td>
+                                <td style="width: 1rem;"> : </td>
+                                <td><?= $row["MsItemMaterial"] ?></td>
+                            </tr>
+                        </table>
+                    </div>
+                <?php endforeach; ?>
                 </div>
             </div>
         </div>
-    <?php endforeach; ?>
+</div>
+<?php endforeach; ?>
 
 
 
-    <div class="p-5 mt-5">
-        <h4 class="text-center mb-5">Gallery Product</h4>
-        <div class="row row-cols-2 row-cols-lg-4 row-cols-sm-3 row-cols-xxl-5 text-center">
-            <?php foreach($MsItemSubImg as $row) : ?>
-                <div class="col mb-5">
-                    <img class="img-fluid" src="<?= base_url() ?>/asset/image/subProduct/<?= $row["ItemSubImageFileName"] ?>" alt="">
-                </div>
-                <?php endforeach; ?>
-        </div>
+<div class="container-fluid p-5" style="background-color: #fefdf9;">
+    <h4 class="text-center mb-5">Gallery Product</h4>
+    <div class="row row-cols-2 row-cols-lg-4 row-cols-sm-3 row-cols-xxl-5 text-center">
+        <?php foreach ($MsItemSubImg as $row) : ?>
+            <div class="col mb-5">
+                <img class="img-fluid" src="<?= base_url() ?>/asset/image/subProduct/<?= $row["ItemSubImageFileName"] ?>" alt="">
+            </div>
+        <?php endforeach; ?>
     </div>
+</div>
 </div>

@@ -32,6 +32,11 @@ class Product extends CI_Controller
    }
    public function detailItem($id)
    {
+      $this->load->helper('nohp');
+		// panggil library text
+		$this->load->helper('text');	
+		// panggil library text
+		$this->load->library('user_agent');	
       $data['title'] = "Detail Item";
       $data['_page'] = 'PRODUCTS';
       $data['productKategori'] = $this->Product_model->getDataProductKategori();
