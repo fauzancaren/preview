@@ -46,8 +46,10 @@ class Product extends CI_Controller
    {
       $data = $this->Product_model->getDataProductNext($category, $index);
       $html = "";
+      $delay = 0;
       foreach ($data as $row) {
-         $html .= '<a class ="col" style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
+      if($delay == 400) { $delay=100 ;}else{ $delay+=100;}
+         $html .= '<a data-aos="fade-up" data-aos-delay="'.$delay.'" data-aos-once="false" class ="col" style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
                      <div class="d-flex flex-column justify-content-center  p-2">
                         <div class="d-flex flex-column item"> 
                            <img class="img-fluid mb-2 rounded-3 align-self-center" style="height: 300px; width: 350px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">

@@ -4,6 +4,8 @@
         <small>&reg;2022 PT. Global Cakra Buana Group. All Right Reserved.</small>
     </div>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script> 
     AOS.init();
 </script>

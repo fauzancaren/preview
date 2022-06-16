@@ -29,7 +29,7 @@
                 </div>
             </div>
         </nav>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" data-aos="fade-up" id="data-item" data-index="0" style="background-color: #fefdf9;">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" id="data-item" data-index="0" style="background-color: #fefdf9;">
         </div>
         <div class="text-center loading" style="display: none">
             <div class="fa-5x">
