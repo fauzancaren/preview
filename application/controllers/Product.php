@@ -56,10 +56,9 @@ class Product extends CI_Controller
       if($delay == 400) { $delay=100 ;}else{ $delay+=100;}
          $html .= '<a data-aos="fade-up" data-aos-delay="'.$delay.'" data-aos-once="false" class ="col" style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
                      <div class="d-flex flex-column justify-content-center  p-2">
-                        <div class="d-flex flex-column item"> 
+                        <div class="d-flex flex-column item p-2"> 
                            <img class="img-fluid mb-2 rounded-3 align-self-center" style="height: 300px; width: 350px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
-                           <h6 class="align-self-center align-self-lg-start px-sm-2 fw-bold">' . $row->MsItemName . '</h6> 
-                           <span class="align-self-center align-self-lg-start px-sm-2">' . $row->MsItemSize . '</span>
+                           <h6 class="align-self-center align-self-lg-start px-sm-2 fw-bold">' . $row->MsItemName . '</h6>
                            <span class="align-self-center align-self-lg-start px-sm-2">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
                            <span class="align-self-center  align-self-lg-start px-sm-2">' . $row->MsItemCode . '</span> 
                         </div>

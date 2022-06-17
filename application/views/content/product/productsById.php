@@ -11,8 +11,34 @@
     <?php endforeach; ?>
 </div>
 
-<div class="py-5" style="background-color: #fefdf9;">
-    <div class="container">
+<div class="costumproduct">
+    <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
+    <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
+    <div class="drop">
+        <button class="dropbtn">ROSTER
+        </button>
+        <div class="drop-content">
+            <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
+            <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
+            <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
+            <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+        </div>
+    </div>
+    <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
+</div>
+<div class="container-fluid" style="background-color: #fefdf9;">
+    <div class="container py-5" style="background-color: #fefdf9;">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" id="data-item" data-index="0" style="background-color: #fefdf9;">
+        </div>
+        <div class="text-center loading" style="display: none">
+            <div class="fa-5x">
+                <i class="fas fa-spinner fa-pulse"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- <div class="container">
     <nav class="navbar navbar-expand-lg p-5" style="background-color: #fefdf9;">
             <div class="collapse navbar-collapse d-flex justify-content-around mt-5" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
@@ -40,41 +66,41 @@
                 <i class="fas fa-spinner fa-pulse"></i>
             </div>
         </div>
-    </div>
-    <script>
-        var loaddata = true;
-        var request; // Stores the XMLHTTPRequest object
-        var timeout; // Stores time
-        $(window).scroll(function() {
-            if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-                if (!request && loaddata) {
-                    load_data();
+    </div> -->
+<script>
+    var loaddata = true;
+    var request; // Stores the XMLHTTPRequest object
+    var timeout; // Stores time
+    $(window).scroll(function() {
+        if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+            if (!request && loaddata) {
+                load_data();
+            }
+        }
+    });
+    load_data = function() {
+        $(".loading").css("display", "block");
+        request = $.ajax({
+            url: "<?= base_url("product/getitem/") . $catid . "/" ?>" + $("#data-item").data("index"),
+            success: function(data) {
+                if (data != "") {
+                    $("#data-item").append(data);
+                    $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
+                } else {
+                    loaddata = false;
                 }
+                $(".loading").css("display", "none");
+                timeout = request = null
             }
         });
-        load_data = function() {
-            $(".loading").css("display", "block");
-            request = $.ajax({
-                url: "<?= base_url("product/getitem/") . $catid . "/" ?>" + $("#data-item").data("index"),
-                success: function(data) {
-                    if (data != "") {
-                        $("#data-item").append(data);
-                        $("#data-item").data("index", parseInt($("#data-item").data("index")) + 20);
-                    } else {
-                        loaddata = false;
-                    }
-                    $(".loading").css("display", "none");
-                    timeout = request = null
-                }
-            });
 
-            timeout = setTimeout(function() {
-                if (request) {
-                    request.abort();
-                    $(".loading").css("display", "none");
-                }
-            }, 10000);
-        }
-        load_data();
-    </script>
+        timeout = setTimeout(function() {
+            if (request) {
+                request.abort();
+                $(".loading").css("display", "none");
+            }
+        }, 10000);
+    }
+    load_data();
+</script>
 </div>
