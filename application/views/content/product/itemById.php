@@ -21,11 +21,11 @@
                     else $linkWA = 'https://web.whatsapp.com/send?phone=' . $nohp . $message;
                     ?>
 
-                    <div class="col col-sm-6 col-lg-8 col-xl-5">
-                    <a class="btn d-flex justify-content-center" style="background-color: #26a69a; color: white;" target="_blank" href="<?php echo $linkWA ?>">
-                        <i class="fab fa-whatsapp fs-2" style="margin-right: 1rem;"></i>
-                        <span>Order Via Whatsapp</span>
-                    </a>
+                    <div class="col col-sm-6 col-lg-8 col-xl-6">
+                        <a class="btn d-flex justify-content-center align-items-center" style="background-color: #26a69a; color: white;" target="_blank" href="<?php echo $linkWA ?>">
+                            <i class="fab fa-whatsapp fs-2" style="margin-right: 1rem;"></i>
+                            <span>Order Via Whatsapp</span>
+                        </a>
                     </div>
 
                 </div>

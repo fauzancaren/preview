@@ -70,27 +70,27 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
+            <div class="offcanvas offcanvas-end" style="background-color: #bd7658d9;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style="color: #ffffffa3;">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" style="background-color: #ffffffa3;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>">HOME</a>
+                            <a class="nav-link" style="color: #ffffffa3; margin-bottom: 1rem; border-bottom: 1px solid #ffffffa3;" href="<?= base_url() ?>">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  " href="<?= base_url() ?>product">PRODUCTS</a>
+                            <a class="nav-link" style="color: #ffffffa3; margin-bottom: 1rem; border-bottom: 1px solid #ffffffa3;" href="<?= base_url() ?>product">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  " href="<?= base_url() ?>project">PROJECT</a>
+                            <a class="nav-link" style="color: #ffffffa3; margin-bottom: 1rem; border-bottom: 1px solid #ffffffa3;" href="<?= base_url() ?>project">PROJECT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  " href="<?= base_url() ?>contact">CONTACT</a>
+                            <a class="nav-link" style="color: #ffffffa3; margin-bottom: 1rem; border-bottom: 1px solid #ffffffa3;" href="<?= base_url() ?>contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  " href="<?= base_url() ?>account">MY ACCOUNT</a>
+                            <a class="nav-link" style="color: #ffffffa3; margin-bottom: 1rem; border-bottom: 1px solid #ffffffa3;" href="<?= base_url() ?>account">MY ACCOUNT</a>
                         </li>
                     </ul>
                 </div>
@@ -109,11 +109,11 @@
                     <a class="nav-link <?= ($_page == "PROJECT" ? "active" : "") ?>" href="<?= base_url() ?>project">PROJECT</a>
                     <a class="nav-link <?= ($_page == "CONTACT" ? "active" : "") ?>" href="<?= base_url() ?>contact">CONTACT</a>
                 </div>
-                <div class="navbar gap-4">
+                <!-- <div class="navbar gap-4">
                     <i class="fas fa-user icon"></i>
                     <i class="fas fa-heart icon"></i>
                     <i class="fas fa-shopping-cart icon"></i>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
