@@ -3,6 +3,88 @@ body {
     color: #69422d;
 }
 
+/* start animation */
+.containercard{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 0;
+
+}
+
+.containercard .card{
+    position: relative;
+    height: 250px;
+    background: #c2846a69;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.containercard .card .imgbx{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #c2846a69;
+    backdrop-filter: blur(5px);
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5p 5px 30px rgba(0,0,0,0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.containercard .card:hover .imgbx{
+    height: 150px;
+    width: 150px;
+    left: -75px;
+    top: calc(50%- 75px);
+}
+
+.containercard .card .imgbx img{
+    max-width: 100px;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+}
+
+.containercard .card:hover .imgbx img{
+    max-width: 75px;
+}
+
+.containercard .card .content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px;);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containercard .card .content h3{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.containercard .card .content p{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* end animation */
+
 /* Navbar container */
 .costumproduct {
     overflow: hidden;
@@ -328,7 +410,6 @@ body {
 /* nav end */
 .box-client {
     border: 1px solid #e5e5e5;
-    background: white;
     height: 9rem;
     width: 9rem;
     justify-content: center;

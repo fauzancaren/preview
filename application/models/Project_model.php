@@ -5,6 +5,10 @@
         {
             return $this->db->get('TblMsCustomerProject')->result_array();
         }
+        public function getDataProjectClient()
+        {
+            return $this->db->get('TblWebCilent')->result_array();
+        }
         public function getDataProjectLastUpdate()
         {
            
