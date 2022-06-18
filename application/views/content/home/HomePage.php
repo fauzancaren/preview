@@ -170,9 +170,9 @@
                         <h2 class="text-uppercase fw-bold" style="color: whitesmoke; text-align: center;"><span class="text-kata-mereka">Kata Mereka Tentang <span style=" color: #6d4a33; ">Omah</span><span style=" color: #d4582a; ">Bata</span></span>&nbsp;|</h2>
                     </div>
                     <div class="row row-cols-md-2 pt-3 m-auto">
-                        <div class="col-lg-6 col-md-6 col-sm-12 p-4" > 
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
                             <div class="d-flex justify-content-center">
-                                <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px" >
+                                <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px">
                                     <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                 </figure>
 
 
-                            </div> 
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12  p-4">
                             <div class="d-flex justify-content-center">
@@ -376,7 +376,55 @@
                 <div class="text-center justify-content-end mb-5 text-white text-uppercase">
                     <h2>Why shope with use?</h2>
                 </div>
-                <div class="row gy-5">
+
+                <div class="containercard">
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src=" <?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" alt="">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>Free Delivery</h3>
+                                <p>Gratis Pengiriman untuk area Jakarta<br>syarat dan ketentuan berlaku</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="<?= base_url("asset/image/secure-payment-svgrepo-com.svg") ?>" alt="">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>100% Secure Payment</h3>
+                                <p>Jaminan transaksi yang aman dan terpercaya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="<?= base_url("asset/image/quality-svgrepo-com.svg") ?>" alt="">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>Quality Quarantee</h3>
+                                <p>Kualitas produk yang tidak diragukan lagi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="<?= base_url("asset/image/handshake-deal-svgrepo-com.svg") ?>" alt="">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>Big Offers</h3>
+                                <p>Banyak benefit yang akan anda dapatkan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row gy-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
                             <img src=" <?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
@@ -407,7 +455,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -421,100 +469,17 @@
             </div>
             <div class="row justify-content-center ms-auto me-auto">
                 <div class="client">
-                    <div class="col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/adhi.png" alt="">
+                    <?php foreach ($WebClientLogo as $row) : ?>
+                        <div class="col">
+                            <div class="box-client mb-5 shadow-sm">
+                                <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/<?= $row["WebCilentLogo"] ?>" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="img-fluid" src="<?= base_url() ?>/asset/image/logoClient/al-jazaera-logo.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/daiso.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Dominos_pizza.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/dr-marteens.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hana_Bank.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Hotel-Santika.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Jaya-Konstruksi.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jco.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/jw marriote.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/kfc.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/logo-Net-tv.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/PT_PP_logo.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/quality.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Rai-Fitness.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/sbucks.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/skechers.png" alt="">
-                        </div>
-                    </div>
-                    <div class=" col">
-                        <div class="box-client mb-5 shadow-sm">
-                            <img class="  img-fluid" src="<?= base_url() ?>/asset/image/logoClient/Wika.png" alt="">
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
-            <script> 
+            <script>
                 $(document).ready(function() {
 
                     // my slick slider options
@@ -624,15 +589,15 @@
                         multiSlideAdaptiveHeight(mySlider);
 
                     });
-    gsap.registerPlugin(TextPlugin);
-    const tl = gsap.timeline({
-        repeat: -1,
-        repeatDelay: 4,
-    });
-    tl.from(".text-kata-mereka", {
-        duration: 4,
-        text: ""
-    })
+                    gsap.registerPlugin(TextPlugin);
+                    const tl = gsap.timeline({
+                        repeat: -1,
+                        repeatDelay: 4,
+                    });
+                    tl.from(".text-kata-mereka", {
+                        duration: 4,
+                        text: ""
+                    })
                 });
             </script>
         </div>
@@ -642,16 +607,16 @@
 <div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/Moon.svg") ?>');background-size: cover;"">
     <div class=" container ">
         <div class=" row">
-            <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
-                <h4 class="fw-normal">Our Newsletter</h4>
-                <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
+    <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
+        <h4 class="fw-normal">Our Newsletter</h4>
+        <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
 
 
-                <div class="input-group mb-3 mt-5">
-                    <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
-                </div>
-            </div>
+        <div class="input-group mb-3 mt-5">
+            <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
         </div>
     </div>
-</div> 
+</div>
+</div>
+</div>
