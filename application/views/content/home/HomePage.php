@@ -170,9 +170,9 @@
                         <h2 class="text-uppercase fw-bold" style="color: whitesmoke; text-align: center;"><span class="text-kata-mereka">Kata Mereka Tentang <span style=" color: #6d4a33; ">Omah</span><span style=" color: #d4582a; ">Bata</span></span>&nbsp;|</h2>
                     </div>
                     <div class="row row-cols-md-2 pt-3 m-auto">
-                        <div class="col-lg-6 col-md-6 col-sm-12 p-4" > 
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
                             <div class="d-flex justify-content-center">
-                                <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px" >
+                                <div style="border-radius:10px;overflow: hidden;width: fit-content;display: flex;height: 180px">
                                     <iframe class="img-fluid" src="https://www.youtube.com/embed/Q0U-9m9_sLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                 </figure>
 
 
-                            </div> 
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12  p-4">
                             <div class="d-flex justify-content-center">
@@ -514,7 +514,7 @@
                 </div>
             </div>
 
-            <script> 
+            <script>
                 $(document).ready(function() {
 
                     // my slick slider options
@@ -624,15 +624,15 @@
                         multiSlideAdaptiveHeight(mySlider);
 
                     });
-    gsap.registerPlugin(TextPlugin);
-    const tl = gsap.timeline({
-        repeat: -1,
-        repeatDelay: 4,
-    });
-    tl.from(".text-kata-mereka", {
-        duration: 4,
-        text: ""
-    })
+                    gsap.registerPlugin(TextPlugin);
+                    const tl = gsap.timeline({
+                        repeat: -1,
+                        repeatDelay: 4,
+                    });
+                    tl.from(".text-kata-mereka", {
+                        duration: 4,
+                        text: ""
+                    })
                 });
             </script>
         </div>
@@ -642,16 +642,16 @@
 <div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/Moon.svg") ?>');background-size: cover;"">
     <div class=" container ">
         <div class=" row">
-            <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
-                <h4 class="fw-normal">Our Newsletter</h4>
-                <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
+    <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
+        <h4 class="fw-normal">Our Newsletter</h4>
+        <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
 
 
-                <div class="input-group mb-3 mt-5">
-                    <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
-                </div>
-            </div>
+        <div class="input-group mb-3 mt-5">
+            <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
         </div>
     </div>
-</div> 
+</div>
+</div>
+</div>
