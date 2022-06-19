@@ -47,7 +47,7 @@ body {
 .containercard .card:hover .imgbx{
     height: 150px;
     width: 150px;
-    left: -75px;
+    left: -50px;
     top: calc(50%- 75px);
 }
 
