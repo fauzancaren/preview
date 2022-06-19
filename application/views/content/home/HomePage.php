@@ -13,7 +13,7 @@
                     <span class="fw-normal text-uppercase" style="font-size: small;">Tangerang</span>
                 </div>
 
-                <div class="col animate__animated animate__fadeInUpBig animate__slow">
+                <div class="col animate__animated animate__zoomInUp animate__slow">
                     <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
                 </div>
             </div>
