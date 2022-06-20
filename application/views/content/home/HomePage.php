@@ -18,6 +18,24 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="row py-5">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out-back">
+                <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
+            </div>
+            <div class="col-12 col-lg-6 text-center d-grid align-content-center align-items-center">
+                <div class="col mb-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                    <h1 class="fw-bolder" style="font-family: 'Montserrat', sans-serif;">Fungsional sekaligus estetis dengan bentuk geometris.</h1>
+                </div>
+                <div class="col d-grid mb-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <small class="fs-6 fw-normal text-uppercase">MP House by TIES</small>
+                    <span class="fw-normal text-uppercase" style="font-size: small;">Tangerang</span>
+                </div>
+
+                <div class="col" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
+                    <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
+                </div>
+            </div>
+        </div> -->
     </div>
 </div>
 
@@ -86,6 +104,14 @@
                         },
                         {
                             breakpoint: 576,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                dots: false,
+                            }
+                        },
+                        {
+                            breakpoint: 375,
                             settings: {
                                 slidesToShow: 1,
                                 slidesToScroll: 1,
@@ -208,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 p-0 animate__animated animate__bounceInRight">
+                <div class="col-lg-4 col-md-12 p-0">
                     <div class="d-flex flex-column align-items-center p-2 rounded" style="background-color: #f5f5f5d4;">
                         <div class="row pb-2">
                             <h1 class="fw-bolder" style="color: whitesmoke; text-align: center;">
