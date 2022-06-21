@@ -22,7 +22,7 @@ class Product extends CI_Controller
    public function productsById($id)
    {
       $data['title'] = "Products Byid";
-      $data['_page'] = ["1, 2, 3, 4"];
+      $data['_page'] = 'PRODUCTS';
       $data['productsById'] = $this->Product_model->getDataProductById($id);
       $data['productKategori'] = $this->Product_model->getDataProductKategori();
       $data['productKategoriById'] = $this->Product_model->getDataProductKategoriById($id);
@@ -58,7 +58,8 @@ class Product extends CI_Controller
                      <div class="d-flex flex-column justify-content-center  p-2">
                         <div class="d-flex flex-column item p-2"> 
                            <img class="img-fluid mb-2 rounded-3 align-self-center" style="height: 300px; width: 350px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
-                           <h6 class="align-self-center align-self-lg-start px-sm-2 py-3 fw-bold">' . $row->MsItemName . '</h6>
+                           <h5 class="align-self-center align-self-lg-start px-sm-2 mt-2 fw-bold">' . $row->MsItemName . '</h5>
+                           <small class="align-self-center align-self-lg-start px-sm-2 mb-3 fw-light">' . $row->MsItemCode . '</small>
                            <span class="align-self-center align-self-lg-start px-sm-2">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
                         </div>
                      </div>

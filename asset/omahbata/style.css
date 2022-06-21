@@ -221,6 +221,28 @@ body {
     border-radius: 2.5rem !important;
     color: #ffffff;
 }
+.tombol-contact {
+    font-size: 1rem;
+    background-color: #bd7658;
+    border: none;
+    /* border-radius: 2.5rem !important; */
+    color: #ffffff;
+    position: absolute;
+    right: -5%;
+}
+
+.tombol-contact:hover {
+    background-color: #99634c;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+.tombol:hover>.fa {
+    background-color: #99634c;
+    color: #ffffff;
+    transition: all .5s;
+    padding-left: 2rem;
+}
 
 .tombol:hover {
     background-color: #99634c;
@@ -234,6 +256,7 @@ body {
     transition: all .5s;
     padding-left: 2rem;
 }
+
 
 .tombol-produk {
     background-color: #c4c4c4;
@@ -481,8 +504,7 @@ body {
 
     .contact {
         border: 2px solid #9b7856;
-        border-bottom-right-radius: 25px;
-        border-top-left-radius: 25px;
+        position: relative;
     }
 
     .pcnav {
@@ -652,6 +674,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .tombol-contact {
+        bottom: -7.5%;
+    }
     .ipnav {
         display: none;
     }
@@ -684,6 +709,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+    .tombol-contact {
+        bottom: -7.5%;
+    }
 
     .textNavigasiHomeProduct {
         font-weight: lighter;
