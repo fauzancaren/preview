@@ -7,6 +7,7 @@
             <div class="col d-flex px-4 px-lg-5 flex-column justify-content-lg-center">
                 <div class="row">
                     <h2 class="mb-2"><?= $item["MsItemName"] ?></h2>
+                    <h6 class="mb-2"><?= $item["MsItemCode"] ?></h6>
                     <span class="mb-4">Ukuran <?= $item["MsItemSize"] ?></span>
                     <h4 class="mb-4 fw-normal">Rp. <?= number_format($item["MsItemPrice"]) ?> <small class="fw-light">/<?= $item["MsItemUoM"] ?></small></h4>
                     <?php

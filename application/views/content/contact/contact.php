@@ -1,4 +1,4 @@
-<div style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%); padding: 50px;">
+<div class="p-md-5" style="background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
     <div class="container">
         <div class="row flex-column text-center justify-content-end" style="height: 100px;">
             <h4 class="fw-normal fs-2" style="font-family: lora, serif;">Our Locations</h4>
@@ -31,7 +31,7 @@
                                 <i class="fab fa-whatsapp fa-lg mb-5"></i> 0812-8201-414
                             </a>
                         </div>
-                        <a class="d-flex justify-content-end" style="text-decoration: none;" href="http://maps.google.com/?q=1200 Omahbata - Toko Bata Expose , Toko Bata Tempel"><button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
+                        <a class="d-flex justify-content-end" style="text-decoration: none;" href="http://maps.google.com/?q=1200 Omahbata - Toko Bata Expose , Toko Bata Tempel"><button class="d-flex gap-2 btn tombol-contact btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                                 <i class="fab fa-whatsapp fa-lg mb-5"></i> 0812-1348-1313
                             </a>
                         </div>
-                        <a class="d-flex justify-content-end" style="text-decoration: none;" href="http://maps.google.com/?q=1200 Toko Roster BSD - Jual Lubang Angin - Jual Roster Custom - Pabrik Roster - Toko Roster Serpong"><button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
+                        <a class="d-flex justify-content-end" style="text-decoration: none;" href="http://maps.google.com/?q=1200 Toko Roster BSD - Jual Lubang Angin - Jual Roster Custom - Pabrik Roster - Toko Roster Serpong"><button class="d-flex gap-2 btn tombol-contact btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                                 <i class="fab fa-whatsapp fa-lg mb-5"></i> 0813-1234-8313
                             </a>
                         </div>
-                        <a class="d-flex justify-content-end" style="text-decoration: none;" href="http://maps.google.com/?q=1200 PABRIK ROSTER - Pabrik Roster, Lubang Angin, Toko Roster, Jual Bata Tempel, Jual Bata Expose"><button class="d-flex gap-2 btn tombol btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
+                        <a class="d-flex justify-content-end" style="text-decoration: none;" href="http://maps.google.com/?q=1200 PABRIK ROSTER - Pabrik Roster, Lubang Angin, Toko Roster, Jual Bata Tempel, Jual Bata Expose"><button class="d-flex gap-2 btn tombol-contact btn-lg rounded-0 px-5 py-3">Maps <i class="fas fa-arrow-right"></i></button></a>
                     </div>
                 </div>
             </div>
