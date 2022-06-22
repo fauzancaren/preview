@@ -111,6 +111,7 @@ body {
   /* Dropdown button */
   .drop .dropbtn {
     font-size: 16px;
+    width: 100%;
     border: none;
     outline: none;
     color: #ffffffa3;
@@ -493,6 +494,19 @@ body {
         padding-bottom: 20px;
     }
 
+    .costumproduct {
+        overflow: hidden;
+        background-color: #bd7658a3;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .drop-content {
+        z-index: 4;
+        right: 0;
+      }
+
     /* .projectList:hover {
         background-color: #F5F5F5;
         transform: scale(1, 1.4);
@@ -597,6 +611,10 @@ body {
         height: 350px;
         padding: 20px;
     }
+    .drop-content {
+        z-index: 4;
+        right: 15%;
+      }
 
     .box-project>img {
         width: 300px;
@@ -635,6 +653,23 @@ body {
         width: 500px;
         height: 500px;
     }
+
+    .costumproduct {
+        overflow: hidden;
+        background-color: #bd7658a3;
+        font-family: 'Poppins', sans-serif;
+        display: block;
+      }
+
+      .drop-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        right: inherit;
+        z-index: 4;
+      }
 
     .ipnav {
         display: flex;
