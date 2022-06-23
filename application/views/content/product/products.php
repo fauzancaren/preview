@@ -1,26 +1,27 @@
-<div class="py-5" style="position: relative; overflow: hidden;">
-    <img class="demo-bg" src="<?= base_url() ?>/asset/image/test.jpg" alt="" style="opacity: 0.6;position: absolute;left: 0;top: 0; height: 400;z-index: -1;">
-    <div class="container text-dark">
-        <div class=" d-grid justify-content-center text-center align-content-center" data-aos="zoom-out" style="height: 400px;font-family: 'Montserrat', sans-serif;position: relative;">
-            <h1 class="fw-bolder">https://Omahbata.com</h1>
-            <small class="fw-normal fs-3">Omahbata penyedia berbagai macam Bata Expose, Bata Tempel Roster Dan Paving</small>
-        </div>
+<div class="py-5 jumbotron" style="position: relative; overflow: hidden;height: 400px;">
+    <img class="img-display" src="<?= base_url("asset/image/test.jpg") ?>" id="CategoryDetailImg">
+    <div class="img-background"></div>
+    <div class="img-text">
+        <h1 class="fw-bolder" id="CategoryDetailHeader">https://Omahbata.com</h1>
+        <small class="fw-normal fs-3" id="CategoryDetailText">Omahbata penyedia berbagai macam Bata Expose, Bata Tempel Roster Dan Paving</small>
     </div>
 </div>
 <div class="costumproduct">
-    <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
-    <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
-    <div class="drop">
-        <button class="dropbtn">ROSTER
-        </button>
-        <div class="drop-content">
-            <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
-            <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
-            <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
-            <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+    <div class="container">
+        <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
+        <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
+        <div class="drop">
+            <button class="dropbtn">ROSTER</button>
+            <div class="drop-content">
+                <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
+                <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
+                <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
+                <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+            </div>
         </div>
+        <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
+
     </div>
-    <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
 </div>
 <div class="container-fluid" style="background-color: #fefdf9;">
     <div class="py-5 contanier-product" style="background-color: #fefdf9;">

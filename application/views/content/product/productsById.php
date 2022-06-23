@@ -1,30 +1,31 @@
-<div class="py-5" style="position: relative; overflow: hidden;">
+<div class="py-5 jumbotron" style="position: relative; overflow: hidden;height: 400px;">
     <?php foreach ($productKategoriById as $item) : ?>
         <?php $catid = $item['CategoryRef']; ?>
-        <img class="demo-bg" src="<?= base_url() ?>/asset/image/headerProduct/<?= $item['CategoryDetailImg'] ?>" alt="" style="opacity: 0.6;position: absolute;left: 0;top: 0; height: 400;z-index: -1; background-position: center;">
-        <div class="container text-dark">
-            <div class=" d-grid justify-content-center text-center align-content-center" style="height: 400px;font-family: 'Montserrat', sans-serif;position: relative;">
-                <h1 class="fw-bolder"><?= $item['CategoryDetailHeader'] ?></h1>
-                <small class="fw-normal fs-3"><?= $item['CategoryDetailText'] ?></small>
-            </div>
+        <img class="img-display" src="<?= base_url() ?>/asset/image/headerProduct/<?= $item['CategoryDetailImg'] ?>">
+        <div class="img-background"></div>
+        <div class="img-text">
+            <h1 class="fw-bolder"><?= $item['CategoryDetailHeader'] ?></h1>
+            <small class="fw-normal fs-3"><?= $item['CategoryDetailText'] ?></small>
         </div>
     <?php endforeach; ?>
 </div>
 
 <div class="costumproduct">
-    <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
-    <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
-    <div class="drop">
-        <button class="dropbtn">ROSTER
-        </button>
-        <div class="drop-content">
-            <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
-            <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
-            <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
-            <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+    <div class="container">
+        <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
+        <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
+        <div class="drop">
+            <button class="dropbtn">ROSTER
+            </button>
+            <div class="drop-content">
+                <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
+                <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
+                <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
+                <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+            </div>
         </div>
+        <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
     </div>
-    <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
 </div>
 <div class="container-fluid" style="background-color: #fefdf9;">
     <div class="container py-5" style="background-color: #fefdf9;">
