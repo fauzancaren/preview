@@ -9,7 +9,7 @@
         background: rgb(255 255 255 / 40%);
         position: absolute;
         width: 100%;
-        height: 300px;
+        height: 400px;
         top: 0;
         left: 0;
     }
@@ -19,7 +19,7 @@
         left: 0;
         top: 0;
         object-fit: cover;
-        height: 300px;
+        height: 400px;
         width: 100%;
     }
 
@@ -29,9 +29,8 @@
         left: 0;
         width: 100%;
         text-align: center;
-        height: 300px;
-        margin-top: 50%;
-        transform: translateY(-100%);
+        height: 400px;
+        margin-top: 150px;
     }
 </style>
 <div class="container-fluid">
@@ -75,7 +74,7 @@
     </div>
 
     <div class="modal fade" id="modal-edit" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">EDIT COVER KATEGORI</h5>
@@ -107,7 +106,7 @@
                         <label for="input-pencarian" class="col-sm-2 col-form-label">Background</label>
                         <div class="col-sm-10">
                             <input type="file" class="form-control form-control-sm" id="input-CategoryDetailImg" accept="image/*" onchange="loadFile(event)">
-                            <small class="text-secondary">optimal Ukuran file gambar 1200 x 400 px </small>
+                            <small class="text-secondary">Optimal ukuran file gambar 1200 x 400 px </small>
                         </div>
                     </div>
                 </div>
