@@ -1,32 +1,3 @@
-<style>
-    .jumbotron .img-background {
-        background: rgb(255 255 255 / 40%);
-        position: absolute;
-        width: 100%;
-        height: 400px;
-        top: 0;
-        left: 0;
-    }
-
-    .jumbotron .img-display {
-        position: absolute;
-        left: 0;
-        top: 0;
-        object-fit: cover;
-        height: 400px;
-        width: 100%;
-    }
-
-    .jumbotron .img-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        height: 400px;
-        margin-top: 150px;
-    }
-</style>
 <div class="py-5 jumbotron" style="position: relative; overflow: hidden;height: 400px;">
     <img class="img-display" src="<?= base_url("asset/image/test.jpg") ?>" id="CategoryDetailImg">
     <div class="img-background"></div>
@@ -36,19 +7,21 @@
     </div>
 </div>
 <div class="costumproduct">
-    <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
-    <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
-    <div class="drop">
-        <button class="dropbtn">ROSTER
-        </button>
-        <div class="drop-content">
-            <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
-            <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
-            <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
-            <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+    <div class="container">
+        <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
+        <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
+        <div class="drop">
+            <button class="dropbtn">ROSTER</button>
+            <div class="drop-content">
+                <a href="<?= base_url() ?>product/productsById/1">ROSTER WHITE</a>
+                <a href="<?= base_url() ?>product/productsById/2">ROSTER RED</a>
+                <a href="<?= base_url() ?>product/productsById/3">ROSTER SEMEN</a>
+                <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
+            </div>
         </div>
+        <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
+
     </div>
-    <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
 </div>
 <div class="container-fluid" style="background-color: #fefdf9;">
     <div class="container py-5" style="background-color: #fefdf9;">
