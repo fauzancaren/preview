@@ -11,10 +11,6 @@ class Contact extends CI_Controller
 
    public function index()
    {
-      $this->load->helper('nohp');
-		// panggil library text
-		$this->load->helper('text');	
-		// panggil library text
 		$this->load->library('user_agent');	
       $data['title'] = 'Contact';
       $data['_page'] = 'CONTACT';

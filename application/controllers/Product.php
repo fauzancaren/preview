@@ -32,10 +32,6 @@ class Product extends CI_Controller
    }
    public function detailItem($id)
    {
-      $this->load->helper('nohp');
-		// panggil library text
-		$this->load->helper('text');	
-		// panggil library text
 		$this->load->library('user_agent');	
       $data['title'] = "Detail Item";
       $data['_page'] = 'PRODUCTS';
@@ -55,12 +51,12 @@ class Product extends CI_Controller
       foreach ($data as $row) {
       if($delay == 400) { $delay=100 ;}else{ $delay+=100;}
          $html .= '<a data-aos="fade-up" data-aos-delay="'.$delay.'" data-aos-once="false" class ="col" style="text-decoration: none; color: #000000bd;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
-                     <div class="d-flex flex-column justify-content-center  p-2" style="background-color: #f2f2f22b; box-shadow: -1px 1px 4px 0px #3c2f2a7a; border-radius: 10px; font-family: Montserrat, sans-serif; height: 100%;">
-                        <div class="d-flex flex-column item p-2"> 
-                           <img class="img-fluid mb-2 rounded-3 align-self-center" style="height: 300px; width: 350px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
-                           <h6 class="align-self-center align-self-lg-start px-sm-2 mt-2 fw-bold" style="color: #896a5e;">' . $row->MsItemName . '</h6>
-                           <span class="align-self-center align-self-lg-start px-sm-2 mb-3 fw-light">' . $row->MsItemSize . '</span>
-                           <span class="align-self-center align-self-lg-start px-sm-2 fw-normal">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
+                     <div class="d-flex flex-column justify-content-center  p-md-2" style="background-color: #f2f2f22b;box-shadow: 1px 2px 2px 0px #a3a2a291;     border: 1.2px solid #a3a2a280; font-family: Montserrat, sans-serif; height: 100%;">
+                        <div class="d-flex flex-column item p-md-2"> 
+                           <img class="img-fluid mb-2 align-self-center img-product" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
+                           <small class="align-self-center align-self-lg-start px-2 mt-2 fw-bold" style="color: #896a5e; font-size: 1em;">' . $row->MsItemName . '</small>
+                           <span class="align-self-center align-self-lg-start px-sm-2 mb-2 fw-normal" style="font-size: 1.3vh;">' . $row->MsItemSize . '</span>
+                           <span class="align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="font-size: 1.7vh;">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
                         </div>
                      </div>
                   </a>';

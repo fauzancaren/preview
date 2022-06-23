@@ -17,15 +17,9 @@
                         <p>Jl. Ciputat Raya No.59, RT.5/RW.2, Pondok Pinang, Kebayoran Lama, South Jakarta City, Jakarta 12310</p>
                         <div class="">
                             <?php
-                            // sediakan nohp target
-                            $nohp = hp('08128201414');
-                            // atur pesan dengan helper text urlencode
-                            $message = '&text=' . urlencode('Halo omahbata');
-                            // cek user_agent / device yang digunakan user
-                            // kalau mobil maka pakai api.whatsapp.com
-                            if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=' . $nohp . $message;
+                            if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=628128201414&text=' . urlencode('Halo omahbata');
                             // tapi kalau desktop pakai web.whatsapp.com
-                            else $linkWA = 'https://web.whatsapp.com/send?phone=' . $nohp . $message;
+                            else $linkWA = 'https://web.whatsapp.com/send?phone=628128201414&text=' . urlencode('Halo omahbata');
                             ?>
                             <a style="text-decoration: none; color: black;" target="_blank" href="<?= $linkWA ?>">
                                 <i class="fab fa-whatsapp fa-lg mb-5"></i> 0812-8201-414
@@ -47,15 +41,9 @@
                         <p>Jl. Raya Ciater No.185 E Kampung Maruga Rt 004/09 Kelurahan Ciater, Kecamatan Serpong, Tangerang Selatan</p>
                         <div class="">
                             <?php
-                            // sediakan nohp target
-                            $nohp = hp('081213481313');
-                            // atur pesan dengan helper text urlencode
-                            $message = '&text=' . urlencode('Halo omahbata');
-                            // cek user_agent / device yang digunakan user
-                            // kalau mobil maka pakai api.whatsapp.com
-                            if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=' . $nohp . $message;
+                            if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=6281213481313&text=' . urlencode('Halo omahbata');
                             // tapi kalau desktop pakai web.whatsapp.com
-                            else $linkWA = 'https://web.whatsapp.com/send?phone=' . $nohp . $message;
+                            else $linkWA = 'https://web.whatsapp.com/send?phone=6281213481313&text=' . urlencode('Halo omahbata');
                             ?>
                             <a style="text-decoration: none; color: black;" target="_blank" href="<?= $linkWA ?>">
                                 <i class="fab fa-whatsapp fa-lg mb-5"></i> 0812-1348-1313
@@ -77,15 +65,9 @@
                         <p>Jl. Raya Jakarta-Bogor No.KM.28, RT. 001/RW.No.5, Pekayon, Kec. Ps. Rebo, Kota Jakarta Timur, Daerah Khusus Inukota Jakarta 13710</p>
                         <div class="">
                             <?php
-                            // sediakan nohp target
-                            $nohp = hp('081312348313');
-                            // atur pesan dengan helper text urlencode
-                            $message = '&text=' . urlencode('Halo omahbata');
-                            // cek user_agent / device yang digunakan user
-                            // kalau mobil maka pakai api.whatsapp.com
-                            if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=' . $nohp . $message;
+                            if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=6281312348313&text=' . urlencode('Halo omahbata');
                             // tapi kalau desktop pakai web.whatsapp.com
-                            else $linkWA = 'https://web.whatsapp.com/send?phone=' . $nohp . $message;
+                            else $linkWA = 'https://web.whatsapp.com/send?phone=6281312348313&text=' . urlencode('Halo omahbata');
                             ?>
                             <a style="text-decoration: none; color: black;" target="_blank" href="<?= $linkWA ?>">
                                 <i class="fab fa-whatsapp fa-lg mb-5"></i> 0813-1234-8313

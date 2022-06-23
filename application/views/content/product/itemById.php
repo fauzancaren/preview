@@ -12,7 +12,7 @@
                     <h4 class="mb-4 fw-normal">Rp. <?= number_format($item["MsItemPrice"]) ?> <small class="fw-light">/<?= $item["MsItemUoM"] ?></small></h4>
                     <?php
                     // sediakan nohp target
-                    $nohp = hp('08128201414');
+                    $nohp = '628128201414';
                     // atur pesan dengan helper text urlencode
                     $message = '&text=' . urlencode('Halo omahbata');
                     // cek user_agent / device yang digunakan user
