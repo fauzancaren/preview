@@ -467,15 +467,15 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/no1.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">Pioneer</h4>
-                            <span class="fw-light">Pelopor Roster di Indonesia</span>
+                            <img src="<?= base_url("asset/image/numb1.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-4">Pioneer</h4>
+                            <span class="fw-light">Pelopor di Indonesia</span>
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/quality-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <img src="<?= base_url("asset/image/status-good-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
                             <h4 class="mt-2">Good Quality</h4>
                             <span class="fw-light">Produk kami sudah memiliki standar mutu yang tinggi.</span>
                         </div>
@@ -498,17 +498,17 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/app-development-installation-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <img src="<?= base_url("asset/image/build-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
                             <h4 class="mt-2">installation service</h4>
-                            <span class="fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, eius.</span>
+                            <span class="fw-light">Jasa pasang profesional</span>
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/telemarketer-customer-service-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">Sales Support</h4>
-                            <span class="fw-light">Memiliki kontak layanan After Sales</span>
+                            <img src="<?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">fast delivery</h4>
+                            <span class="fw-light">Pengiriman aman, cepat dan terpercaya</span>
                         </div>
 
                     </div>
