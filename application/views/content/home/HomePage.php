@@ -460,7 +460,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src=" <?= base_url("asset/image/factory-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <img src=" <?= base_url("asset/image/factory-stock-house-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
                             <h4 class="mt-2">Biggest Factory</h4>
                             <span class="fw-light">Kami memiliki pabrik sendiri, terlengkap dan terbesar.</span>
                         </div>
@@ -482,9 +482,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/globe-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">International</h4>
-                            <span class="fw-light">Sudah terbiasa melayani perusahaan besar dalam dan luar negri</span>
+                            <img src="<?= base_url("asset/image/change-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Custom</h4>
+                            <span class="fw-light">Jasa custom roster</span>
                         </div>
 
                     </div>
@@ -498,7 +498,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/build-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <img src="<?= base_url("asset/image/brickwall-brick-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
                             <h4 class="mt-2">installation service</h4>
                             <span class="fw-light">Jasa pasang profesional</span>
                         </div>
