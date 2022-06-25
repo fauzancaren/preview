@@ -1,6 +1,6 @@
 <div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
     <div class="container">
-        <div class="row py-5">
+        <!-- <div class="row py-5">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                 <img class="imageHead shadow-lg animate__animated animate__rubberBand animate__slower" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
             </div>
@@ -17,8 +17,8 @@
                     <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
                 </div>
             </div>
-        </div>
-        <!-- <div class="row py-5">
+        </div> -->
+        <div class="row py-5">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out-back">
                 <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
             </div>
@@ -35,7 +35,7 @@
                     <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </div>
 
@@ -400,7 +400,7 @@
             <div class="d-flex flex-column text-center flex-wrap justify-content-center">
 
                 <div class="text-center justify-content-end mb-5 text-white text-uppercase">
-                    <h2>Why shope with use?</h2>
+                    <h2>Service & Support</h2>
                 </div>
 
                 <!-- <div class="containercard">
@@ -453,31 +453,62 @@
                 <div class="row gy-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src=" <?= base_url("asset/image/delivery-truck-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">Free Delivery</h4>
-                            <span class="fw-light">Gratis Pengiriman untuk area Jakarta<br>syarat dan ketentuan berlaku</span>
+                            <img src=" <?= base_url("asset/image/appreciation-best-marketing-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Best Service</h4>
+                            <span class="fw-light">Pelayanan terbaik dan profesional.</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/secure-payment-svgrepo-com.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">100% Secure Payment</h4>
-                            <span class="fw-light">Jaminan transaksi yang aman dan terpercaya</span>
+                            <img src=" <?= base_url("asset/image/factory-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Biggest Factory</h4>
+                            <span class="fw-light">Kami memiliki pabrik sendiri, terlengkap dan terbesar.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/no1.svg") ?>" style="width:50%;filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Pioneer</h4>
+                            <span class="fw-light">Pelopor Roster di Indonesia</span>
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
                             <img src="<?= base_url("asset/image/quality-svgrepo-com.svg") ?>" style="width:50%; filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">Quality Quarantee</h4>
-                            <span class="fw-light">Kualitas produk yang tidak diragukan lagi</span>
+                            <h4 class="mt-2">Good Quality</h4>
+                            <span class="fw-light">Produk kami sudah memiliki standar mutu yang tinggi.</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
-                            <img src="<?= base_url("asset/image/handshake-deal-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
-                            <h4 class="mt-2">Big Offers</h4>
-                            <span class="fw-light">Banyak benefit yang akan anda dapatkan</span>
+                            <img src="<?= base_url("asset/image/globe-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">International</h4>
+                            <span class="fw-light">Sudah terbiasa melayani perusahaan besar dalam dan luar negri</span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/telemarketer-customer-service-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Sales Support</h4>
+                            <span class="fw-light">Memiliki kontak layanan After Sales</span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/app-development-installation-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">installation service</h4>
+                            <span class="fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, eius.</span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="img-fluid rounded-3 p-3 py-5 text-white h-100" style="background-color: #6e492f99;">
+                            <img src="<?= base_url("asset/image/telemarketer-customer-service-svgrepo-com.svg") ?>" style="width:50%;  filter: invert(90%) drop-shadow(-1px -1px 4px rgb(189 118 88 / 40%));" alt="">
+                            <h4 class="mt-2">Sales Support</h4>
+                            <span class="fw-light">Memiliki kontak layanan After Sales</span>
                         </div>
 
                     </div>
