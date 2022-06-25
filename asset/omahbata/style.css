@@ -540,12 +540,12 @@ body {
         background-color: #bd7658a3;
         font-family: 'Poppins', sans-serif;
         display: flex;
-        flex-direction: column;
+        flex-direction: columns;
     }
 
     .drop-content {
         z-index: 4;
-        right: 0;
+        right: 4%;
     }
 
     /* .projectList:hover {
@@ -594,6 +594,11 @@ body {
 }
 
 @media (min-width: 375px) {
+    .drop-content {
+        z-index: 4;
+        right: 3%;
+    }
+
     .imageHead {
         width: 300px;
         height: 300px;

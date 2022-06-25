@@ -7,7 +7,7 @@
     </div>
 </div>
 <div class="costumproduct">
-    <div class="container">
+    <div class="container-md d-flex flex-column d-md-block">
         <a href="<?= base_url() ?>product/productsById/5">BATA EXPOSE</a>
         <a href="<?= base_url() ?>product/productsById/6">BATA TEMPEL</a>
         <div class="drop">
