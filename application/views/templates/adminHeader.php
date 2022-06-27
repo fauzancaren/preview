@@ -9,6 +9,7 @@
 
     <link href="<?= base_url("asset/sb-admin/css/sb-admin-2.min.css") ?>" rel="stylesheet">
     <link href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/omahbata/style.css?version=v2.0.2") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/datatable/datatables.min.css") ?>" rel="stylesheet" type="text/css">

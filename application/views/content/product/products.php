@@ -24,7 +24,7 @@
     </div>
 </div>
 <div class="container-fluid" style="background-color: #fefdf9;">
-    <div class="py-5 contanier-product" style="background-color: #fefdf9;">
+    <div class="py-5 container px-sm-0" style="background-color: #fefdf9;">
         <div class="input-group mb-5" style="max-width: 600px; margin: auto;">
             <input type="text" class="form-control" id="text-produk" placeholder="Cari nama produk..." aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" onclick="" id="button-addon2"><i class="fas fa-search icon"></i></button>
