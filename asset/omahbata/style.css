@@ -499,29 +499,91 @@ body {
 
 .btn-imgrole {
     width: 250px;
-    height: 30px;
+    height: 40px;
     background-color: transparent;
-    border: transparent;
+    border: 2px solid #ffffff42;
     color: #ffffff9e;
+    margin-bottom: 20px;
 }
 
-.imgrole {
-
-    margin: auto;
-    background-color: #aa6a4f;
-    padding: 8px;
-    opacity: 0.9;
-    box-shadow: 0 0 0 2px #ffffff52;
-}
-
-.imgrole:hover {
-    margin: auto;
-    background-color: #aa6a4f;
-    padding: 8px;
+.btn-imgrole:hover {
+    background-color: #330b0b;
     opacity: 1;
-    box-shadow: none;
     transition: all 0.3s;
+    opacity: 0.8;
+    border: none;
 }
+
+/* bg-clip start */
+.contain-bg-clip {
+    padding: 0;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+    box-shadow: 6px 20px 20px 8px #00000066;
+}
+
+.contain-bg-clip .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.contain-bg-clip .clip.clip1 {
+    background: url('../image/headerProduct/exposefix.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 0 50%, 100% 0);
+}
+.contain-bg-clip .clip.clip2 {
+    background: url('../image/headerProduct/tempelfix.jpg');
+    background-size: cover;
+    clip-path: polygon(100% 50%, 0 50%, 100% 0);
+
+}
+.contain-bg-clip .clip.clip3 {
+    background: url('../image/headerProduct/Redfix.jpg');
+    background-size: cover;
+    clip-path: polygon(100% 50%, 0 50%, 0 100%);
+}
+.contain-bg-clip .clip.clip4 {
+    background: url('../image/headerProduct/roblockfix.jpg');
+    background-size: cover;
+    clip-path: polygon(100% 50%, 100% 100%, 0 100%);
+}
+
+.contain-bg-clip:hover .clip {
+    clip-path: polygon(100% 100%, 100% 100%, 0 100%);
+    transition: all 0.7s;
+}
+
+.contain-bg-clip .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 0.7s;
+
+}
+
+.clip-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding: 20px;
+    background: #330b0bba;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contain-bg-clip .clip:hover .clip-content {
+    bottom: 0;
+    opacity: 1;
+}
+
+
+
+/* bg-clip end */
 
 @media (min-width: 320px) {
     .img-product {

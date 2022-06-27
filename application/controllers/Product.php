@@ -57,6 +57,13 @@ class Product extends CI_Controller
                            <small class="align-self-center align-self-lg-start px-2 mt-2 fw-bold" style="color: #896a5e; font-size: 1em; min-height: 46px;">' . $row->MsItemName . '</small>
                            <span class="align-self-center align-self-lg-start px-sm-2 mb-2 fw-normal" style="font-size: 1.3vh;">' . $row->MsItemSize . '</span>
                            <span class="align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="font-size: 1.7vh;">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
+                           <ul class="d-flex align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="list-style: none; color: orange;">
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                           </ul>
                         </div>
                      </div>
                   </a>';

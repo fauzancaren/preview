@@ -254,142 +254,47 @@
     </div>
 </div>
 
-<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
-    <div class=" container py-5">
+<div class="py-5" style="background: linear-gradient(36deg, #6c757d82 0%, #fefdf9 70%);">
+    <div class="container py-5">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end py-5">
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
             </div>
-            <div class="row d-flex">
-                <div class="test p-2" id="nav-tabContent" style="background-color: #aa6a4f;">
-                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/white.jpg);">
-                        <a href="<?= base_url() ?>" class="imgrole">
+            
+            <div class="contain-bg-clip">
+                <div class="clip clip1">
+                    <div class="clip-content">
+                        <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
+                        <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
                     </div>
-
-                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/headerBTL.jpg);">
-                        <a href="<?= base_url() ?>" class="imgrole">
+                </div>
+                <div class="clip clip2">
+                <div class="clip-content">
+                        <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
+                        <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
                     </div>
-
-                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/Red.jpg);">
-                        <a href="<?= base_url() ?>" class="imgrole">
+                </div>
+                <div class="clip clip3">
+                <div class="clip-content">
+                        <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
+                        <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
                     </div>
-
-                    <div class="d-flex justify-content-center" style="height: 400px; object-fit: fill; background-size: cover;  background-image: url(<?= base_url() ?>/asset/image/headerProduct/semen.jpg);">
-                        <a href="<?= base_url() ?>" class="imgrole">
+                </div>
+                <div class="clip clip4">
+                <div class="clip-content">
+                        <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
+                        <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
                     </div>
-                    <!-- <div class="tab-pane fade show active p-1" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/white.jpg" alt="">
-                    </div>
-
-                    <div class="tab-pane fade p-1" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/headerBTL.jpg" alt="">
-                    </div>
-
-                    <div class="tab-pane fade p-1" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/Red.jpg" alt="">
-                    </div>
-
-                    <div class="tab-pane fade p-1" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">
-                        <img class="img-fluid" src="<?= base_url() ?>/asset/image/headerProduct/semen.jpg" alt="">
-                    </div> -->
                 </div>
             </div>
-
-            <script>
-                $(document).ready(function() {
-
-                    // my slick slider options
-                    var options = {
-                        infinite: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        adaptiveHeight: true,
-                        infinite: false,
-                        dots: true,
-                    };
-
-
-                    // my slick slider as constant object
-                    const mySlider = $('.test').on('init', function(slick) {
-
-                        // on init run our multi slide adaptive height function
-                        multiSlideAdaptiveHeight(this);
-
-                    }).on('beforeChange', function(slick, currentSlide, nextSlide) {
-
-                        // on beforeChange run our multi slide adaptive height function
-                        multiSlideAdaptiveHeight(this);
-
-                    }).slick(options);
-
-
-                    // our multi slide adaptive height function passing slider object
-                    function multiSlideAdaptiveHeight(slider) {
-
-                        // set our vars
-                        let activeSlides = [];
-                        let tallestSlide = 0;
-
-                        // very short delay in order for us get the correct active slides
-                        setTimeout(function() {
-
-                            // loop through each active slide for our current slider
-                            $('.slick-track .slick-active', slider).each(function(item) {
-
-                                // add current active slide height to our active slides array
-                                activeSlides[item] = $(this).outerHeight();
-
-                            });
-
-                            // for each of the active slides heights
-                            activeSlides.forEach(function(item) {
-
-                                // if current active slide height is greater than tallest slide height
-                                if (item > tallestSlide) {
-
-                                    // override tallest slide height to current active slide height
-                                    tallestSlide = item;
-
-                                }
-
-                            });
-
-                            // set the current slider slick list height to current active tallest slide height
-                            $('.slick-list', slider).height(tallestSlide);
-
-                        }, 10);
-
-                    }
-
-
-                    // when window is resized
-                    $(window).on('resize', function() {
-
-                        // run our multi slide adaptive height function incase current slider active slides change height responsively
-                        multiSlideAdaptiveHeight(mySlider);
-
-                    });
-                });
-            </script>
-
-            <!-- <nav class="pb-5">
-                <div class=" flex-column nav nav-tabs nav-fill fw-bold" id="nav-tab" role="tablist">
-                    <button class="nav-link active px-lg-5 rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">BATA EXPOSE</button>
-                    <button class="nav-link px-lg-5 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">BATA TEMPEL</button>
-                    <button class="nav-link px-lg-5 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ROSTER</button>
-                    <button class="nav-link px-lg-5 rounded-0" id="nav-contact2-tab" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">PAVING</button>
-                </div>
-            </nav> -->
-
         </div>
     </div>
 </div>
