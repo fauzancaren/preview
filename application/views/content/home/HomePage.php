@@ -239,7 +239,7 @@
                         <div class="row pb-2">
                             <h1 class="fw-bolder" style="color: whitesmoke; text-align: center;">
                                 <span class="fs-5" style=" color: #6d4a33; ">OMAH</span><span class="fs-5" style=" color: #d4582a; ">BATA</span> <span class="fs-5" style=" color: #6c6c6c; ">on</span>
-                                <img class="d-inline-block" src="<?= base_url("asset/image/transtvlogo.png") ?>" height="15px" alt="" style="width:fit-content">
+                                <img class="d-inline-block" src="<?= base_url("asset/image/transtvlogo.png") ?>" height="15px" alt="" style="width:7rem">
                             </h1>
                         </div>
                         <div class="d-flex justify-content-center p-4 mb-4">
