@@ -11,15 +11,9 @@
                     <span class="mb-4">Ukuran <?= $item["MsItemSize"] ?></span>
                     <h4 class="mb-4 fw-normal">Rp. <?= number_format($item["MsItemPrice"]) ?> <small class="fw-light">/<?= $item["MsItemUoM"] ?></small></h4>
                     <?php
-                    // sediakan nohp target
-                    $nohp = '628128201414';
-                    // atur pesan dengan helper text urlencode
-                    $message = '&text=' . urlencode('Halo omahbata');
-                    // cek user_agent / device yang digunakan user
-                    // kalau mobil maka pakai api.whatsapp.com
-                    if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=' . $nohp . $message;
+                    if ($this->agent->is_mobile()) $linkWA = 'https://api.whatsapp.com/send?phone=628128201414&text=' . urlencode('Halo omahbata');
                     // tapi kalau desktop pakai web.whatsapp.com
-                    else $linkWA = 'https://web.whatsapp.com/send?phone=' . $nohp . $message;
+                    else $linkWA = 'https://web.whatsapp.com/send?phone=628128201414&text=' . urlencode('Halo omahbata');
                     ?>
 
                     <div class="col col-sm-6 col-lg-8 col-xl-6">
