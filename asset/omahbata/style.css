@@ -214,20 +214,6 @@ body {
 
 /* nav end */
 
-<<<<<<< HEAD
-=======
-/* start item Product */
-.item:hover {
-
-    background-color: #f2f2f2;
-    transition: all .5s;
-    cursor: pointer;
-    z-index: 9999;
-}
-
-/* end item product */
-
->>>>>>> 33b2f2f6a132549abf8f333ad7fdfd3decd981d3
 /* startt nav autohide */
 .autohide {
     position: fixed;
@@ -915,8 +901,8 @@ body {
 @media (min-width: 768px) {
     /* break product */
     .icon-product {
-        top: 30px;
-        right: 30px;
+        top: 25px;
+        right: 25px;
         display: flex;
     }
 
@@ -998,8 +984,8 @@ body {
 @media (min-width: 1024px) {
      /* break product */
      .icon-product {
-        top: 30px;
-        right: 30px;
+        top: 25px;
+        right: 25px;
         display: inherit;
     }
 
