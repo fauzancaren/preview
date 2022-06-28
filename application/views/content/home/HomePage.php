@@ -239,7 +239,7 @@
                         <div class="row pb-2">
                             <h1 class="fw-bolder" style="color: whitesmoke; text-align: center;">
                                 <span class="fs-5" style=" color: #6d4a33; ">OMAH</span><span class="fs-5" style=" color: #d4582a; ">BATA</span> <span class="fs-5" style=" color: #6c6c6c; ">on</span>
-                                <img class="d-inline-block" src="<?= base_url("asset/image/transtvlogo.png") ?>" height="15px" alt="" style="width:fit-content">
+                                <img class="d-inline-block" src="<?= base_url("asset/image/transtvlogo.png") ?>" height="15px" alt="" style="width:7rem">
                             </h1>
                         </div>
                         <div class="d-flex justify-content-center p-4 mb-4">
@@ -260,7 +260,7 @@
             <div class="text-center justify-content-end py-5">
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
             </div>
-            
+
             <div class="contain-bg-clip">
                 <div class="clip clip1">
                     <div class="clip-content">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
                 <div class="clip clip2">
-                <div class="clip-content">
+                    <div class="clip-content">
                         <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
@@ -279,7 +279,7 @@
                     </div>
                 </div>
                 <div class="clip clip3">
-                <div class="clip-content">
+                    <div class="clip-content">
                         <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
@@ -287,13 +287,18 @@
                     </div>
                 </div>
                 <div class="clip clip4">
-                <div class="clip-content">
+                    <div class="clip-content">
                         <a href="<?= base_url() ?>">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
                         <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
                     </div>
                 </div>
+            </div>
+
+
+            <div class="slide-image-using-clip d-block w-md-75 w-sm-100 w-lg-75 mt-5 position-relative">
+
             </div>
         </div>
     </div>

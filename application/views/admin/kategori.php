@@ -1,38 +1,4 @@
 <!-- Begin Page Content -->
-<style>
-    table td {
-        font-size: 0.85rem;
-        font-family: "roboto";
-    }
-
-    .img-background {
-        background: rgb(255 255 255 / 40%);
-        position: absolute;
-        width: 100%;
-        height: 400px;
-        top: 0;
-        left: 0;
-    }
-
-    .img-display {
-        position: absolute;
-        left: 0;
-        top: 0;
-        object-fit: cover;
-        height: 400px;
-        width: 100%;
-    }
-
-    .img-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        height: 400px;
-        margin-top: 150px;
-    }
-</style>
 <div class="container-fluid">
     <!-- Page Heading -->
     <h3 class="fw-bold mb-4 text-gray-800 text-uppercase">Kategori</h3>
@@ -81,7 +47,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="py-5" style="position: relative; overflow: hidden;height: 300px;">
+                    <div class="py-5 jumbotron" style="position: relative; overflow: hidden;height: 400px;">
                         <img class="img-display" src="<?= base_url("asset/image/test.jpg") ?>" id="CategoryDetailImg">
                         <div class="img-background"></div>
                         <div class="img-text">

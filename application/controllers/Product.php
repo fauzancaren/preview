@@ -49,8 +49,12 @@ class Product extends CI_Controller
       $html = "";
       $delay = 0;
       foreach ($data as $row) {
-      if($delay == 400) { $delay=100 ;}else{ $delay+=100;}
-         $html .= '<a data-aos="fade-up" data-aos-delay="'.$delay.'" data-aos-once="false" class ="col" style="text-decoration: none; color: #000000bd;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
+         if ($delay == 400) {
+            $delay = 100;
+         } else {
+            $delay += 100;
+         }
+         $html .= '<a data-aos="fade-up" data-aos-delay="' . $delay . '" data-aos-once="false" class ="col" style="text-decoration: none; color: #000000bd;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
                      <div class="d-flex flex-column p-md-2" style="background-color: #f2f2f22b;box-shadow: 1px 2px 2px 0px #a3a2a291;     border: 1.2px solid #a3a2a280; font-family: Montserrat, sans-serif; height: 100%;">
                         <div class="d-flex flex-column item p-md-2"> 
                           <div class="C-containerImg">
