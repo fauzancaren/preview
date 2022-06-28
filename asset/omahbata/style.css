@@ -214,17 +214,6 @@ body {
 
 /* nav end */
 
-/* start item Product */
-.item:hover {
-   
-    background-color:  #f2f2f2;
-    transition: all .5s;
-    cursor: pointer;
-    z-index: 9999;
-}
-
-/* end item product */
-
 /* startt nav autohide */
 .autohide {
     position: fixed;
@@ -556,7 +545,7 @@ body {
 }
 
 .contain-bg-clip:hover .clip {
-    clip-path: polygon(100% 100%, 100% 100%, 0 100%);
+    clip-path: polygon(54% 100%, 0% 100%, 100% 100%);
     transition: all 0.7s;
 }
 
@@ -565,7 +554,6 @@ body {
     transition: all 0.7s;
 
 }
-
 .clip-content {
     position: absolute;
     bottom: -100%;
@@ -580,16 +568,141 @@ body {
     bottom: 0;
     opacity: 1;
 }
-
-
-
 /* bg-clip end */
 
+.item:hover {
+   
+    background-color:  #f2f2f2;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.C-containerImg {
+    width: 100%;
+    overflow: hidden;
+}
+
+.C-containerimg .box-img{
+    position: relative;
+    width: 100%;
+    height: 310px;
+}
+
+.C-containerimg .box-img img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.C-containerImg:hover img {
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.icon-product {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.icon-product li{
+    position: relative;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    background: #ca9c89;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 2px;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateX(60px);
+    visibility: hidden;
+}
+
+.C-containerImg:hover .icon-product li{
+    transform: translateX(0px);
+    visibility: visible;
+}
+
+ .icon-product li:hover {
+    background: #c6c6c6;
+    color: #f2f2f2;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+.icon-product li:hover span {
+    visibility: visible;
+    transition: 0.5s;
+    transform: translateY(-50%) translateX(0px);
+ 
+ }
+
+
+.icon-product li span {
+    position: absolute;
+    top:50%;
+    right: 50px;
+    transform: translateY(-50%) translateX(-20px);
+    white-space: nowrap;
+    padding: 4px 6px;
+    background: #c6c6c6;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 4px;
+    visibility: hidden;
+    box-shadow: -2px 2px 2px 0.5px #a5a5a5;
+}
+
+.icon-product li span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background: #c6c6c6;
+    transform: translateY(-50%) rotate(45deg);
+
+}
+
 @media (min-width: 320px) {
+    /* break product */
+    .icon-product {
+        top: 10px;
+        right: 10px;
+    }
+
+    .icon-product li {
+        width: 25px;
+        height: 25px;
+    }
+
+    .icon-product li span {
+        padding: 2px 6px;
+    }
+
+    .icon-product li:hover span {
+        transform: translateY(-50%) translateX(15px);
+    }
+    /* break end product */
+
     .img-product {
-        height: 45vw; 
-        width: 350px;
+        height: 24vw; 
+        width: 100%;
         object-fit: cover;
+    }
+    .img-product:hover {
+        transform: scale(1.5);
+        overflow: hidden;
     }
     .imageHead {
         width: 300px;
@@ -714,6 +827,26 @@ body {
 }
 
 @media (min-width: 425px) {
+    /* break product */
+    .icon-product {
+        top: 20px;
+        right: 20px;
+    }
+
+    .icon-product li {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-product li span {
+        padding: 3px 6px;
+    }
+
+    .icon-product li:hover span {
+        transform: translateY(-50%) translateX(10px);
+    }
+    /* break end product */
+
     .imageHead {
         width: 350px;
         height: 350px;
@@ -759,6 +892,27 @@ body {
 
 
 @media (min-width: 768px) {
+    /* break product */
+    .icon-product {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .icon-product li{
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-product li span {
+        padding: 4px 6px;
+    }
+
+    .icon-product li:hover span {
+        transform: translateY(-50%) translateX(0px);
+    }
+    /* break end product */
+
     .contanier-product {
         padding: 5%
     }
