@@ -627,6 +627,7 @@ body {
     /* clip-path: polygon(0 0, 95% 0, 95% 10%, 0 30%); */
     /* clip-path: polygon(2% 10%, 60% 10%, 60% 48%, 2% 48%); */
     clip-path: polygon(0 0, 48% 0, 58% 54%, 0 38%);
+    z-index: 1;
 }
 
 .contain-bg-clip .clip.clip2 {
@@ -635,7 +636,7 @@ body {
     /* clip-path: polygon(10% 31%, 100% 11%, 100% 58%, 5% 38%); */
     /* clip-path: polygon(62% 10%, 98% 10%, 98% 48%, 62% 48%); */
     clip-path: polygon(52% 0, 100% 0, 100% 66%, 61% 59%);
-
+    z-index: 1;
 
 }
 
@@ -645,6 +646,7 @@ body {
     /* clip-path: polygon(10% 43%, 100% 62%, 94% 75%, 0 89%); */
     /* clip-path: polygon(40% 51%, 98% 51%, 98% 90%, 40% 90%); */
     clip-path: polygon(0 40%, 52% 57%, 19% 100%, 0 100%);
+    z-index: 1;
 }
 
 .contain-bg-clip .clip.clip4 {
@@ -653,6 +655,7 @@ body {
     /* clip-path: polygon(0 94%, 100% 81%, 100% 100%, 4% 100%); */
     /* clip-path: polygon(2% 51%, 38% 51%, 38% 90%, 2% 90%); */
     clip-path: polygon(54% 63%, 100% 70%, 100% 100%, 23% 100%);
+    z-index: 1;
 
 }
 
@@ -664,8 +667,8 @@ body {
 .contain-bg-clip .clip:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: all 0.7s;
-    z-index: 10;
     box-shadow:none;
+    z-index: 10;
 
 }
 
