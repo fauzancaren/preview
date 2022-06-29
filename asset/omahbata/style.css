@@ -507,7 +507,7 @@ body {
 .clip-text1 {
     position: absolute;
     z-index: 2;
-    left: -2%;
+    left: -3%;
     top: 10%;
     font-weight: 500;
     color: #fefdf9;
@@ -534,7 +534,7 @@ body {
 .clip-text2 {
     position: absolute;
     z-index: 2;
-    right:-2%;
+    right:-3%;
     top: 20%;
     font-weight: 500;
     color: #fefdf9;
