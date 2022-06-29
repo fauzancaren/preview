@@ -254,7 +254,7 @@
     </div>
 </div>
 
-<div class="py-5" style="background: linear-gradient(36deg, #6c757d82 0%, #fefdf9 70%);">
+<div class="py-5" style="background: linear-gradient(54deg, #9b9fa3 0%, #fefdf9 70%)">
     <div class="container py-5">
         <div class="row d-flex justify-content-center py-5 text-center">
             <div class="text-center justify-content-end py-5">
@@ -262,6 +262,10 @@
             </div>
 
             <div class="contain-bg-clip">
+                <span class="clip-text clip-text1">Bata Expose</span>
+                <span class="clip-text clip-text2">Bata Tempel</span>
+                <span class="clip-text clip-text3">Roster</span>
+                <span class="clip-text clip-text4">Roblock</span>
                 <div class="clip clip1">
                     <div class="clip-content">
                         <a href="<?= base_url() ?>">
@@ -295,6 +299,19 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                $().ready(function() {
+                    $(".contain-bg-clip .clip").hover(function() {
+                            $(this).addClass("clipshow");
+                        },
+                        function() {
+                            $(this).removeClass("clipshow");
+                        });
+
+                        $("contain-bg-clip .clip").addClass("cliphide");
+                });
+            </script>
 
 
             <div class="slide-image-using-clip d-block w-md-75 w-sm-100 w-lg-75 mt-5 position-relative">
