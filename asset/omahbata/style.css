@@ -61,14 +61,15 @@ body {
 
 /* button start */
 .tombol {
-    font-size: x-small;
+    font-size: 1rem;
     background-color: #bd7658;
-    color: #f8ddc2;
+    border: none;
+    color: #ffffff;
 }
 
 .tombol:hover {
-    background-color: #d19f8a;
-    color: #f8ddc2;
+    background-color: #99634c;
+    color: #ffffff;
     transition: all .5s;
 }
 
@@ -244,9 +245,11 @@ body {
     text-decoration: none;
     color: black;
 }
+
 .btnProject:hover {
     color: #cb5e37;
 }
+
 /* project end */
 
 /* breakpoint start */
