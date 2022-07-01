@@ -11,6 +11,7 @@ class Contact extends CI_Controller
 
    public function index()
    {
+		$this->load->library('user_agent');	
       $data['title'] = 'Contact';
       $data['_page'] = 'CONTACT';
       $this->load->view('templates/header.php', $data);

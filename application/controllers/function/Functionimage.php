@@ -10,7 +10,7 @@ class Functionimage extends CI_Controller
 
    function product($id)
    {
-      $configfile = "asset/image/product/"; //untuk server 
+      $configfile = "./asset/image/product/"; //untuk server 
       try {
          if (file_exists($configfile .   $id . ".png")) {
             $path = FCPATH . $configfile .  $id . ".png";
@@ -27,7 +27,7 @@ class Functionimage extends CI_Controller
             $data = file_get_contents($path);
             $image = imagecreatefromstring($data);
             header('Content-Type: image/' . $type);
-            imagepng($image, null, 5);
+            imagepng($image, null, 7);
             imagedestroy($image);
             exit(0);
          }
@@ -37,7 +37,7 @@ class Functionimage extends CI_Controller
          $data = file_get_contents($path);
          $image = imagecreatefromstring($data);
          header('Content-Type: image/' . $type);
-         imagepng($image, null, 5);
+         imagepng($image, null, 3);
          imagedestroy($image);
          exit(0);
       }

@@ -32,11 +32,13 @@ class Product extends CI_Controller
    }
    public function detailItem($id)
    {
+      $this->load->library('user_agent');
       $data['title'] = "Detail Item";
       $data['_page'] = 'PRODUCTS';
       $data['productKategori'] = $this->Product_model->getDataProductKategori();
       $data['MsitemById'] = $this->Product_model->getDataItemById($id);
       $data['MsitemDeskripsi'] = $this->Product_model->getDataItemDeskripsiById($id);
+      $data['MsItemSubImg'] = $this->Product_model->getDataItemSubImgById($id);
       $this->load->view('templates/header.php', $data, $id);
       $this->load->view('content/product/itemById.php', $data);
       $this->load->view('templates/footer.php');
@@ -45,15 +47,35 @@ class Product extends CI_Controller
    {
       $data = $this->Product_model->getDataProductNext($category, $index);
       $html = "";
+      $delay = 0;
       foreach ($data as $row) {
-         $html .= '<a class ="col" style="text-decoration: none; color: black;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
-                     <div class="d-flex flex-column justify-content-center  p-2">
-                        <div class="d-flex flex-column item"> 
-                           <img class="img-fluid mb-2 rounded-3 align-self-center" style="height: 300px; width: 350px;object-fit: cover;" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
-                           <h6 class="align-self-center align-self-lg-start px-sm-2 fw-bold">' . $row->MsItemName . '</h6> 
-                           <span class="align-self-center align-self-lg-start px-sm-2">' . $row->MsItemSize . '</span>
-                           <span class="align-self-center align-self-lg-start px-sm-2">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
-                           <span class="align-self-center  align-self-lg-start px-sm-2">' . $row->MsItemCode . '</span> 
+         if ($delay == 400) {
+            $delay = 100;
+         } else {
+            $delay += 100;
+         }
+         $html .= '<a data-aos="fade-up" data-aos-delay="' . $delay . '" data-aos-once="false" class ="col" style="text-decoration: none; color: #000000bd;" href="' . base_url("product/detailItem/" . $row->MsItemId) . '">
+                     <div class="d-flex flex-column p-md-2" style="background-color: #f2f2f22b;box-shadow: 1px 2px 2px 0px #a3a2a291;     border: 1.2px solid #a3a2a280; font-family: Montserrat, sans-serif; height: 100%;">
+                        <div class="d-flex flex-column item p-md-2"> 
+                          <div class="C-containerImg">
+                              <div class="box-img">
+                              <img class="img-fluid" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
+                              </div>
+
+                                 <ul class="icon-product">
+                                    <li class="lip1">
+                                       <i class="fas fa-heart"></i>
+                                       <span>Add Favorite</span>
+                                    </li>
+                                    <li class="lip1">
+                                       <i class="fas fa-shopping-cart"></i>
+                                       <span>Add Cart</span>
+                                    </li>
+                                 </ul>
+                          </div>
+                           <small class="align-self-center align-self-lg-start px-2 mt-2 fw-bold" style="color: #896a5e; font-size: 1em; min-height: 46px;">' . $row->MsItemName . '</small>
+                           <span class="align-self-center align-self-lg-start px-sm-2 mb-2 fw-normal" style="font-size: 1.3vh;">' . $row->MsItemSize . '</span>
+                           <span class="align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="font-size: 1.7vh;">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
                         </div>
                      </div>
                   </a>';

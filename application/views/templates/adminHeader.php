@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
 
-    <link href="<?= base_url("asset/sb-admin/vendor/fontawesome-free/css/all.min.css") ?>" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="<?= base_url("asset/sb-admin/css/sb-admin-2.min.css") ?>" rel="stylesheet">
-    <link href="<?= base_url("asset/css/bootstrap.min.css") ?>" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<?= base_url() ?>/asset/css/style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/omahbata/style.css?version=v2.0.2") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url("asset/css/style.css") ?>" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="<?= base_url("asset/datatable/datatables.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/fontgoogle/lora.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/fontgoogle/montserrat.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/fontgoogle/poppins.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/fontgoogle/roboto.css") ?>" rel="stylesheet" type="text/css">
 
-    
+    <script src="<?= base_url("asset/bootstrap5-2/js/jquery-3.6.0.min.js") ?>"></script>
+    <script src="<?= base_url("asset/bootstrap5-2/js/popper.min.js") ?>"></script>
+    <script src="<?= base_url("asset/bootstrap5-2/js/bootstrap.min.js") ?>"></script>
+    <script src="<?= base_url("asset/datatable/datatables.min.js") ?>"></script>
+    <style>
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+
 
 </head>
 
@@ -42,7 +42,7 @@
         <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= site_url("admin") ?>">
                 <div class="sidebar-brand-text mx-3">OBI ADMIN</div>
             </a>
 
@@ -51,9 +51,10 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= site_url("admin") ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -61,25 +62,43 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                Produk
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Master Data</span>
+                <a class="nav-link" href="<?= site_url("admin/kategori") ?>">
+                    <i class="fas fa-fw fa-sitemap"></i>
+                    <span>Kategori</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url() ?>">Product</a>
-                        <a class="collapse-item" href="<?= base_url() ?>/admin/getDataProject">Project</a>
-                    </div>
-                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= site_url("admin/item") ?>">
+                    <i class="fas fa-fw fa-shopping-cart"></i>
+                    <span>Produk</span>
+                </a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Project And Update News
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-project-diagram"></i>
+                    <span>Project</span>
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-newspaper"></i>
+                    <span>Update News</span>
+                </a>
+            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -144,5 +163,3 @@
 
                 </nav>
                 <!-- End of Topbar -->
-
-           
