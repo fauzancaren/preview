@@ -4,7 +4,7 @@ class Product_model extends CI_Model
 
     public function getDataProduct()
     {
-        return $this->db->get('TblMsItem', 20)->result_array();
+        return $this->db->get('TblMsItem')->result_array();
     }
     public function getDataProductById($id)
     {

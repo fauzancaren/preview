@@ -59,7 +59,7 @@ class Product extends CI_Controller
                         <div class="d-flex flex-column item p-md-2"> 
                           <div class="C-containerImg">
                               <div class="box-img">
-                              <img class="img-fluid" src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
+                              <img class="img-fluid lazy" data-src="' . base_url("function/functionimage/product/") . $row->MsItemCode . '" alt="">
                               </div>
 
                                  <ul class="icon-product">

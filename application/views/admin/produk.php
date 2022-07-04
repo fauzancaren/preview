@@ -30,8 +30,8 @@
                         <th>Kategory</th>
                         <th>Nama</th>
                         <th>Harga</th>
-                        <th>Status</th>
                         <th>Image</th>
+                        <th>Status</th>
                         <th>Action</th>
                     </tr>
                 </thead>

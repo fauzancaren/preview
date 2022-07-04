@@ -844,6 +844,22 @@ body {
 }
 /* footer end */
 
+/* skleton start */
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes animation {
+    0% {
+        background-color: hsl(200, 51%, 62%);
+    }
+
+    100% {
+        background-color: hsl(204, 44%, 36%);
+    }
+}
+/* skleton end */
+
 @media (min-width: 320px) {
     .container-bingkai {
         padding: 5%;
