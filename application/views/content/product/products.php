@@ -102,31 +102,4 @@
     }
     load_data();
 </script> -->
-
-<script>
-     $('.lazy').Lazy({
-        // your configuration goes here
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        visibleOnly: true,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        }
-    });
-
-   $(".lazy").Lazy({
-        beforeLoad: function(element) {
-            console.log('before');
-        },
-        afterLoad: function(element) {
-            console.log('after');
-        },
-        onError: function(element) {
-            console.log('error');
-        },
-        onFinishedAll: function() {
-            console.log('finish');
-        }
-    });
-</script>
 </div>

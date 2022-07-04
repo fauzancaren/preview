@@ -9,7 +9,7 @@ class Product_model extends CI_Model
     public function getDataProductById($id)
     {
         $this->db->where('MsItemCatId', $id);
-        return $this->db->get('TblMsItem', 20)->result_array();
+        return $this->db->get('TblMsItem')->result_array();
     }
 
     public function getDataProductKategori()
