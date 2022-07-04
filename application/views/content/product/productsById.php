@@ -34,12 +34,38 @@
             <button class="btn btn-outline-secondary" type="button" onclick="cariProduk()" id="button-addon2"><i class="fas fa-search icon"></i></button>
         </div>
         <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 g-md-2" id="data-item" data-index="0" style="background-color: #fefdf9;">
+        <?php foreach ($productsById as $item) : ?>
+            <a data-aos="fade-up" data-aos-once="false" class="col" style="text-decoration: none; color: #000000bd;" href="<?= base_url() ?>/product/detailItem/<?= $item['MsItemId'] ?>">
+                <div class="d-flex flex-column p-md-2" style="background-color: #f2f2f22b;box-shadow: 1px 2px 2px 0px #a3a2a291;     border: 1.2px solid #a3a2a280; font-family: Montserrat, sans-serif; height: 100%;">
+                    <div class="d-flex flex-column item p-md-2">
+                        <div class="C-containerImg">
+                            <div class="box-img">
+                                <img class="img-fluid lazy skeleton" data-src="<?= base_url() ?>/asset/image/product/<?= $item['MsItemImage'] ?>">
+                            </div>
+                            <ul class="icon-product">
+                                <li class="lip1">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Add Favorite</span>
+                                </li>
+                                <li class="lip1">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add Cart</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <small class="align-self-center align-self-lg-start px-2 mt-2 fw-bold" style="color: #896a5e; font-size: 1em; min-height: 46px;"><?= $item['MsItemName'] ?></small>
+                        <span class="align-self-center align-self-lg-start px-sm-2 mb-2 fw-normal" style="font-size: 1.3vh;"><?= $item['MsItemSize'] ?></span>
+                        <span class="align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="font-size: 1.7vh;"><?= $item['MsItemPrice'] ?></span>
+                    </div>
+                </div>
+            </a>
+        <?php endforeach; ?>
         </div>
-        <div class="text-center loading" style="display: none">
+        <!-- <div class="text-center loading" style="display: none">
             <div class="fa-5x">
                 <i class="fas fa-spinner fa-pulse"></i>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </div>
@@ -72,7 +98,7 @@
             </div>
         </div>
     </div> -->
-<script>
+<!-- <script>
     var loaddata = true;
     var request; // Stores the XMLHTTPRequest object
     var timeout; // Stores time
@@ -107,5 +133,5 @@
         }, 10000);
     }
     load_data();
-</script>
+</script> -->
 </div>

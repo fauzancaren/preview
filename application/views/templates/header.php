@@ -26,6 +26,7 @@
     <script src="<?= base_url("asset/slick/slick.min.js") ?>" type="text/javascript"></script>
     <script src="<?= base_url("asset/gsap/gsap.min.js") ?>" type="text/javascript"></script>
     <script src="<?= base_url("asset/gsap/TextPlugin.min.js") ?>" type="text/javascript"></script>
+    <script src="<?= base_url("asset/lazy/jquery.lazy.min.js") ?>" type="text/javascript"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

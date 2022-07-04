@@ -1,23 +1,5 @@
 <div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
     <div class="container">
-        <!-- <div class="row py-5">
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-                <img class="imageHead shadow-lg animate__animated animate__rubberBand animate__slower" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
-            </div>
-            <div class="col-12 col-lg-6 text-center d-grid align-content-center align-items-center">
-                <div class="col mb-2">
-                    <h1 class="fw-bolder animate__animated animate__backInDown animate__fast" style="font-family: 'Montserrat', sans-serif;">Fungsional sekaligus estetis dengan bentuk geometris.</h1>
-                </div>
-                <div class="col d-grid mb-5 animate__animated animate__fadeInRightBig animate__fast">
-                    <small class="fs-6 fw-normal text-uppercase">MP House by TIES</small>
-                    <span class="fw-normal text-uppercase" style="font-size: small;">Tangerang</span>
-                </div>
-
-                <div class="col animate__animated animate__zoomInUp animate__slow">
-                    <a href="<?= base_url() ?>project"><button class="btn btn-sm px-5 py-3 fw-bold rounded-0 tombol">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
-                </div>
-            </div>
-        </div> -->
         <div class="row py-5">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out-back">
                 <img class="imageHead shadow-lg" src="<?= base_url() ?>/asset/image/project/MpHouse.jpeg" alt="">
@@ -256,7 +238,7 @@
 
 <div class="py-5" style="background: linear-gradient(54deg, #9b9fa3 0%, #fefdf9 70%)">
     <div class="container py-5">
-        <div class="row d-flex justify-content-center py-5 text-center">
+        <div class="row d-flex justify-content-center py-5 text-center container-bingkai">
             <div class="text-center justify-content-end py-5">
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
             </div>

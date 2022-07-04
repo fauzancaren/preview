@@ -1,3 +1,29 @@
+<script>
+     $('.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
+
+   $(".lazy").Lazy({
+        beforeLoad: function(element) {
+            console.log('before');
+        },
+        afterLoad: function(element) {
+            console.log('after');
+        },
+        onError: function(element) {
+            console.log('error');
+        },
+        onFinishedAll: function() {
+            console.log('finish');
+        }
+    });
+</script>
 </div>
 <div class="container-fluid" style="background-color: #fefdf9;">
     <div class="row text-center p-3">

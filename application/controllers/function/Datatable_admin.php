@@ -53,4 +53,47 @@
          //output to json format
          echo json_encode($output);
       }
+
+      function get_data_produk()
+      {
+         // SETUP DATATABLE
+         $this->Datatable->table = 'TblMsItem';
+
+         $this->Datatable->column_order = array(
+            null,
+            'MsItemCode',
+            'MsItemName',
+            'MsItemPrice',
+            'MsItemImage',
+            'MsItemIsActive',
+         ); //set column field database for datatable orderable
+         $this->Datatable->column_search = array('MsItemCode', 'MsItemName'); //set column field database for datatable searchable
+         $this->Datatable->order = array('MsItemCode' => 'asc'); // default order
+
+         // PROSES DATA
+         $list = $this->Datatable->get_datatables();
+         $data = array();
+         $no = $_POST['start'];
+         foreach ($list as $master) {
+            $no++;
+            $row = array();
+            $row[] = $no;
+            $row[] = $master->MsItemCode;
+            $row[] = $master->MsItemName;
+            $row[] = $master->MsItemPrice;
+            $row[] = '<img src="' . base_url("asset/image/Product/" . $master->MsItemImage) . '"  alt="..." width=100 height=100 style="object-fit: cover;">';
+            $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
+            $row[] = ' <div class="d-flex flex-row"><a class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
+            $data[] = $row;
+         }
+         $output = array(
+            "draw" => $_POST['draw'],
+            "recordsTotal" => $this->Datatable->count_all(),
+            "recordsFiltered" => $this->Datatable->count_filtered(),
+            "data" => $data,
+         );
+
+         //output to json format
+         echo json_encode($output);
+      }
    }
