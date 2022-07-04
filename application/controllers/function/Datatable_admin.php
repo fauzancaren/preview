@@ -57,7 +57,7 @@
       function get_data_produk()
       {
          // SETUP DATATABLE
-         $this->Datatable->table = 'tblmsitem';
+         $this->Datatable->table = 'TblMsItem';
 
          $this->Datatable->column_order = array(
             null,
