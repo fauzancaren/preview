@@ -30,13 +30,13 @@
             <button class="btn btn-outline-secondary" type="search" id="search-product"><i class="fas fa-search icon"></i></button>
         </div>
         <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 g-md-2" id="data-item" data-index="0" style="background-color: #fefdf9;">
-        <?php foreach ($product as $item) : ?>
-            <a data-aos="fade-up" data-aos-once="false" class="col" style="text-decoration: none; color: #000000bd;" href="<?= base_url() ?>/product/detailItem/<?= $item['MsItemId'] ?>">
+        <!-- <?php foreach ($product as $item) : ?>
+            <a data-aos="fade-up" data-aos-once="false" class="col" style="text-decoration: none; color: #000000bd;" href="<?= base_url() ?>product/detailItem/<?= $item['MsItemId'] ?>">
                 <div class="d-flex flex-column p-md-2" style="background-color: #f2f2f22b;box-shadow: 1px 2px 2px 0px #a3a2a291;     border: 1.2px solid #a3a2a280; font-family: Montserrat, sans-serif; height: 100%;">
                     <div class="d-flex flex-column item p-md-2">
                         <div class="C-containerImg">
                             <div class="box-img">
-                                <img class="img-fluid lazy skeleton" data-src="<?= base_url() ?>/asset/image/product/<?= $item['MsItemImage'] ?>">
+                                <img class="img-fluid lazy skeleton" data-src="<?= base_url() ?>upload.php?kode=<?= $item['MsItemCode'] ?>">
                             </div>
                             <ul class="icon-product">
                                 <li class="lip1">
@@ -55,24 +55,38 @@
                     </div>
                 </div>
             </a>
-        <?php endforeach; ?>
+        <?php endforeach; ?> -->
         </div>
 
-        <!-- <div class="text-center loading" style="display: none">
-            <div class="fa-5x">
-                <i class="fas fa-spinner fa-pulse"></i>
-            </div>
-        </div> -->
+        <div class="loading row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 g-md-2" id="data-item" data-index="0" style="background-color: #fefdf9" >
+        <?php for ($i= 0 ; $i < 8;$i++) : ?>
+            <a class="col" style="text-decoration: none; color: #000000bd;">
+                <div class="d-flex flex-column p-md-2" style="background-color: #f2f2f22b;box-shadow: 1px 2px 2px 0px #a3a2a291;border: 1.2px solid #a3a2a280; font-family: Montserrat, sans-serif; height: 100%;">
+                    <div class="d-flex flex-column item p-md-2">
+                        <div class="C-containerImg">
+                            <div class="box-img">
+                                <div class="img-fluid loading image"></div>
+                            </div> 
+                        </div>
+                        <div class="loading label1"></div>
+                        <div class="loading label2"></div>
+                        <div class="loading label3"></div> 
+                    </div>
+                </div>
+            </a>
+        <?php endfor; ?> 
+            
+        </div>
 
     </div>
 </div>
-<!-- <script>
+<script>
     var loaddata = true;
     var request; // Stores the XMLHTTPRequest object
     var timeout; // Stores time
     $(window).scroll(function() {
         if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-            if (!request && loaddata) {
+            if (loaddata) {
                 load_data();
             }
         }
@@ -90,6 +104,20 @@
                 }
                 $(".loading").css("display", "none");
                 timeout = request = null;
+                if($('img.lazy').length){ 
+                    $('img.lazy').lazy({  
+                        effect: 'fadeIn', 
+                        visibleOnly: true, 
+                        onError: function(element) {
+                            console.log('error loading ' + element.data('src'));
+                        }, 
+                        afterLoad: function(element) {
+                            console.log('after loading ' + element.data('src'));
+                            $(element).removeClass('skeleton');
+                        }
+
+                    }).removeClass('lazy').addClass('lazyloaded'); 
+                }
             }
         });
 
@@ -101,5 +129,5 @@
         }, 10000);
     }
     load_data();
-</script> -->
+</script>
 </div>
