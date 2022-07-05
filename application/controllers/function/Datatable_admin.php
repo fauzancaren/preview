@@ -64,6 +64,7 @@
             'MsItemCode',
             'MsItemName',
             'MsItemPrice',
+            'MsItemUoM',
             'MsItemImage',
             'MsItemIsActive',
          ); //set column field database for datatable orderable
@@ -78,13 +79,58 @@
             $no++;
             $row = array();
             $row[] = $no;
-            $row[] = "<b>".$master->MsItemCode."</b>";
+            $row[] = $master->MsItemCode;
             $row[] = $master->MsItemName;
-            $row[] = "Rp . ".number_format($master->MsItemPrice)."/".$master->MsItemUoM;
+            $row[] = $master->MsItemPrice;
+            $row[] = $master->MsItemUoM;
             $row[] = '<img src="' . base_url("asset/image/product/" . $master->MsItemImage) . '"  alt="..." style="object-fit: contain; width: 100%; height: 200px;">';
             $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
             $row[] = $master->MsItemId;
+            $data[] = $row;
+         }
+         $output = array(
+            "draw" => $_POST['draw'],
+            "recordsTotal" => $this->Datatable->count_all(),
+            "recordsFiltered" => $this->Datatable->count_filtered(),
+            "data" => $data,
+         );
+
+         //output to json format
+         echo json_encode($output);
+      }
+
+      function get_data_project()
+      {
+         // SETUP DATATABLE
+         $this->Datatable->table = 'TblMsCustomerProject';
+
+         $this->Datatable->column_order = array(
+            null,
+            'CustomerProjectTitle',
+            'CustomerProjectDate',
+            'CustomerProjectDeskripsi',
+            'CustomerProjectAddress',
+            'CustomerProjectHeaderImg',
+         ); //set column field database for datatable orderable
+         $this->Datatable->column_search = array('CustomerProjectTitle', 'CustomerProjectDate'); //set column field database for datatable searchable
+         $this->Datatable->order = array('CustomerProjectTitle' => 'asc'); // default order
+
+         // PROSES DATA
+         $list = $this->Datatable->get_datatables();
+         $data = array();
+         $no = $_POST['start'];
+         foreach ($list as $master) {
+            $no++;
+            $row = array();
+            $row[] = $no;
+            $row[] = $master->CustomerProjectTitle;
+            $row[] = $master->CustomerProjectDate;
+            $row[] = $master->CustomerProjectDeskripsi;
+            $row[] = $master->CustomerProjectAddress;
+            $row[] = '<img src="' . base_url("asset/image/project/" . $master->CustomerProjectHeaderImg) . '"  alt="..." style="object-fit: cover; width: 70%; height: 100%;">';
+            $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
+            $row[] = $master->CustomerProjectId;
             $data[] = $row;
          }
          $output = array(

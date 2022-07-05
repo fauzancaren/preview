@@ -47,6 +47,16 @@ class Admin extends CI_Controller
 		$this->load->view('templates/footerAdmin.php');
 
 	}
+
+	public function project()
+	{
+		$data['title'] = 'Project';
+		
+		$this->load->view('templates/adminHeader.php', $data);
+		$this->load->view('admin/project.php');
+		$this->load->view('templates/footerAdmin.php');
+
+	}
 	// public function list_product()
 	// {
 	// 	set_time_limit(0);

@@ -30,6 +30,7 @@
                         <th>Kategory</th>
                         <th>Nama</th>
                         <th>Harga</th>
+                        <th>Satuan</th>
                         <th>Image</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -41,43 +42,48 @@
 </div>
 
 <div class="modal fade" id="modal-edit" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">EDIT PRODUK</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-sm-2 col-form-label">Header</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control form-control-sm" id="input-CategoryDetailHeader">
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-sm-2 col-form-label">Deskripsi</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control form-control-sm" id="input-CategoryDetailText">
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-sm-2 col-form-label">Background</label>
-                        <div class="col-sm-10">
-                            <input type="file" class="form-control form-control-sm" id="input-CategoryDetailImg" accept="image/*" onchange="loadFile(event)">
-                            <small class="text-secondary">Optimal ukuran file gambar 1200 x 400 px </small>
-                        </div>
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">EDIT PRODUK</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-1">
+                    <label for="input-pencarian" class="col-sm-2 col-form-label">Code</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-sm" id="MsItemCode">
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batalkan</button>
-                    <button type="button" class="btn btn-success" id="btn-simpan" data-id=0>Simpan</button>
+                <div class="row mb-1">
+                    <label for="input-pencarian" class="col-sm-2 col-form-label">Nama</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-sm" id="MsItemName">
+                    </div>
                 </div>
+
+                <div class="row mb-1">
+                    <label for="input-pencarian" class="col-sm-2 col-form-label">Harga</label>
+                    <div class="col-4">
+                        <input type="text" class="form-control form-control-sm" id="MsItemPrice">
+                    </div>
+
+                    <label for="input-pencarian" class="col-sm-2 col-form-label">Satuan</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control form-control-sm" id="MsItemUoM">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batalkan</button>
+                <button type="button" class="btn btn-success" id="btn-simpan" data-id=0>Simpan</button>
             </div>
         </div>
     </div>
+</div>
 
 <script>
-     var table = $('#tb_data').DataTable({
+    var table = $('#tb_data').DataTable({
         "responsive": true,
         "searching": false,
         "lengthChange": false,
@@ -101,25 +107,24 @@
             {
                 "orderable": false,
                 "className": "text-center",
-                targets: 4
+                targets: 5
             },
             {
                 "orderable": false,
                 "className": "text-center",
-                targets: 5,
+                targets: 6
             },
             {
                 "orderable": false,
-                "className": "text-center",
                 targets: 7,
                 className: 'action'
             },
             {
                 "visible": false,
-                targets: 7,
+                targets: 8
             },
         ],
-            
+
     });
 
     $('#input-pencarian').keyup(function() {
@@ -129,15 +134,21 @@
         table.ajax.reload(null, false).responsive.recalc().columns.adjust();
     });
 
-    // $('#tb_data').on('click', 'td.action', function() {
-    //     var row = table.row(this).data(); // returns undefined  
-    //     $("#CategoryDetailHeader").text(row[1]);
-    //     $("#CategoryDetailText").text(row[2]);
-    //     $("#btn-simpan").data("id", row[6]);
+    $('#tb_data').on('click', 'td.action', function() {
+        var row = table.row(this).data(); // returns undefined  
+        $("#MsItemCode").text(row[1]);
+        $("#MsItemName").text(row[2]);
 
-    //     $("#input-CategoryDetailHeader").val(row[1]);
-    //     $("#input-CategoryDetailText").val(row[2]);
-    //     loadURLToInputFiled($(row[4]).prop('src'));
-    //     $("#modal-edit").modal("show");
-    // })
+        $("#MsItemCode").val(row[1]);
+        $("#MsItemName").val(row[2]);
+        $("#MsItemPrice").val(row[3]);
+        $("#MsItemUoM").val(row[4]);
+        $("#modal-edit").modal("show");
+        // $("#btn-simpan").data("id", row[6]);
+
+        // $("#input-CategoryDetailHeader").val(row[1]);
+        // $("#input-CategoryDetailText").val(row[2]);
+        // loadURLToInputFiled($(row[4]).prop('src'));
+        // $("#modal-edit").modal("show");
+    })
 </script>
