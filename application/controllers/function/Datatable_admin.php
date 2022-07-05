@@ -78,9 +78,9 @@
             $no++;
             $row = array();
             $row[] = $no;
-            $row[] = $master->MsItemCode;
+            $row[] = "<b>".$master->MsItemCode."</b>";
             $row[] = $master->MsItemName;
-            $row[] = $master->MsItemPrice;
+            $row[] = "Rp . ".number_format($master->MsItemPrice)."/".$master->MsItemUoM;
             $row[] = '<img src="' . base_url("asset/image/product/" . $master->MsItemImage) . '"  alt="..." style="object-fit: contain; width: 100%; height: 200px;">';
             $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
