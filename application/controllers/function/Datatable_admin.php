@@ -81,9 +81,9 @@
             $row[] = $master->MsItemCode;
             $row[] = $master->MsItemName;
             $row[] = $master->MsItemPrice;
-            $row[] = '<img src="' . base_url("asset/image/Product/" . $master->MsItemImage) . '"  alt="..." style="object-fit: width=100px; height=100; cover;">';
+            $row[] = '<img src="' . base_url("asset/image/product/" . $master->MsItemImage) . '"  alt="..." style="object-fit: contain; width: 100%; height: 200px;">';
             $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
-            $row[] = ' <div class="d-flex flex-row"><a class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
+            $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
             $row[] = $master->MsItemId;
             $data[] = $row;
          }

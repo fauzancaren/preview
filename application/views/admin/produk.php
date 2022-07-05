@@ -100,15 +100,18 @@
             },
             {
                 "orderable": false,
-                targets: 5,
-            },
-            {
-                "orderable": false,
+                "className": "text-center",
                 targets: 4
             },
             {
                 "orderable": false,
-                targets: 6,
+                "className": "text-center",
+                targets: 5,
+            },
+            {
+                "orderable": false,
+                "className": "text-center",
+                targets: 7,
                 className: 'action'
             },
             {
