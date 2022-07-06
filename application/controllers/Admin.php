@@ -32,7 +32,7 @@ class Admin extends CI_Controller
 	{
 		$data['title'] = 'project';
 		// $data['_page'] = 'HOME';
-		$data['project'] = $this->Project_model->getDataProject();
+		$data['project'] = $this->Project_model->getDataProjectGallery();
 		$this->load->view('templates/adminHeader.php', $data);
 		$this->load->view('admin/adminProject.php');
 		$this->load->view('templates/footerAdmin.php');
@@ -51,7 +51,6 @@ class Admin extends CI_Controller
 	public function project()
 	{
 		$data['title'] = 'Project';
-		
 		$this->load->view('templates/adminHeader.php', $data);
 		$this->load->view('admin/project.php');
 		$this->load->view('templates/footerAdmin.php');

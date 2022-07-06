@@ -3,7 +3,7 @@
         <div class="row row-cols-1 row-cols-lg-2 p-2 p-lg-5 mb-3">
             <div class="row mb-5 col-lg">
                 <!-- <img class="img-fluid" style="height: 500px;" src="<?= base_url() ?>/asset/image/project/<?= $item["CustomerProjectHeaderImg"] ?>" alt=""> -->
-                <div class="img-fluid p-4 rounded-1" style="height: 500px; background-image: url(<?= base_url('asset/image/project/' . $item["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
+                <div class="img-fluid p-4 rounded-1" style="height: 500px; background-image: url(<?= base_url('asset/image/project/' . $item["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; object-fit: cover; background-position: center;">
                 </div>
             </div>
             <div class="row col-lg justify-content-lg-evenly align-content-center">

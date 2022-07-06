@@ -49,6 +49,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+
                 <div class="row mb-1">
                     <label for="input-pencarian" class="col-sm-2 col-form-label">Code</label>
                     <div class="col-sm-10">

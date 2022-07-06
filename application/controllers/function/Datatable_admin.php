@@ -103,8 +103,7 @@
       function get_data_project()
       {
          // SETUP DATATABLE
-         $this->Datatable->table = 'TblMsCustomerProject';
-
+         $this->Datatable->table='TblMsCustomerProject';
          $this->Datatable->column_order = array(
             null,
             'CustomerProjectTitle',
@@ -112,6 +111,7 @@
             'CustomerProjectDeskripsi',
             'CustomerProjectAddress',
             'CustomerProjectHeaderImg',
+            'CostumerProjectVisible',
          ); //set column field database for datatable orderable
          $this->Datatable->column_search = array('CustomerProjectTitle', 'CustomerProjectDate'); //set column field database for datatable searchable
          $this->Datatable->order = array('CustomerProjectTitle' => 'asc'); // default order
@@ -129,6 +129,7 @@
             $row[] = $master->CustomerProjectDeskripsi;
             $row[] = $master->CustomerProjectAddress;
             $row[] = '<img src="' . base_url("asset/image/project/" . $master->CustomerProjectHeaderImg) . '"  alt="..." style="object-fit: cover; width: 70%; height: 100%;">';
+            $row[] = ($master->CostumerProjectVisible == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
             $row[] = $master->CustomerProjectId;
             $data[] = $row;
