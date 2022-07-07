@@ -59,28 +59,28 @@ class Product extends CI_Controller
                         <div class="d-flex flex-column item p-md-2"> 
                           <div class="C-containerImg">
                               <div class="box-img">
-                              <img class="img-fluid lazy skeleton" style="min-height:300px;background:#eee" data-src="' . base_url("upload.php?kode=") . $row->MsItemCode . '" alt="">
+                              <img class="img-fluid lazy skeleton" style="background:#eee object-fit: contain;" data-src="' . base_url("upload.php?kode=") . $row->MsItemCode . '" alt="">
                               </div>
 
-                                 <ul class="icon-product">
-                                    <li class="lip1">
-                                       <i class="fas fa-heart"></i>
-                                       <span>Add Favorite</span>
-                                    </li>
-                                    <li class="lip1">
-                                       <i class="fas fa-shopping-cart"></i>
-                                       <span>Add Cart</span>
-                                    </li>
-                                 </ul>
+                              <ul class="icon-product">
+                              <li class="lip1">
+                                 <i class="fas fa-heart"></i>
+                                 <span>Add Favorite</span>
+                              </li>
+                              <li class="lip1">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <span>Add Cart</span>
+                              </li>
+                           </ul>
+                               
                           </div>
                            <small class="align-self-center align-self-lg-start px-2 mt-2 fw-bold" style="color: #896a5e; font-size: 1em; min-height: 46px;">' . $row->MsItemName . '</small>
-                           <span class="align-self-center align-self-lg-start px-sm-2 mb-2 fw-normal" style="font-size: 1.3vh;">' . $row->MsItemSize . '</span>
-                           <span class="align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="font-size: 1.7vh;">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
-                        </div>
+                           <span class="align-self-center align-self-lg-start px-sm-2 mb-2 fw-normal" style="font-size: 1.2vh;">' . $row->MsItemSize . '</span>
+                           <span class="align-self-center align-self-lg-start px-sm-2 fw-normal mb-2" style="font-size: 1.4vh;">Rp. ' . number_format($row->MsItemPrice) . ' /' . $row->MsItemUoM . '</span>
+                           </div>
                      </div>
                   </a>
                  ';
-                  
       }
       echo $html;
    }

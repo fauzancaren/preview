@@ -41,7 +41,7 @@
                         <div class="C-containerImg">
                             <div class="box-img">
                                 <div class="img-fluid loading image"></div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="loading label1"></div>
                         <div class="loading label2"></div>
