@@ -569,20 +569,3 @@
         </div>
     </div>
 </div>
-
-<div class="py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/Moon.svg") ?>');background-size: cover;"">
-    <div class=" container ">
-        <div class=" row">
-    <div class="d-grid justify-content-center align-content-center p-4" style="color: whitesmoke;">
-        <h4 class="fw-normal">Our Newsletter</h4>
-        <small class="fw-light">Subscribe to our newsletter to get update about our grand offers.</small>
-
-
-        <div class="input-group mb-3 mt-5">
-            <input type="text" class="form-control rounded-0" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn rounded-0 fw-normal px-4" style="background-color: #67452c ; font-size: small; color: white;" type="button" id="button-addon2">Send <i class="fas fa-paper-plane ml-2"></i></button>
-        </div>
-    </div>
-</div>
-</div>
-</div>
