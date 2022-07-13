@@ -1,4 +1,4 @@
-<div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
+<!-- <div class="mb-1 py-5" style="background: linear-gradient(180deg, rgba(237,237,237,1) 0%, #fefdf9 70%);background-image:url('<?= base_url("asset/image/bg-light-1.svg") ?>');background-size: cover;">
     <div class="container">
         <div class="row py-5">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out-back">
@@ -19,16 +19,28 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="mb-1 homepage-wrapper" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out-back">
+    <div class="homepage-contain">
+        <div class="homepage-text">
+            <h1>Fungsional sekaligus estetis dengan bentuk geometris.</h1>
+            <small class="text-uppercase px-3">MP House by TIES</small>
+            <span class="text-uppercase px-3">Tangerang</span>
+            <a class="px-3 mt-2" href="<?= base_url() ?>project/projectById/2"><button class="btn btn-sm px-3 py-2 px-lg-5 py-lg-3 fw-bold rounded-0 tombol-header">LIHAT PROJECT <span class="ps-3 fa fa-arrow-right"></span></button></a>
+        </div>
+    </div>
 </div>
 
+
 <div class="py-5" style="background: linear-gradient(180deg, rgba(254,253,249,1) 15%, rgba(237,237,237,1) 100%);">
-    <div class="container py-5">
+    <div class="py-5 px-3">
         <div class="text-center justify-content-end py-5">
             <H1 class="fw-bolder text-uppercase">Featured <span style="color:#d4582a">Projects</span></H1>
         </div>
         <div class="project text-center" data-aos="fade-right">
             <?php foreach ($project as $row) : ?>
-                <div class="col p-4 item-project">
+                <div class="col px-2 item-project">
                     <div class="img-fluid p-4 rounded-1 head-project" style="height: 250px; background-image: url(<?= base_url('asset/image/project/' . $row["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; background-position: center;">
                     </div>
                     <div class="d-flex flex-column rounded-3 p-3 shadow shadow-md deskripsi-project" style="background-color: #fefdf9; margin: -50px 10px 0 10px;">
@@ -63,8 +75,8 @@
                 // my slick slider options
                 var options = {
                     infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     adaptiveHeight: true,
                     infinite: false,
                     dots: true,
@@ -237,7 +249,7 @@
 </div>
 
 <div class="py-5" style="background: linear-gradient(54deg, #9b9fa3 0%, #fefdf9 70%)">
-    <div class="container py-5">
+    <div class="container-fluid py-5">
         <div class="row d-flex justify-content-center py-5 text-center container-bingkai">
             <div class="text-center justify-content-end py-5">
                 <h3 class="fw-bold text-uppercase">Percantik hunian anda dengan <span style="color:#d4582a">aneka produk material kami</span></h3>
@@ -291,7 +303,7 @@
                             $(this).removeClass("clipshow");
                         });
 
-                        $("contain-bg-clip .clip").addClass("cliphide");
+                    $("contain-bg-clip .clip").addClass("cliphide");
                 });
             </script>
 
