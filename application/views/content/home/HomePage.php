@@ -26,8 +26,8 @@
         <div class="homepage-text">
             <h1>Fungsional sekaligus estetis dengan bentuk geometris.</h1>
             <small class="text-uppercase px-3">MP House by TIES</small>
-            <span class="text-uppercase px-3">Tangerang</span>
-            <a class="px-3 mt-2" href="<?= base_url() ?>project/projectById/2"><button class="btn btn-sm px-3 py-2 px-lg-5 py-lg-3 fw-bold rounded-0 tombol-header">LIHAT PROJECT <span class="ps-3 fa fa-arrow-right"></span></button></a>
+            <span class="text-uppercase fw-light px-3 fs-5" style="letter-spacing: 3px;">Tangerang</span>
+            <a class="px-3 mt-2" href="<?= base_url() ?>project/projectById/2"><button class="btn btn-sm px-3 py-2 px-lg-5 py-lg-3 fw-normal rounded-0 tombol-header">LIHAT PROJECT <span class="ps-2 fa fa-arrow-right"></span></button></a>
         </div>
     </div>
 </div>

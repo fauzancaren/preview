@@ -16,10 +16,10 @@ body {
 }
 
 .homepage-wrapper {
-    height:1000px;
-    background-image:url('../../asset/image/headerHome.jpg');
-    object-fit: contain; 
-    background-size: cover; 
+    height: 1000px;
+    background-image: url('../../asset/image/headerHome.jpg');
+    object-fit: contain;
+    background-size: cover;
     background-position: bottom;
 }
 
@@ -50,6 +50,7 @@ body {
 }
 
 .homepage-text small {
+    letter-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -884,6 +885,13 @@ body {
     padding: 2rem;
 }
 
+.li-footer {
+    padding-right: 10%;
+    list-style: none;
+    width: 50px;
+    color: #ffffffa6;
+}
+
 .li-footer:hover a i {
     color: slateblue;
 }
@@ -991,7 +999,7 @@ body {
     /* header-hompage start */
 
     .homepage-wrapper {
-        height:600px;
+        height: 600px;
     }
 
     .homepage-contain {
@@ -1028,8 +1036,10 @@ body {
     }
 
     .homepage-text small {
+        letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
+        font-size: 2.5vh;
         width: max-content;
         filter: drop-shadow(2px 4px 6px black);
     }
@@ -1279,7 +1289,7 @@ body {
     /* header-hompage start */
 
     .homepage-wrapper {
-        height:900px;
+        height: 900px;
     }
 
     .homepage-contain {
@@ -1309,9 +1319,10 @@ body {
     }
 
     .homepage-text h1 {
+        letter-spacing: 0.3vh;
         font-family: ui-sans-serif;
         font-size: 6vh;
-        font-weight: 900;
+        font-weight: 400;
         filter: drop-shadow(2px 4px 6px black);
         background: linear-gradient(60deg, #0000008c, transparent);
         padding: 2vh;
@@ -1319,8 +1330,9 @@ body {
     }
 
     .homepage-text small {
+        letter-spacing: 3px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
+        font-size: 27px;
         font-weight: 700;
         width: max-content;
         filter: drop-shadow(2px 4px 6px black);
@@ -1418,7 +1430,7 @@ body {
 
 @media (min-width: 1024px) {
     .homepage-wrapper {
-        height:1300px;
+        height: 1300px;
     }
 
     .homepage-contain {
@@ -1434,6 +1446,7 @@ body {
     .homepage-contain:hover {
         opacity: 1;
     }
+
     .container-bingkai {
         padding: none;
     }

@@ -46,13 +46,13 @@
 
 <div class="footer-C-newsletter py-5">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 m-auto">
-        <div class="col-lg-3" style="color: #ffffffa6;">
+        <div class="col-lg-4" style="color: #ffffffa6;">
             <h4 style="padding-left: 1rem; border-left: 3px solid #ffffffa6;">Follow Us</h4>
             <ul style="display: flex; padding: 0; margin-top: 2rem;">
-               <li class="li-footer" style="list-style: none; width: 50px; color: #ffffffa6;"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-facebook"></i></a></li>
-               <li class="li-footer" style="list-style: none; width: 50px; color: #ffffffa6;"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-instagram"></i></a></li>
-               <li class="li-footer" style="list-style: none; width: 50px; color: #ffffffa6;"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-twitter"></a></i></li>
-               <li class="li-footer" style="list-style: none; width: 50px; color: #ffffffa6;"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-tiktok"></i></a></li>
+               <li class="li-footer"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-facebook"></i></a></li>
+               <li class="li-footer"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-instagram"></i></a></li>
+               <li class="li-footer"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-twitter"></a></i></li>
+               <li class="li-footer"><a style="text-decoration: none; color: #ffffffa6;" href="#"><i class="fs-1 fab fa-tiktok"></i></a></li>
             </ul>
         </div>
         <div class="col-lg-3" style="color: #ffffffa6;">
@@ -65,7 +65,7 @@
         </div>
             
         </div>
-        <div class="col-md-12 col-lg-6 px-lg-5" style="color: #ffffffa6;">
+        <div class="col-md-12 col-lg-5 px-lg-5" style="color: #ffffffa6;">
             <h4 class="fw-normal" style="padding-left: 1rem; border-left: 3px solid #ffffffa6; color: #ffffffa6;">Our Newsletter</h4>
             <p class="fw-light pt-3" style="font-size: 1rem; color: white;">Subscribe to our newsletter to get update about our grand offers.</p>
 
