@@ -1,13 +1,12 @@
 <div class="container-fluid" style="background-color: #fefdf9;">
     <?php foreach ($projectById as $item) : ?>
-        <div class="row row-cols-1 row-cols-lg-2 p-2 p-lg-5 mb-3">
-            <div class="row mb-5 col-lg">
-                <!-- <img class="img-fluid" style="height: 500px;" src="<?= base_url() ?>/asset/image/project/<?= $item["CustomerProjectHeaderImg"] ?>" alt=""> -->
+        <div class="row row-cols-1 row-cols-lg-2 mb-3 py-5 align-items-center">
+            <div class="mb-5 col-lg">
                 <div class="img-fluid p-4 rounded-1" style="height: 500px; background-image: url(<?= base_url('asset/image/project/' . $item["CustomerProjectHeaderImg"] . '') ?>); background-size: cover; object-fit: cover; background-position: center;">
                 </div>
             </div>
-            <div class="row col-lg justify-content-lg-evenly align-content-center">
-                <div class="row">
+            <div class="col-lg justify-content-lg-evenly align-content-center">
+                <div class="row p-1 p-lg-3">
                     <h2 class="mb-4"><?= $item["CustomerProjectTitle"] ?></h2>
                     <small class="mb-2"> <?= $item["CustomerProjectDeskripsi"] ?></small>
                     <span><?= date('d F Y', strtotime($item["CustomerProjectDate"])); ?> | <?= $item["CustomerProjectAddress"] ?></span>
