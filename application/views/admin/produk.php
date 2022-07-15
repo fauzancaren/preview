@@ -52,7 +52,7 @@
                 <div class="container-fluid" style="background-color: #fefdf9;">
                     <div class="row row-cols-1 row-cols-lg-2 p-lg-5 shadow-sm pb-5">
                         <div class="col mb-5 mb-lg-0 text-center d-flex justify-content-center" style="height: 600px;">
-                            <img class="img-fluid" id="MsItemImage" src="<?= base_url("upload.php?kode=")?>" alt="">
+                            <img class="img-fluid" id="MsItemImage" src="<?= base_url("asset/image/test.jpg") ?>" alt="">
                         </div>
                         <div class="col d-flex px-4 px-lg-5 flex-column justify-content-lg-center">
                             <div class="row">
@@ -105,31 +105,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" style="background-color: #d77777;" id="panelstay-basic-information">
+                        <button class="accordion-button" style="height: 100px; color: white; font-size: 30px; margin: 10px; background-color: #d77777;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-basic-information" aria-expanded="true" aria-controls="panelstay-basic-information">
+                            <i class="fas fa-info-circle pe-2"></i> Detail Item
+                        </button>
+                    </h2>
+                    <div id="panel-basic-information" class="accordion-collapse collapse show" aria-labelledby="panelstay-basic-information">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <div class="row mb-1">
+                                    <label for="input-pencarian" class="col-2 col-form-label">Deskripsi</label>
+                                    <div class="col-10">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="input-MsItemDeskripsiText" style="height: 200px"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <label for="input-pencarian" class="col-2 col-form-label">Warna</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control form-control" id="input-MsItemColor">
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <label for="input-pencarian" class="col-2 col-form-label">Material</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control form-control" id="input-MsItemMaterial">
+                                    </div>
+                                </div>
 
-                <div class="container">
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-2 col-form-label">Deskripsi</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control" id="input-MsItemDeskripsiText">
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-2 col-form-label">Warna</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control" id="input-MsItemColor">
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-2 col-form-label">Material</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control" id="input-MsItemMaterial">
-                        </div>
-                    </div>
-
-                    <div class="row mb-1">
-                        <label for="input-pencarian" class="col-2 col-form-label">Foto Produk</label>
-                        <div class="col-10">
-                            <input type="file" class="form-control form-control" id="input-MsItemImage" accept="image/*" onchange="loadFile(event)">
+                                <div class="row mb-1">
+                                    <label for="input-pencarian" class="col-2 col-form-label">Foto Produk</label>
+                                    <div class="col-10">
+                                        <input type="file" class="form-control form-control" id="input-MsItemImage" accept="image/*" onchange="loadFile(event)">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,11 +174,7 @@
                 "orderable": false,
                 targets: 0
             },
-            {
-                "orderable": false,
-                "className": "text-center",
-                targets: 5
-            },
+         
             {
                 "orderable": false,
                 "className": "text-center",
@@ -204,11 +210,14 @@
         $("#MsItemDeskripsiText").text(row[9]);
         $("#MsItemColor").text(row[10]);
         $("#MsItemMaterial").text(row[11]);
+        $("#btn-simpan").data("id", row[8]);
 
         $("#input-MsItemDeskripsiText").val(row[9]);
         $("#input-MsItemColor").val(row[10]);
         $("#input-MsItemMaterial").val(row[11]);
+        loadURLToInputFiled($(row[5]).prop('src'));
         $("#modal-edit").modal("show");
+    })
 
         $('#input-MsItemDeskripsiText').keyup(function() {
             $("#MsItemDeskripsiText").text($(this).val());
@@ -221,10 +230,6 @@
         $('#input-MsItemMaterial').keyup(function() {
             $("#MsItemMaterial").text($(this).val());
         });
-        $("#btn-simpan").data("id", row[8]);
-
-        loadURLToInputFiled($(row[5]).prop('src'));
-        $("#modal-edit").modal("show");
 
         function loadURLToInputFiled(url) {
             getImgURL(url, (imgBlob) => {
@@ -263,12 +268,10 @@
         var loadFile = function(event) {
             var reader = new FileReader();
             reader.onload = function() {
-                var output = document.getElementById('#MsItemImage');
+                var output = document.getElementById('MsItemImage');
                 output.src = reader.result;
             };
             reader.readAsDataURL(event.target.files[0]);
         };
-
-        $("#")
-    })
+   
 </script>

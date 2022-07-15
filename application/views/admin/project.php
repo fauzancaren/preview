@@ -253,12 +253,17 @@
         $("#CustomerProjectDate").text(row[2]);
         $("#CustomerProjectDeskripsi").text(row[3]);
         $("#CustomerProjectAddress").text(row[4]);
+        $("#btn-simpan").data("id", row[8]);
 
         $("#input-CustomerProjectTitle").val(row[1]);
         $("#input-CustomerProjectDate").val(row[2]);
         $("#input-CustomerProjectDeskripsi").val(row[3]);
         $("#input-CustomerProjectAddress").val(row[4]);
+        loadURLToInputFiled($(row[5]).prop('src'));
+        $("#modal-edit").modal("show");
 
+    })
+    
         $('#input-CustomerProjectTitle').keyup(function() {
             $("#CustomerProjectTitle").text($(this).val());
         });
@@ -274,10 +279,7 @@
         $('#input-CustomerProjectAddress').keyup(function() {
             $("#CustomerProjectAddress").text($(this).val());
         });
-        $("#btn-simpan").data("id", row[8]);
-
-        loadURLToInputFiled($(row[5]).prop('src'));
-        $("#modal-edit").modal("show");
+   
 
         function loadURLToInputFiled(url) {
             getImgURL(url, (imgBlob) => {
@@ -321,7 +323,4 @@
             };
             reader.readAsDataURL(event.target.files[0]);
         };
-
-        $("#")
-    })
 </script>
