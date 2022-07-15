@@ -19,7 +19,7 @@
                 <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
             </div>
         </div>
-        <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
+        <a href="<?= base_url() ?>/product/productsById/10">ROBLOCK</a>
 
     </div>
 </div>
@@ -27,7 +27,7 @@
     <div class="py-5 container px-sm-0" style="background-color: #fefdf9;">
         <div class="input-group mb-5" style="max-width: 600px; margin: auto;">
             <input type="text" class="form-control" id="text-produk" placeholder="Cari nama produk..." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="search" id="search-product"><i class="fas fa-search icon"></i></button>
+            <button class="btn btn-outline-secondary" type="search" id="search"><i class="fas fa-search icon"></i></button>
         </div>
         <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 g-md-2" id="data-item" data-index="0" style="background-color: #fefdf9;">
         

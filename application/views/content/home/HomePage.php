@@ -262,7 +262,7 @@
                 <span class="clip-text clip-text4">Roblock</span>
                 <div class="clip clip1">
                     <div class="clip-content">
-                        <a href="<?= base_url() ?>">
+                        <a href="<?= base_url() ?>product/productsById/5">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
                         <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
@@ -270,7 +270,7 @@
                 </div>
                 <div class="clip clip2">
                     <div class="clip-content">
-                        <a href="<?= base_url() ?>">
+                        <a href="<?= base_url() ?>product/productsById/6">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
                         <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
@@ -278,7 +278,7 @@
                 </div>
                 <div class="clip clip3">
                     <div class="clip-content">
-                        <a href="<?= base_url() ?>">
+                        <a href="<?= base_url() ?>/product">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
                         <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>
@@ -286,7 +286,7 @@
                 </div>
                 <div class="clip clip4">
                     <div class="clip-content">
-                        <a href="<?= base_url() ?>">
+                        <a href="<?= base_url() ?>/product/productsById/10">
                             <button class="btn-imgrole">LIHAT PRODUK</button>
                         </a>
                         <p style="font-size: 2vh; text-align: justify; color: #ffffff6e;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit illum reprehenderit laudantium, accusamus nobis ab voluptas cupiditate voluptatibus architecto ipsum iusto quasi!</p>

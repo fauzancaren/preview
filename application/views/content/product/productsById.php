@@ -24,7 +24,7 @@
                 <a href="<?= base_url() ?>product/productsById/4">ROSTER TANAH LIAT</a>
             </div>
         </div>
-        <a href="<?= base_url() ?>/product/productsById/10">PAVING</a>
+        <a href="<?= base_url() ?>/product/productsById/10">ROBLOCK</a>
     </div>
 </div>
 <div class="container-fluid" style="background-color: #fefdf9;">
