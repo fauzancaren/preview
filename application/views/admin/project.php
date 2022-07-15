@@ -101,49 +101,49 @@
                     <div id="panel-basic-information" class="accordion-collapse collapse show" aria-labelledby="panelstay-basic-information">
                         <div class="accordion-body">
                             <div class="row mb-1 mt-5">
-                                <p class="col-sm-2"></p>
-                                <label for="input-pencarian" class="col-sm-2 col-form-label">Title</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control-sm" id="input-CustomerProjectTitle">
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Title</label>
+                                <div class="col-6">
+                                    <input type="text" class="form-control form-control" id="input-CustomerProjectTitle">
                                 </div>
-                                <p class="col-sm-2"></p>
+                                <p class="col-2"></p>
                             </div>
 
                             <div class="row mb-1">
-                                <p class="col-sm-2"></p>
-                                <label for="input-pencarian" class="col-sm-2 col-form-label">Address</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control-sm" id="input-CustomerProjectAddress">
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Address</label>
+                                <div class="col-6">
+                                    <input type="text" class="form-control form-control" id="input-CustomerProjectAddress">
                                 </div>
-                                <p class="col-sm-2"></p>
+                                <p class="col-2"></p>
                             </div>
 
                             <div class="row mb-1">
-                                <p class="col-sm-2"></p>
-                                <label for="input-pencarian" class="col-sm-2 col-form-label">Deskripsi</label>
-                                <div class="col-sm-6">
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Deskripsi</label>
+                                <div class="col-6">
                                     <textarea class="form-control" placeholder="Leave a comment here" id="input-CustomerProjectDeskripsi" style="height: 200px"></textarea>
                                 </div>
-                                <p class="col-sm-2"></p>
+                                <p class="col-2"></p>
                             </div>
 
                             <div class="row mb-1">
-                                <p class="col-sm-2"></p>
-                                <label for="input-pencarian" class="col-sm-2 col-form-label">Date</label>
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Date</label>
                                 <div class="col-6">
-                                    <input type="text" class="form-control form-control-sm" id="input-CustomerProjectDate">
+                                    <input type="text" class="form-control form-control" id="input-CustomerProjectDate">
                                 </div>
-                                <p class="col-sm-2"></p>
+                                <p class="col-2"></p>
                             </div>
 
                             <div class="row mb-1">
-                                <p class="col-sm-2"></p>
-                                <label for="input-pencarian" class="col-sm-2 col-form-label">Header Image</label>
-                                <div class="col-sm-6">
-                                    <input type="file" class="form-control form-control-sm" id="input-CustomerProjectHeaderImg" accept="image/*" onchange="loadFile(event)">
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Header Image</label>
+                                <div class="col-6">
+                                    <input type="file" class="form-control form-control" id="input-CustomerProjectHeaderImg" accept="image/*" onchange="loadFile(event)">
                                     <small class="text-secondary">Optimal ukuran file gambar 1200 x 400 px </small>
                                 </div>
-                                <p class="col-sm-2"></p>
+                                <p class="col-2"></p>
                             </div>
                         </div>
                     </div>
@@ -157,13 +157,13 @@
                     <div id="panel-Gallery-product" class="accordion-collapse collapse show" aria-labelledby="panelstay-Gallery-product">
                         <div class="accordion-body">
                             <div class="row mb-1 mt-5">
-                                <p class="col-sm-2"></p>
-                                <label for="input-pencarian" class="col-sm-2 col-form-label">Gallery Customer Project</label>
-                                <div class="col-sm-6">
-                                    <input type="file" class="form-control form-control-sm" id="input-CustomerProjectHeaderImg" accept="image/*" onchange="loadFile(event)">
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Gallery Customer Project</label>
+                                <div class="col-6">
+                                    <input type="file" class="form-control form-control" id="input-CustomerProjectHeaderImg" accept="image/*" onchange="loadFile(event)">
                                     <small class="text-secondary">Optimal ukuran file gambar 1200 x 400 px </small>
                                 </div>
-                                <p class="col-sm-2"></p>
+                                <p class="col-2"></p>
                             </div>
                         </div>
                     </div>

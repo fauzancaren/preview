@@ -50,7 +50,7 @@ class Product_model extends CI_Model
     public function getDataProductNext($category, $index)
     {
         if ($category != "0") $this->db->where('MsItemCatId', $category);
-        return $this->db->join('TblMsItemCategoryDetail', 'TblMsItemCategoryDetail.CategoryDetailId = TblMsItem.MsItemCatId', 'left')->where('CategoryDetailVisible', '1')->order_by("MsItemName asc")->get("TblMsItem", 20, $index)->result();
+        return $this->db->join('TblMsItemDeskripsi', 'TblMsItemDeskripsi.MsItemDeskripsiRef = TblMsItem.MsItemId', 'left')->where('MsItemDeskripsiVisible', '1')->order_by("MsItemName asc")->get("TblMsItem", 20, $index)->result();
     }
     function get_base_64_by_item($id)
     {

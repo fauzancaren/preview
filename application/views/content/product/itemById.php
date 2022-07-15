@@ -2,7 +2,7 @@
     <?php foreach ($MsitemById as $item) : ?>
         <div class="row row-cols-1 row-cols-lg-2 p-lg-5 shadow-sm pb-5">
             <div class="col mb-5 mb-lg-0 text-center d-flex justify-content-center" style="height: 600px;">
-                <img class="img-fluid" src="<?= base_url() ?>/asset/image/product/<?= $item["MsItemImage"] ?>" alt="">
+                <img class="img-fluid" style="object-fit: contain;" src="<?= base_url() ?>/asset/image/product/<?= $item["MsItemImage"] ?>" alt="">
             </div>
             <div class="col d-flex px-4 px-lg-5 flex-column justify-content-lg-center">
                 <div class="row">
