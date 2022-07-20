@@ -93,14 +93,14 @@
                 </div>
 
                 <div class="accordion-item mt-2">
-                    <h2 class="accordion-header" style="background-color: #d77777;" id="panelstay-basic-information">
-                        <button class="accordion-button" style="height: 100px; color: white; font-size: 30px; margin: 10px; background-color: #d77777;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-basic-information" aria-expanded="true" aria-controls="panelstay-basic-information">
+                    <h2 class="accordion-header" id="panelstay-basic-information">
+                        <button class="accordion-button" style="height: 100px; color: #ffffff; font-size: 1em; padding-left: 5%; background-color: #5a5c69;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-basic-information" aria-expanded="true" aria-controls="panelstay-basic-information">
                             <i class="fas fa-info-circle pe-2"></i> Customer Project
                         </button>
                     </h2>
                     <div id="panel-basic-information" class="accordion-collapse collapse show" aria-labelledby="panelstay-basic-information">
-                        <div class="accordion-body">
-                            <div class="row mb-1 mt-5">
+                        <div class="accordion-body py-5">
+                            <div class="row">
                                 <p class="col-2"></p>
                                 <label for="input-pencarian" class="col-2 col-form-label">Title</label>
                                 <div class="col-6">
@@ -148,15 +148,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item mt-2 mb-5">
-                    <h2 class="accordion-header" style="background-color: #d77777;" id="panelstay-Gallery-product">
-                        <button class="accordion-button" style="height: 100px; color: white; font-size: 30px; margin: 10px; background-color: #d77777;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-Gallery-product" aria-expanded="true" aria-controls="panelstay-Gallery-product">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelstay-Gallery-product">
+                        <button class="accordion-button" style="height: 100px; color: #ffffff; font-size: 1em; padding-left: 5%; background-color: #5a5c69;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-Gallery-product" aria-expanded="true" aria-controls="panelstay-Gallery-product">
                             <i class="fas fa-info-circle pe-2"></i> Gallery Product
                         </button>
                     </h2>
                     <div id="panel-Gallery-product" class="accordion-collapse collapse show" aria-labelledby="panelstay-Gallery-product">
-                        <div class="accordion-body">
-                            <div class="row mb-1 mt-5">
+                        <div class="accordion-body py-5">
+                            <div class="row">
                                 <p class="col-2"></p>
                                 <label for="input-pencarian" class="col-2 col-form-label">Gallery Customer Project</label>
                                 <div class="col-6">
@@ -168,11 +168,32 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelstay-item-use">
+                        <button class="accordion-button" style="height: 100px; color: #ffffff; font-size: 1em; padding-left: 5%; background-color: #5a5c69;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-item-use" aria-expanded="true" aria-controls="panelstay-item-use">
+                            <i class="fas fa-info-circle pe-2"></i> Item Digunakan
+                        </button>
+                    </h2>
+                    <div id="panel-item-use" class="accordion-collapse collapse show" aria-labelledby="panelstay-item-use">
+                        <div class="accordion-body py-5">
+                            <div class="row">
+                                <p class="col-2"></p>
+                                <label for="input-pencarian" class="col-2 col-form-label">Item Digunakan</label>
+                                <div class="col-6">
+                                    <input type="file" class="form-control form-control" id="input-CustomerProjectHeaderImg" accept="image/*" onchange="loadFile(event)">
+                                </div>
+                                <p class="col-2"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="input-CustomerProjectId">
+                </div>
             </div>
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batalkan</button>
-                <button type="button" class="btn btn-success" id="btn-simpan" data-id="0">Simpan</button>
+                <button type="button" class="btn btn-success" id="btn-simpan">Simpan</button>
             </div>
         </div>
     </div>
@@ -253,9 +274,9 @@
         $("#CustomerProjectDate").text(row[2]);
         $("#CustomerProjectDeskripsi").text(row[3]);
         $("#CustomerProjectAddress").text(row[4]);
-        $("#btn-simpan").data("id", row[8]);
 
         $("#input-CustomerProjectTitle").val(row[1]);
+        $("#input-CustomerProjectId").val(row[8]);
         $("#input-CustomerProjectDate").val(row[2]);
         $("#input-CustomerProjectDeskripsi").val(row[3]);
         $("#input-CustomerProjectAddress").val(row[4]);
@@ -263,64 +284,107 @@
         $("#modal-edit").modal("show");
 
     })
-    
-        $('#input-CustomerProjectTitle').keyup(function() {
-            $("#CustomerProjectTitle").text($(this).val());
-        });
 
-        $('#input-CustomerProjectDate').keyup(function() {
-            $("#CustomerProjectDate").text($(this).val());
-        });
+    $('#input-CustomerProjectTitle').keyup(function() {
+        $("#CustomerProjectTitle").text($(this).val());
+    });
 
-        $('#input-CustomerProjectDeskripsi').keyup(function() {
-            $("#CustomerProjectDeskripsi").text($(this).val());
-        });
+    $('#input-CustomerProjectDate').keyup(function() {
+        $("#CustomerProjectDate").text($(this).val());
+    });
 
-        $('#input-CustomerProjectAddress').keyup(function() {
-            $("#CustomerProjectAddress").text($(this).val());
-        });
-   
+    $('#input-CustomerProjectDeskripsi').keyup(function() {
+        $("#CustomerProjectDeskripsi").text($(this).val());
+    });
 
-        function loadURLToInputFiled(url) {
-            getImgURL(url, (imgBlob) => {
-                // Load img blob to input
-                // WIP: UTF8 character error 
-                let fileName = url.replace(defaultImageLocation, "");
-                let file = new File([imgBlob], fileName, {
-                    type: "image/jpg",
-                    lastModified: new Date().getTime()
-                }, 'utf-8');
-                let container = new DataTransfer();
-                container.items.add(file);
-                document.querySelector('#input-CustomerProjectHeaderImg').files = container.files;
+    $('#input-CustomerProjectAddress').keyup(function() {
+        $("#CustomerProjectAddress").text($(this).val());
+    });
 
-                var reader = new window.FileReader();
-                reader.readAsDataURL(imgBlob);
-                reader.onloadend = function() {
-                    base64data = reader.result;
-                    $("#CustomerProjectHeaderImg").prop("src", base64data);
+    function loadURLToInputFiled(url) {
+        getImgURL(url, (imgBlob) => {
+            // Load img blob to input
+            // WIP: UTF8 character error 
+            let fileName = url.replace(defaultImageLocation, "");
+            let file = new File([imgBlob], fileName, {
+                type: "image/jpg",
+                lastModified: new Date().getTime()
+            }, 'utf-8');
+            let container = new DataTransfer();
+            container.items.add(file);
+            document.querySelector('#input-CustomerProjectHeaderImg').files = container.files;
+
+            var reader = new window.FileReader();
+            reader.readAsDataURL(imgBlob);
+            reader.onloadend = function() {
+                base64data = reader.result;
+                $("#CustomerProjectHeaderImg").prop("src", base64data);
+            }
+        })
+    }
+
+    // xmlHTTP return blob respond
+    function getImgURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            callback(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+
+    //auto show from input file
+    var loadFile = function(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('CustomerProjectHeaderImg');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+
+    var req_status_add = 0;
+
+    // loadURLToInputFiled(url);
+    $("#btn-simpan").click(function() {
+        if (!req_status_add) {
+            $("#btn-simpan").html('<i class="fas fa-circle-notch fa-spin"></i> Loading');
+
+            $.ajax({
+                type: 'POST',
+                url: "<?= site_url("function/FunctionAdmin/project_edit/") ?>" + $("#input-CustomerProjectId").val(),
+                data: {
+                    "CustomerProjectTitle": $("#input-CustomerProjectTitle").val(),
+                    "CustomerProjectDeskripsi": $("#input-CustomerProjectDeskripsi").val(),
+                    "CustomerProjectAddress": $("#input-CustomerProjectAddress").val()
+                },
+                before: function() {
+                    req_status_add = 1;
+                },
+                success: function(data) {
+                    req_status_add = 0;
+                    $("#btn-simpan").html("Simpan");
+                    Swal.fire({
+                        icon: 'success',
+                        text: 'Edit data berhasil',
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        timer: 1500,
+                    })
+                },
+                error: function(err) {
+                    Swal.fire({
+                        icon: 'error',
+                        text: err,
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        timer: 1500
+                    });
                 }
             })
         }
-
-        // xmlHTTP return blob respond
-        function getImgURL(url, callback) {
-            var xhr = new XMLHttpRequest();
-            xhr.onload = function() {
-                callback(xhr.response);
-            };
-            xhr.open('GET', url);
-            xhr.responseType = 'blob';
-            xhr.send();
-        }
-
-        //auto show from input file
-        var loadFile = function(event) {
-            var reader = new FileReader();
-            reader.onload = function() {
-                var output = document.getElementById('CustomerProjectHeaderImg');
-                output.src = reader.result;
-            };
-            reader.readAsDataURL(event.target.files[0]);
-        };
+    });
 </script>

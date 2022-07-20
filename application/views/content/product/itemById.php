@@ -27,7 +27,7 @@
                 <hr class="mb-4">
                 <div class="p-0" id="list-tab" role="tablist">
                     <a class="px-4 py-1 active border border-1 border-dark text-dark" style="text-decoration: none;" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Deskripsi</a>
-                    <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Info Tambahan</a>
+                    <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Lainnya</a>
                 </div>
                 <div class="tab-content mt-3" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">

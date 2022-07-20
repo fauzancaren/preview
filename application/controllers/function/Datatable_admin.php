@@ -58,7 +58,7 @@
       {
          // SETUP DATATABLE
          $this->Datatable->table = 'TblMsItem';
-         $this->Datatable->tablejoin = array(array(0 => 'TblMsItemDeskripsi', 1 => 'MsItemDeskripsiRef = MsItemId'));
+         $this->Datatable->tablejoin = array(array(0 => 'TblMsItemDeskripsi', 1 => 'MsItemDeskripsiRef = MsItemId'), array(0 => 'TblMsItemSubImage', 1 => 'ItemSubImageRef = MsItemId'));
          $this->Datatable->column_order = array(
             null,
             'MsItemCode',
@@ -90,6 +90,9 @@
             $row[] = $master->MsItemDeskripsiText;
             $row[] = $master->MsItemColor;
             $row[] = $master->MsItemMaterial;
+            $row[] = $master->ItemSubImageRef;
+            $row[] = $master->ItemSubImageFileName;
+            $row[] = $master->MsItemDeskripsiRef;
             $data[] = $row;
          }
          $output = array(

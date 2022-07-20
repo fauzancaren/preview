@@ -52,7 +52,7 @@
                 <div class="container-fluid" style="background-color: #fefdf9;">
                     <div class="row row-cols-1 row-cols-lg-2 p-lg-5 shadow-sm pb-5">
                         <div class="col mb-5 mb-lg-0 text-center d-flex justify-content-center" style="height: 600px;">
-                            <img class="img-fluid" id="MsItemImage" src="<?= base_url("asset/image/test.jpg") ?>" alt="">
+                            <img class="img-fluid" style="object-fit: contain;" id="MsItemImage" src="<?= base_url("asset/image/test.jpg") ?>" alt="">
                         </div>
                         <div class="col d-flex px-4 px-lg-5 flex-column justify-content-lg-center">
                             <div class="row">
@@ -72,7 +72,7 @@
                             <hr class="mb-4">
                             <div class="p-0" id="list-tab" role="tablist">
                                 <a class="px-4 py-1 active border border-1 border-dark text-dark" style="text-decoration: none;" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Deskripsi</a>
-                                <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Info Tambahan</a>
+                                <a class="px-4 py-1 border border-1 border-dark text-dark" style="text-decoration: none;" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Lainnya</a>
                             </div>
                             <div class="tab-content mt-3" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
@@ -101,18 +101,18 @@
                     <h4 class="text-center mb-5">Gallery Product</h4>
                     <div class="row row-cols-2 row-cols-lg-4 row-cols-sm-3 row-cols-xxl-5 text-center">
                         <div class="col mb-5">
-                            <!-- <img class="img-fluid" src="<?= base_url() ?>/asset/image/subProduct/BXP0001.png" alt=""> -->
+
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item mt-2">
-                    <h2 class="accordion-header" style="background-color: #d77777;" id="panelstay-basic-information">
-                        <button class="accordion-button" style="height: 100px; color: white; font-size: 30px; margin: 10px; background-color: #d77777;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-basic-information" aria-expanded="true" aria-controls="panelstay-basic-information">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" style="background-color: #d77777;" id="panelstay-detail-item">
+                        <button class="accordion-button" style="height: 100px; color: #ffffff; font-size: 1em; padding-left: 5%; background-color: #5a5c69;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-detail-item" aria-expanded="true" aria-controls="panelstay-detail-item">
                             <i class="fas fa-info-circle pe-2"></i> Detail Item
                         </button>
                     </h2>
-                    <div id="panel-basic-information" class="accordion-collapse collapse show" aria-labelledby="panelstay-basic-information">
-                        <div class="accordion-body">
+                    <div id="panel-detail-item" class="accordion-collapse collapse show" aria-labelledby="panelstay-detail-item">
+                        <div class="accordion-body py-5">
                             <div class="container">
                                 <div class="row mb-1">
                                     <label for="input-pencarian" class="col-2 col-form-label">Deskripsi</label>
@@ -135,6 +135,27 @@
 
                                 <div class="row mb-1">
                                     <label for="input-pencarian" class="col-2 col-form-label">Foto Produk</label>
+                                    <div class="col-10">
+                                        <input type="file" class="form-control form-control" id="input-MsItemImage" accept="image/*" onchange="loadFile(event)">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="input-MsItemDeskripsiRef">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" style="background-color: #d77777;" id="panelstay-gallery-product">
+                        <button class="accordion-button" style="height: 100px; color: #ffffff; font-size: 1em; padding-left: 5%; background-color: #5a5c69;" type="button" data-bs-toggle="collapse" data-bs-target="#panel-gallery-product" aria-expanded="true" aria-controls="panelstay-gallery-product">
+                            <i class="fas fa-info-circle pe-2"></i>Gallery Product
+                        </button>
+                    </h2>
+                    <div id="panel-gallery-product" class="accordion-collapse collapse show" aria-labelledby="panelstay-gallery-product">
+                        <div class="accordion-body py-5">
+                            <div class="container">
+                                <div class="row mb-1">
+                                    <label for="input-pencarian" class="col-2 col-form-label">Foto Gallery</label>
                                     <div class="col-10">
                                         <input type="file" class="form-control form-control" id="input-MsItemImage" accept="image/*" onchange="loadFile(event)">
                                     </div>
@@ -174,7 +195,7 @@
                 "orderable": false,
                 targets: 0
             },
-         
+
             {
                 "orderable": false,
                 "className": "text-center",
@@ -210,8 +231,8 @@
         $("#MsItemDeskripsiText").text(row[9]);
         $("#MsItemColor").text(row[10]);
         $("#MsItemMaterial").text(row[11]);
-        $("#btn-simpan").data("id", row[8]);
 
+        $("#input-MsItemDeskripsiRef").val(row[8]);
         $("#input-MsItemDeskripsiText").val(row[9]);
         $("#input-MsItemColor").val(row[10]);
         $("#input-MsItemMaterial").val(row[11]);
@@ -219,59 +240,102 @@
         $("#modal-edit").modal("show");
     })
 
-        $('#input-MsItemDeskripsiText').keyup(function() {
-            $("#MsItemDeskripsiText").text($(this).val());
-        });
+    $('#input-MsItemDeskripsiText').keyup(function() {
+        $("#MsItemDeskripsiText").text($(this).val());
+    });
 
-        $('#input-MsItemColor').keyup(function() {
-            $("#MsItemColor").text($(this).val());
-        });
+    $('#input-MsItemColor').keyup(function() {
+        $("#MsItemColor").text($(this).val());
+    });
 
-        $('#input-MsItemMaterial').keyup(function() {
-            $("#MsItemMaterial").text($(this).val());
-        });
+    $('#input-MsItemMaterial').keyup(function() {
+        $("#MsItemMaterial").text($(this).val());
+    });
 
-        function loadURLToInputFiled(url) {
-            getImgURL(url, (imgBlob) => {
-                // Load img blob to input
-                // WIP: UTF8 character error 
-                let fileName = url.replace(defaultImageLocation, "");
-                let file = new File([imgBlob], fileName, {
-                    type: "image/jpg",
-                    lastModified: new Date().getTime()
-                }, 'utf-8');
-                let container = new DataTransfer();
-                container.items.add(file);
-                document.querySelector('#input-MsItemImage').files = container.files;
+    function loadURLToInputFiled(url) {
+        getImgURL(url, (imgBlob) => {
+            // Load img blob to input
+            // WIP: UTF8 character error 
+            let fileName = url.replace(defaultImageLocation, "");
+            let file = new File([imgBlob], fileName, {
+                type: "image/jpg",
+                lastModified: new Date().getTime()
+            }, 'utf-8');
+            let container = new DataTransfer();
+            container.items.add(file);
+            document.querySelector('#input-MsItemImage').files = container.files;
 
-                var reader = new window.FileReader();
-                reader.readAsDataURL(imgBlob);
-                reader.onloadend = function() {
-                    base64data = reader.result;
-                    $("#MsItemImage").prop("src", base64data);
+            var reader = new window.FileReader();
+            reader.readAsDataURL(imgBlob);
+            reader.onloadend = function() {
+                base64data = reader.result;
+                $("#MsItemImage").prop("src", base64data);
+            }
+        })
+    }
+
+    // xmlHTTP return blob respond
+    function getImgURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            callback(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+
+    //auto show from input file
+    var loadFile = function(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('MsItemImage');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+
+    var req_status_add = 0;
+
+    // loadURLToInputFiled(url);
+    $("#btn-simpan").click(function() {
+        if (!req_status_add) {
+            $("#btn-simpan").html('<i class="fas fa-circle-notch fa-spin"></i> Loading');
+
+            $.ajax({
+                type: 'POST',
+                url: "<?= site_url("function/FunctionAdmin/product_edit/") ?>" + $("#input-MsItemDeskripsiRef").val(),
+                data: {
+                    "MsItemDeskripsiText": $("#input-MsItemDeskripsiText").val(),
+                    "MsItemColor": $("#input-MsItemColor").val(),
+                    "MsItemMaterial": $("#input-MsItemMaterial").val()
+                },
+                before: function() {
+                    req_status_add = 1;
+                },
+                success: function(data) {
+                    req_status_add = 0;
+                    $("#btn-simpan").html("Simpan");
+                    Swal.fire({
+                        icon: 'success',
+                        text: 'Edit data berhasil',
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        timer: 1500,
+                    })
+                },
+                error: function(err) {
+                    Swal.fire({
+                        icon: 'error',
+                        text: err,
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        timer: 1500
+                    });
                 }
             })
         }
-
-        // xmlHTTP return blob respond
-        function getImgURL(url, callback) {
-            var xhr = new XMLHttpRequest();
-            xhr.onload = function() {
-                callback(xhr.response);
-            };
-            xhr.open('GET', url);
-            xhr.responseType = 'blob';
-            xhr.send();
-        }
-
-        //auto show from input file
-        var loadFile = function(event) {
-            var reader = new FileReader();
-            reader.onload = function() {
-                var output = document.getElementById('MsItemImage');
-                output.src = reader.result;
-            };
-            reader.readAsDataURL(event.target.files[0]);
-        };
-   
+    });
 </script>

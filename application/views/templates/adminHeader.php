@@ -11,6 +11,7 @@
     <link href="<?= base_url("asset/bootstrap5-2/css/bootstrap.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/omahbata/style.css?version=v2.0.2") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/fontawesome.min.css") ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url("asset/sweetalert/dist/sweetalert2.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontawesome5/all.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/datatable/datatables.min.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontgoogle/lora.css") ?>" rel="stylesheet" type="text/css">
@@ -20,6 +21,7 @@
 
     <script src="<?= base_url("asset/bootstrap5-2/js/jquery-3.6.0.min.js") ?>"></script>
     <script src="<?= base_url("asset/bootstrap5-2/js/popper.min.js") ?>"></script>
+    <script src="<?= base_url("asset/sweetalert/dist/sweetalert2.min.js") ?>"></script>
     <script src="<?= base_url("asset/bootstrap5-2/js/bootstrap.min.js") ?>"></script>
     <script src="<?= base_url("asset/datatable/datatables.min.js") ?>"></script>
     <style>
