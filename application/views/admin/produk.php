@@ -292,6 +292,7 @@
     remove_dropzone_file = function(file){ 
         foto_upload.removeFile(object[file]);
         delete object[file]; 
+        // log
     }
     $("#test-drop").click(function(){
         $("#image-temp").html("");
