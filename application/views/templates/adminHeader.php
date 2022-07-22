@@ -18,12 +18,16 @@
     <link href="<?= base_url("asset/fontgoogle/montserrat.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontgoogle/poppins.css") ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url("asset/fontgoogle/roboto.css") ?>" rel="stylesheet" type="text/css">
-
+    <!-- <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" /> -->
+    <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+    
     <script src="<?= base_url("asset/bootstrap5-2/js/jquery-3.6.0.min.js") ?>"></script>
     <script src="<?= base_url("asset/bootstrap5-2/js/popper.min.js") ?>"></script>
     <script src="<?= base_url("asset/sweetalert/dist/sweetalert2.min.js") ?>"></script>
     <script src="<?= base_url("asset/bootstrap5-2/js/bootstrap.min.js") ?>"></script>
     <script src="<?= base_url("asset/datatable/datatables.min.js") ?>"></script>
+    <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+    <!-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script> -->
     <style>
         .pointer {
             cursor: pointer;

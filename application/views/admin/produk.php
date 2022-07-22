@@ -139,7 +139,7 @@
                                         <input type="file" class="form-control form-control" id="input-MsItemImage" accept="image/*" onchange="loadFile(event)">
                                     </div>
                                 </div>
-                                <input type="hidden" id="input-MsItemDeskripsiRef">
+                                <input type="hidden" name="idRef" id="input-MsItemDeskripsiRef">
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,9 @@
                                 <div class="row mb-1">
                                     <label for="input-pencarian" class="col-2 col-form-label">Foto Gallery</label>
                                     <div class="col-10">
-                                        <input type="file" class="form-control form-control" id="input-MsItemImage" accept="image/*" onchange="loadFile(event)">
+                                        <form action="<?php echo base_url('UploadGallery/uploadGalleryProduct') ?>" class="dropzone"">
+                                        </form>
+                                        <button id="uploadFile">Upload Files</button>
                                     </div>
                                 </div>
                             </div>
@@ -250,6 +252,45 @@
 
     $('#input-MsItemMaterial').keyup(function() {
         $("#MsItemMaterial").text($(this).val());
+    });
+
+    Dropzone.autoDiscover = false;
+
+    var foto_upload = new Dropzone(".dropzone",{
+        maxFilesize: 2,
+        method: "post",
+        autoProcessQueue: false,
+        acceptedFiles: "image/*",
+        paramName: "userfile",
+        dictInvalidFileType: "Type file not allowed",
+        addRemoveLink: true,
+    });
+    
+
+    init: foto_upload.on("sending", function(a, b, c){
+        a.token = Math.random();
+        c.append("token_foto", a.token);
+    });
+
+    $('#uploadFile').click(function(){
+        foto_upload.processQueue();
+    });
+
+    foto_upload.on("removedfile", function(a){
+        var token = a.token;
+        $.ajax({
+            type: "post",
+            data: {token:token},
+            url: "<?php echo base_url('function/Functionimage/removeGalleryProduct') ?>",
+            cache: false,
+            dataType: 'json',
+            success: function(){
+                console.log("remove success");
+            },
+            error: function(){
+                console.log("error");
+            }
+        })
     });
 
     function loadURLToInputFiled(url) {
