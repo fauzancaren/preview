@@ -61,11 +61,8 @@
          $this->Datatable->tablejoin = array(array(0 => 'TblMsItemDeskripsi', 1 => 'MsItemDeskripsiRef = MsItemId'), array(0 => 'TblMsItemSubImage', 1 => 'ItemSubImageRef = MsItemId'));
          $this->Datatable->column_order = array(
             null,
-            null,
-            'MsItemCatCode',
             'MsItemCode',
             'MsItemName',
-            'MsItemDeskripsiText',
             'MsItemPrice',
             'MsItemUoM',
             'MsItemImage',
@@ -81,15 +78,11 @@
          foreach ($list as $master) {
             $no++;
             $row = array();
-            $row[] = $no; 
-            $row[] = '<img src="' . base_url("upload.php?kode=" . $master->MsItemCode) . '"  alt="..." style="object-fit: contain; width: 75px; height: 75px;">';
-            $row[] = $master->MsItemCatCode." - ".$master->MsItemCatName;
+            $row[] = $no;
             $row[] = $master->MsItemCode;
             $row[] = $master->MsItemName;
-            $row[] = $master->MsItemDeskripsiText;
             $row[] = $master->MsItemPrice;
             $row[] = $master->MsItemUoM;
-            $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = '<img src="' . base_url("upload.php?kode=") . $master->MsItemCode . '"  alt="..." style="object-fit: contain; width: 100%; height: 200px;">';
             $row[] = ($master->MsItemDeskripsiVisible == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
