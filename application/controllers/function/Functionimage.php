@@ -36,6 +36,7 @@ class Functionimage extends CI_Controller
          imagepng($image, null, 3);
          imagedestroy($image);
          exit(0);
+         
       }
    }
 }
