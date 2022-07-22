@@ -5,6 +5,10 @@ class Product_model extends CI_Model
     public function getDataProduct()
     {
         return $this->db->get('TblMsItem')->result_array();
+        $this->db->from('TblMsItem');
+        $this->db->join('TblMsItemCategoryDetail', 'TblMsItemCategoryDetail.CategoryDetailId = TblMsItem.MsItemCatId', 'left');
+        $this->db->where('CategoryDetailVisible', '1');
+        $query = $this->db->get();
     }
     public function getDataProductById($id)
     {
@@ -14,7 +18,7 @@ class Product_model extends CI_Model
 
     public function getDataProductKategori()
     {
-        return $this->db->get('TblMsItemCategory')->result_array();
+        return $this->db->get('TblMsItemCategoryDetail')->result_array();
     }
 
     public function getDataProductKategoriById($id)
@@ -42,11 +46,11 @@ class Product_model extends CI_Model
         $this->db->where('ItemSubImageRef', $id);
         return $this->db->get()->result_array();
     }
-    
+
     public function getDataProductNext($category, $index)
     {
         if ($category != "0") $this->db->where('MsItemCatId', $category);
-        return $this->db->order_by("MsItemName asc")->get("TblMsItem", 20, $index)->result();
+        return $this->db->join('TblMsItemDeskripsi', 'TblMsItemDeskripsi.MsItemDeskripsiRef = TblMsItem.MsItemId', 'left')->where('MsItemDeskripsiVisible', '1')->order_by("MsItemName asc")->get("TblMsItem", 20, $index)->result();
     }
     function get_base_64_by_item($id)
     {

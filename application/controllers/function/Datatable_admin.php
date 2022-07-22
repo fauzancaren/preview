@@ -58,11 +58,7 @@
       {
          // SETUP DATATABLE
          $this->Datatable->table = 'TblMsItem';
-         $this->Datatable->tablejoin = array(
-            array(0=>"TblMsItemCategory",1=>"TblMsItemCategory.MsItemCatId=TblMsItem.MsItemCatId"),
-            array(0=>"TblMsItemDeskripsi",1=>"TblMsItemDeskripsi.MsItemDeskripsiRef=TblMsItem.MsItemId")
-         ); 
-
+         $this->Datatable->tablejoin = array(array(0 => 'TblMsItemDeskripsi', 1 => 'MsItemDeskripsiRef = MsItemId'), array(0 => 'TblMsItemSubImage', 1 => 'ItemSubImageRef = MsItemId'));
          $this->Datatable->column_order = array(
             null,
             null,
@@ -72,7 +68,8 @@
             'MsItemDeskripsiText',
             'MsItemPrice',
             'MsItemUoM',
-            'MsItemIsActive',
+            'MsItemImage',
+            'MsItemDeskripsiVisible',
          ); //set column field database for datatable orderable
          $this->Datatable->column_search = array('MsItemCode', 'MsItemName'); //set column field database for datatable searchable
          $this->Datatable->order = array('MsItemCode' => 'asc'); // default order
@@ -93,8 +90,16 @@
             $row[] = $master->MsItemPrice;
             $row[] = $master->MsItemUoM;
             $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
+            $row[] = '<img src="' . base_url("upload.php?kode=") . $master->MsItemCode . '"  alt="..." style="object-fit: contain; width: 100%; height: 200px;">';
+            $row[] = ($master->MsItemDeskripsiVisible == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
             $row[] = $master->MsItemId;
+            $row[] = $master->MsItemDeskripsiText;
+            $row[] = $master->MsItemColor;
+            $row[] = $master->MsItemMaterial;
+            $row[] = $master->ItemSubImageRef;
+            $row[] = $master->ItemSubImageFileName;
+            $row[] = $master->MsItemDeskripsiRef;
             $data[] = $row;
          }
          $output = array(

@@ -3,6 +3,63 @@ body {
     color: #69422d;
 }
 
+/* header-hompage start */
+
+.homepage-contain {
+    background-color: #00000075;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.homepage-wrapper {
+    height: 1000px;
+    background-image: url('../../asset/image/headerHome.jpg');
+    object-fit: contain;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.homepage-contain:hover {
+    opacity: 1;
+}
+
+.homepage-text {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 10px;
+    opacity: 1;
+}
+
+.homepage-text h1 {
+    font-family: ui-sans-serif;
+    font-size: 6vh;
+    font-weight: 900;
+    filter: drop-shadow(2px 4px 6px black);
+    background: linear-gradient(60deg, #0000008c, transparent);
+    padding: 2vh;
+    color: #ffffffe6;
+}
+
+.homepage-text small {
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: max-content;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* header-hompage end */
+
 .jumbotron .img-background {
     background: rgb(255 255 255 / 40%);
     position: absolute;
@@ -239,8 +296,20 @@ body {
 .tombol {
     font-size: 1rem;
     background-color: #bd7658;
-    border: none;
-    border-radius: 2.5rem !important;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+.tombol-header:hover {
+    background-color: #000000de;
+    border: 1px solid #000000b8;
+    color: #ffffff;
+}
+
+.tombol-header {
+    font-size: 1rem;
+    /* background-color: #bd7658; */
+    border: 1px solid white;
     color: #ffffff;
 }
 
@@ -527,14 +596,14 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 51% 50%);
 }
 
-.contain-bg-clip:hover .clip-text{
+.contain-bg-clip:hover .clip-text {
     opacity: 0;
 }
 
 .clip-text2 {
     position: absolute;
     z-index: 2;
-    right:-3%;
+    right: -3%;
     top: 20%;
     font-weight: 500;
     color: #fefdf9;
@@ -557,7 +626,7 @@ body {
 .clip-text3 {
     position: absolute;
     z-index: 2;
-    left:-3%;
+    left: -3%;
     bottom: 20%;
     font-weight: 500;
     color: #fefdf9;
@@ -580,7 +649,7 @@ body {
 .clip-text4 {
     position: absolute;
     z-index: 2;
-    right:-3%;
+    right: -3%;
     bottom: 10%;
     font-weight: 500;
     color: #fefdf9;
@@ -603,9 +672,9 @@ body {
 .contain-bg-clip {
     padding: 0;
     position: relative;
-    width: 800px;
-    height: 600px;
-    filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.3));
+    width: 90%;
+    height: 700px;
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.3));
 }
 
 .clip {
@@ -667,7 +736,7 @@ body {
 .contain-bg-clip .clip:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: all 0.7s;
-    box-shadow:none;
+    box-shadow: none;
     z-index: 10;
 
 }
@@ -675,6 +744,7 @@ body {
 .clipshow {
     opacity: 1;
 }
+
 .cliphide {
     opacity: 0;
 }
@@ -694,6 +764,7 @@ body {
     bottom: 0;
     opacity: 1;
 }
+
 /* bg-clip */
 
 .item {
@@ -702,8 +773,8 @@ body {
 }
 
 .item:hover {
-   
-    background-color:  #f2f2f2;
+
+    background-color: #f2f2f2;
     cursor: pointer;
     z-index: 9999;
     opacity: 1;
@@ -741,7 +812,7 @@ body {
     right: 5px;
 }
 
-.icon-product li{
+.icon-product li {
     position: relative;
     list-style: none;
     width: 35px;
@@ -759,28 +830,29 @@ body {
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-.C-containerImg:hover .icon-product li{
+.C-containerImg:hover .icon-product li {
     visibility: visible;
     opacity: 1;
 }
 
- .icon-product li:hover {
+.icon-product li:hover {
     background: #c6c6c6;
     color: #f2f2f2;
     transition: 0.5s;
     border-radius: 10%;
 }
+
 .icon-product li:hover span {
     visibility: visible;
     transition: 0.5s;
     transform: translateY(-50%) translateX(0px);
- 
- }
+
+}
 
 
 .icon-product li span {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 50px;
     transform: translateY(-50%) translateX(-20px);
     white-space: nowrap;
@@ -807,7 +879,24 @@ body {
 }
 
 /* footer start */
-.footer-about {
+.footer-C-newsletter {
+    width: 100%;
+    background: #000000b0;
+    padding: 2rem;
+}
+
+.li-footer {
+    padding-right: 10%;
+    list-style: none;
+    width: 50px;
+    color: #ffffffa6;
+}
+
+.li-footer:hover a i {
+    color: slateblue;
+}
+
+/* .footer-about {
     position: relative;
     background: linear-gradient(169deg, rgb(112 112 112) 0%, #fefdf961 70%);
     height: 50vh;
@@ -842,7 +931,7 @@ body {
     margin-bottom: 10%;
     padding-right: 5px;
     color: transparent;
-}
+} */
 /* footer end */
 
 /* skleton start */
@@ -851,9 +940,10 @@ body {
     background: linear-gradient(90deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
     border-radius: 5px;
     background-size: 200% 100%;
-    width: 100%; 
+    width: 100%;
     animation: skeleton-loading 1.5s linear infinite;
 }
+
 .loading.image {
     background: #eee;
     background: linear-gradient(90deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
@@ -863,6 +953,7 @@ body {
     height: 300px;
     animation: skeleton-loading 1.5s linear infinite;
 }
+
 .loading.label1 {
     background: #eee;
     margin-top: 10px;
@@ -873,6 +964,7 @@ body {
     height: 20px;
     animation: skeleton-loading 1.5s linear infinite;
 }
+
 .loading.label2 {
     background: #eee;
     margin-top: 10px;
@@ -883,6 +975,7 @@ body {
     height: 15px;
     animation: skeleton-loading 1.5s linear infinite;
 }
+
 .loading.label3 {
     background: #eee;
     margin-top: 10px;
@@ -894,17 +987,81 @@ body {
     animation: skeleton-loading 1.5s linear infinite;
 }
 
-@keyframes skeleton-loading { 
+@keyframes skeleton-loading {
     100% {
         background-position-x: -200%;
     }
 }
+
 /* skleton end */
 
 @media (min-width: 320px) {
+    /* header-hompage start */
+
+    .homepage-wrapper {
+        height: 600px;
+    }
+
+    .homepage-contain {
+        background-color: #00000075;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+    }
+
+    /* .homepage-contain:hover {
+        opacity: 1;
+    } */
+
+    .homepage-text {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+    }
+
+    .homepage-text h1 {
+        font-family: ui-sans-serif;
+        font-size: 3vh;
+        font-weight: 900;
+        filter: drop-shadow(2px 4px 6px black);
+        background: linear-gradient(60deg, #0000008c, transparent);
+        color: #ffffffe6;
+    }
+
+    .homepage-text small {
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 2.5vh;
+        width: max-content;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .homepage-text span {
+        filter: drop-shadow(2px 4px 6px black);
+        width: max-content;
+    }
+
+    /* header-hompage end */
+
+    .tombol-header {
+        font-size: 1rem;
+        /* background-color: #bd7658; */
+        border: 1px solid white;
+        color: #ffffff;
+    }
+
     .container-bingkai {
         padding: 5%;
     }
+
     /* break product */
     .icon-product {
         top: 5px;
@@ -922,17 +1079,20 @@ body {
     .icon-product li:hover span {
         visibility: hidden;
     }
+
     /* break end product */
 
     .img-product {
-        height: 24vw; 
+        height: 24vw;
         width: 100%;
         object-fit: cover;
     }
+
     .img-product:hover {
         transform: scale(1.5);
         overflow: hidden;
     }
+
     .imageHead {
         width: 300px;
         height: 300px;
@@ -1001,6 +1161,7 @@ body {
     .container-bingkai {
         padding: 5%;
     }
+
     .drop-content {
         z-index: 4;
         right: 3%;
@@ -1059,8 +1220,9 @@ body {
 }
 
 @media (min-width: 425px) {
-     /* break product */
-     .icon-product {
+
+    /* break product */
+    .icon-product {
         top: 10px;
         right: 10px;
         display: flex;
@@ -1076,6 +1238,7 @@ body {
     .icon-product li:hover span {
         visibility: hidden;
     }
+
     /* break end product */
 
     .imageHead {
@@ -1123,6 +1286,65 @@ body {
 
 
 @media (min-width: 768px) {
+    /* header-hompage start */
+
+    .homepage-wrapper {
+        height: 900px;
+    }
+
+    .homepage-contain {
+        background-color: #00000075;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+    }
+
+    .homepage-contain:hover {
+        opacity: 1;
+    }
+
+    .homepage-text {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        padding: 10px;
+        opacity: 1;
+    }
+
+    .homepage-text h1 {
+        letter-spacing: 0.3vh;
+        font-family: ui-sans-serif;
+        font-size: 6vh;
+        font-weight: 400;
+        filter: drop-shadow(2px 4px 6px black);
+        background: linear-gradient(60deg, #0000008c, transparent);
+        padding: 2vh;
+        color: #ffffffe6;
+    }
+
+    .homepage-text small {
+        letter-spacing: 3px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+        width: max-content;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .homepage-text span {
+        filter: drop-shadow(2px 4px 6px black);
+        width: max-content;
+    }
+
+    /* header-hompage end */
+
     /* break product */
     .icon-product {
         top: 25px;
@@ -1140,6 +1362,7 @@ body {
     .icon-product li:hover span {
         visibility: hidden;
     }
+
     /* break end product */
 
     .contanier-product {
@@ -1206,11 +1429,30 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .homepage-wrapper {
+        height: 1300px;
+    }
+
+    .homepage-contain {
+        background-color: #00000075;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+    }
+
+    .homepage-contain:hover {
+        opacity: 1;
+    }
+
     .container-bingkai {
         padding: none;
     }
-     /* break product */
-     .icon-product {
+
+    /* break product */
+    .icon-product {
         top: 10px;
         right: 10px;
         display: inherit;
@@ -1226,6 +1468,7 @@ body {
     .icon-product li:hover span {
         visibility: visible;
     }
+
     /* break end product */
 
     .contanier-product {
