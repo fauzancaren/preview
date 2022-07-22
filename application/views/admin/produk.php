@@ -1,3 +1,17 @@
+<style>
+    .dropzone .dz-preview:hover .dz-image img { 
+        filter: blur(1px) !important;
+    }
+    .dz-action{
+        position: absolute;
+        top:0;
+        right:0;
+        z-index:100;
+    }
+    .dz-action:hover{
+        cursor: pointer;
+    }
+</style>
 <div class="container-fluid">
     <!-- Page Heading -->
     <h3 class="fw-bold mb-4 text-gray-800 text-uppercase">Produk</h3>
@@ -157,11 +171,12 @@
                                 <div class="row mb-1">
                                     <label for="input-pencarian" class="col-2 col-form-label">Foto Gallery</label>
                                     <div class="col-10">
-                                        <form action="<?php echo base_url('UploadGallery/uploadGalleryProduct') ?>" class="dropzone"">
-                                        </form>
-                                        <button id="uploadFile">Upload Files</button>
+                                        <div class="dropzone">
+                                        </div> 
                                     </div>
                                 </div>
+                                <button id="test-drop" class="btn btn-primary">test</button>
+                                <div id="image-temp"></div>
                             </div>
                         </div>
                     </div>
@@ -254,44 +269,39 @@
         $("#MsItemMaterial").text($(this).val());
     });
 
-    Dropzone.autoDiscover = false;
-
+    Dropzone.autoDiscover = false; 
     var foto_upload = new Dropzone(".dropzone",{
-        maxFilesize: 2,
-        method: "post",
+        url: "<?= base_url("uploadGallery/uploadGalleryProduct")?>",
+        maxFilesize: 2, 
         autoProcessQueue: false,
         acceptedFiles: "image/*",
         paramName: "userfile",
         dictInvalidFileType: "Type file not allowed",
-        addRemoveLink: true,
+        addRemoveLink: true, 
+    }); 
+    var object = {};
+    var indexobject = 0;
+    foto_upload.on("addedfile", file => { 
+        $('.dz-preview').addClass('dz-complete');
+        $('.dz-details').addClass('d-none'); 
+ 
+        object[indexobject] = file;
+        $(file.previewTemplate).append("<div class='dz-action'><a onclick='remove_dropzone_file(" + indexobject+ ")'><i class='fas fa-times'></i></a></div>"); 
+        indexobject++;
     });
-    
-
-    init: foto_upload.on("sending", function(a, b, c){
-        a.token = Math.random();
-        c.append("token_foto", a.token);
-    });
-
-    $('#uploadFile').click(function(){
-        foto_upload.processQueue();
-    });
-
-    foto_upload.on("removedfile", function(a){
-        var token = a.token;
-        $.ajax({
-            type: "post",
-            data: {token:token},
-            url: "<?php echo base_url('function/Functionimage/removeGalleryProduct') ?>",
-            cache: false,
-            dataType: 'json',
-            success: function(){
-                console.log("remove success");
-            },
-            error: function(){
-                console.log("error");
-            }
-        })
-    });
+    remove_dropzone_file = function(file){ 
+        foto_upload.removeFile(object[file]);
+        delete object[file]; 
+    }
+    $("#test-drop").click(function(){
+        $("#image-temp").html("");
+        console.log(foto_upload.files);
+        for(var i = 0;i < foto_upload.files.length;i++){
+            $("#image-temp").append("<image src='" + foto_upload.files[i]["dataURL"]+"'/>");
+            
+        }
+    })
+ 
 
     function loadURLToInputFiled(url) {
         getImgURL(url, (imgBlob) => {
