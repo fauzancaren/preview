@@ -58,14 +58,20 @@
       {
          // SETUP DATATABLE
          $this->Datatable->table = 'TblMsItem';
+         $this->Datatable->tablejoin = array(
+            array(0=>"TblMsItemCategory",1=>"TblMsItemCategory.MsItemCatId=TblMsItem.MsItemCatId"),
+            array(0=>"TblMsItemDeskripsi",1=>"TblMsItemDeskripsi.MsItemDeskripsiRef=TblMsItem.MsItemId")
+         ); 
 
          $this->Datatable->column_order = array(
             null,
+            null,
+            'MsItemCatCode',
             'MsItemCode',
             'MsItemName',
+            'MsItemDeskripsiText',
             'MsItemPrice',
             'MsItemUoM',
-            'MsItemImage',
             'MsItemIsActive',
          ); //set column field database for datatable orderable
          $this->Datatable->column_search = array('MsItemCode', 'MsItemName'); //set column field database for datatable searchable
@@ -78,12 +84,14 @@
          foreach ($list as $master) {
             $no++;
             $row = array();
-            $row[] = $no;
+            $row[] = $no; 
+            $row[] = '<img src="' . base_url("upload.php?kode=" . $master->MsItemCode) . '"  alt="..." style="object-fit: contain; width: 75px; height: 75px;">';
+            $row[] = $master->MsItemCatCode." - ".$master->MsItemCatName;
             $row[] = $master->MsItemCode;
             $row[] = $master->MsItemName;
+            $row[] = $master->MsItemDeskripsiText;
             $row[] = $master->MsItemPrice;
             $row[] = $master->MsItemUoM;
-            $row[] = '<img src="' . base_url("asset/image/product/" . $master->MsItemImage) . '"  alt="..." style="object-fit: contain; width: 100%; height: 200px;">';
             $row[] = ($master->MsItemIsActive == 1 ? '<span class="badge rounded-pill text-bg-success">Aktif</span>' : '<span class="badge rounded-pill text-bg-danger">Tidak Aktif</span>');
             $row[] = ' <div class="d-flex flex-row"><a style="text-decoration: none;" class="me-2 text-primary pointer" title="Edit Data"><i class="fas fa-pencil-alt"></i> Edit</a></div>';
             $row[] = $master->MsItemId;

@@ -1,3 +1,8 @@
+<style>
+    .max-desc{
+        max-width:200px;
+    }
+    </style>
 <div class="container-fluid">
     <!-- Page Heading -->
     <h3 class="fw-bold mb-4 text-gray-800 text-uppercase">Produk</h3>
@@ -27,13 +32,16 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Kategory</th>
+                        <th>Gambar</th>
+                        <th>Kategori</th>
+                        <th>Kode</th>
                         <th>Nama</th>
+                        <th>Deskripsi</th>
                         <th>Harga</th>
                         <th>Satuan</th>
-                        <th>Image</th>
                         <th>Status</th>
                         <th>Action</th>
+                        <th>type</th>
                     </tr>
                 </thead>
             </table>
@@ -101,28 +109,28 @@
             }
         },
         "order": [],
-        "columnDefs": [{
-                "orderable": false,
-                targets: 0
-            },
+        "columnDefs": [
             {
                 "orderable": false,
-                "className": "text-center",
+                targets: [0,1]
+            }, 
+            { 
+                "className": "max-desc",
                 targets: 5
             },
             {
-                "orderable": false,
-                "className": "text-center",
+                "orderable": false, 
+                "className": "text-end",
                 targets: 6
             },
             {
                 "orderable": false,
-                targets: 7,
+                targets: 9,
                 className: 'action'
             },
             {
                 "visible": false,
-                targets: 8
+                targets: 10
             },
         ],
 
